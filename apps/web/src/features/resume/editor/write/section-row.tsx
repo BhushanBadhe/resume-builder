@@ -1,5 +1,5 @@
 import type { WriteSection } from "./model";
-import type { SectionType } from "@reactive-resume/schema/resume/data";
+import type { BadgeDesign, SectionType } from "@reactive-resume/schema/resume/data";
 import type { KeyboardEvent, ReactNode } from "react";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
@@ -8,6 +8,7 @@ import { plural, t } from "@lingui/core/macro";
 import { Plural, Trans } from "@lingui/react/macro";
 import { useState } from "react";
 import { sortSectionItemsByPeriod } from "@reactive-resume/resume/section-sort";
+import { defaultBadgeDesign } from "@reactive-resume/schema/resume/data";
 import { Badge } from "@reactive-resume/ui/components/badge";
 import { Collapsible, CollapsibleContent } from "@reactive-resume/ui/components/collapsible";
 import {
@@ -31,7 +32,9 @@ import { cn } from "@reactive-resume/utils/style";
 import { pendingProposals } from "../proposals/proposals";
 import { useEditorStore } from "../store";
 import { addEntryTo } from "./actions";
+import { BadgeDesignMenu } from "./badge-design-menu";
 import { countEntriesToCheck, getEntries, getSectionObject } from "./model";
+import { ColorPicker } from "@/components/input/color-picker";
 import { IconPicker } from "@/components/input/icon-picker";
 import { useCurrentBuilderResumeSelector, useResumeStore, useUpdateResumeData } from "@/features/resume/builder/draft";
 import { usePrompt } from "@/hooks/use-confirm";
@@ -182,6 +185,8 @@ function SectionMenu({ section, title, onMove }: SectionMenuProps) {
 	const settings = useCurrentBuilderResumeSelector((resume) => getSectionObject(resume.data, section) ?? null);
 	const locale = useCurrentBuilderResumeSelector((resume) => resume.data.metadata.page.locale);
 	const [iconPickerOpen, setIconPickerOpen] = useState(false);
+	const primaryColor = useCurrentBuilderResumeSelector((resume) => resume.data.metadata.design.colors.primary);
+	const [badgeColorOpen, setBadgeColorOpen] = useState(false);
 	if (!settings) return null;
 
 	const edit = (mutate: (target: NonNullable<ReturnType<typeof getSectionObject>>) => void) =>
@@ -203,6 +208,17 @@ function SectionMenu({ section, title, onMove }: SectionMenuProps) {
 	const layout = isSkills || hasBadges ? (settings as { layout?: string }).layout : undefined;
 	const columns =
 		(isSkills && layout === "inline") || (hasBadges && layout === "badges") ? layout : String(settings.columns);
+
+	// Badge design settings, shown while a built-in Skills or Languages section uses the Badges layout.
+	const badgeDesign =
+		hasBadges && layout === "badges"
+			? { ...defaultBadgeDesign, ...(settings as { badge?: Partial<BadgeDesign> }).badge }
+			: undefined;
+	const editBadge = (patch: Partial<BadgeDesign>) =>
+		edit((target) => {
+			const withBadge = target as { badge?: BadgeDesign };
+			withBadge.badge = { ...defaultBadgeDesign, ...withBadge.badge, ...patch };
+		});
 
 	const sortByDate = () => {
 		let unresolved: string[] = [];
@@ -352,6 +368,9 @@ function SectionMenu({ section, title, onMove }: SectionMenuProps) {
 							</DropdownMenuRadioGroup>
 						</DropdownMenuSubContent>
 					</DropdownMenuSub>
+					{badgeDesign && (
+						<BadgeDesignMenu design={badgeDesign} onChange={editBadge} onPickColor={() => setBadgeColorOpen(true)} />
+					)}
 					{isSkills && (
 						<DropdownMenuSub>
 							<DropdownMenuSubTrigger>
@@ -404,6 +423,19 @@ function SectionMenu({ section, title, onMove }: SectionMenuProps) {
 					</DropdownMenuItem>
 				</DropdownMenuContent>
 			</DropdownMenu>
+
+			{/* The badge color picker opens from the ⋯ button the same way as the icon grid below. */}
+			{badgeDesign && (
+				<ColorPicker
+					value={badgeDesign.color || primaryColor}
+					onChange={(color) => editBadge({ color })}
+					open={badgeColorOpen}
+					onOpenChange={setBadgeColorOpen}
+					aria-hidden
+					tabIndex={-1}
+					className="pointer-events-none absolute inset-0 size-full opacity-0"
+				/>
+			)}
 
 			{/* The icon grid opens from the ⋯ button: an invisible trigger laid over it anchors the popover. */}
 			<IconPicker

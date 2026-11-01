@@ -1,11 +1,14 @@
 import type { LayoutColumn, WriteSection } from "./model";
+import type { BadgeDesign } from "@reactive-resume/schema/resume/data";
 import { plural } from "@lingui/core/macro";
 import { useLingui } from "@lingui/react/macro";
 import { useRouter } from "expo-router";
 import { useState } from "react";
+import { defaultBadgeDesign } from "@reactive-resume/schema/resume/data";
+import { BadgeDesignPage } from "./badge-design-page";
 import { addEntry, edit, requestFocus, useSectionTitle, useSortByDate, useUndoToast, useWriteData } from "./hooks";
 import { deleteCustomSection, findPlacement, getSectionObject, NO_PAGES, placeSection, selectPages } from "./model";
-import { IconPickerSheet, PromptSheet } from "./pickers";
+import { ColorPickerSheet, IconPickerSheet, PromptSheet } from "./pickers";
 import { routes } from "@/routes";
 import { Icon, ListRow, Sheet, Switch, Text, useTheme } from "@/ui";
 
@@ -18,7 +21,7 @@ type SectionSheetProps = {
 	onMove?: ((direction: "up" | "down") => void) | undefined;
 };
 
-type Page = "menu" | "columns" | "keywords" | "move";
+type Page = "menu" | "columns" | "keywords" | "badge" | "move";
 
 /** Every web section action: add, sort, move, rename, icon, show, heading, columns, layout, clear or delete. */
 export function SectionSheet({ resumeId, section, open, onClose, onMove }: SectionSheetProps) {
@@ -35,6 +38,8 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 	const [page, setPage] = useState<Page>("menu");
 	const [renaming, setRenaming] = useState(false);
 	const [iconOpen, setIconOpen] = useState(false);
+	const [badgeColorOpen, setBadgeColorOpen] = useState(false);
+	const primaryColor = useWriteData((data) => data.metadata.design.colors.primary, "");
 	if (!settings) return null;
 
 	const change = (mutate: (target: NonNullable<typeof settings>) => void) =>
@@ -55,6 +60,16 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 		(isSkills && skills.layout === "inline") || (hasBadges && skills.layout === "badges")
 			? skills.layout
 			: String(settings.columns);
+	// Badge design settings, shown while a built-in Skills or Languages section uses the Badges layout.
+	const badgeDesign =
+		hasBadges && skills.layout === "badges"
+			? { ...defaultBadgeDesign, ...(settings as { badge?: Partial<BadgeDesign> }).badge }
+			: undefined;
+	const changeBadge = (patch: Partial<BadgeDesign>) =>
+		change((target) => {
+			const withBadge = target as { badge?: BadgeDesign };
+			withBadge.badge = { ...defaultBadgeDesign, ...withBadge.badge, ...patch };
+		});
 	const switchRow = (
 		label: string,
 		icon: Parameters<typeof ListRow>[0]["leading"],
@@ -85,17 +100,19 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 	return (
 		<>
 			<Sheet
-				open={open && !renaming && !iconOpen}
-				// Rename and Icon take over from the sheet; its dismissal then isn't a close.
-				onClose={() => !renaming && !iconOpen && close()}
+				open={open && !renaming && !iconOpen && !badgeColorOpen}
+				// Rename, Icon and the badge color take over from the sheet; its dismissal then isn't a close.
+				onClose={() => !renaming && !iconOpen && !badgeColorOpen && close()}
 				title={
 					page === "columns"
 						? t`Columns`
 						: page === "keywords"
 							? t`Keyword layout`
-							: page === "move"
-								? t`Move ${title} to…`
-								: title
+							: page === "badge"
+								? t`Badge design`
+								: page === "move"
+									? t`Move ${title} to…`
+									: title
 				}
 				detents={[0.9]}
 			>
@@ -147,6 +164,16 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 						<Text variant="caption" color="ink3" style={{ paddingHorizontal: space.s4 }}>
 							{t`How each skill's keywords print.`}
 						</Text>
+					</>
+				) : page === "badge" && badgeDesign ? (
+					<>
+						{back}
+						<BadgeDesignPage
+							design={badgeDesign}
+							primaryColor={primaryColor}
+							onChange={changeBadge}
+							onPickColor={() => setBadgeColorOpen(true)}
+						/>
 					</>
 				) : page === "move" ? (
 					<>
@@ -263,6 +290,9 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 							chevron
 							onPress={() => setPage("columns")}
 						/>
+						{badgeDesign ? (
+							<ListRow title={t`Badge design`} leading="palette" chevron onPress={() => setPage("badge")} />
+						) : null}
 						{isSkills ? (
 							<ListRow
 								title={t`Keyword layout`}
@@ -324,6 +354,17 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 						});
 					setRenaming(false);
 					close();
+				}}
+			/>
+			<ColorPickerSheet
+				open={open && badgeColorOpen}
+				title={t`Badge color`}
+				value={badgeDesign?.color ?? ""}
+				allowDefault
+				onClose={() => setBadgeColorOpen(false)}
+				onChange={(color) => {
+					changeBadge({ color });
+					setBadgeColorOpen(false);
 				}}
 			/>
 			<IconPickerSheet

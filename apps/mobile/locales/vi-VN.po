@@ -1805,6 +1805,14 @@ msgid "Background color"
 msgstr "Màu nền"
 
 #: src/features/write/section-sheet.tsx
+msgid "Badge color"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
+msgid "Badge design"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
 msgid "Badges"
 msgstr ""
 
@@ -3244,6 +3252,10 @@ msgstr "Tiền tệ"
 msgid "Custom"
 msgstr "Tùy chỉnh"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Custom color"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "Màu tùy chỉnh (hex)"
@@ -4174,6 +4186,11 @@ msgstr "Điền chi tiết thủ công"
 #: src/features/applications/add-sheet.tsx
 msgid "Fill empty fields with AI"
 msgstr "Điền vào các trường trống bằng AI"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/features/letters/write.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -5135,6 +5152,11 @@ msgstr "Ngôn ngữ"
 msgid "Languages"
 msgstr "Ngôn ngữ"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #: src/features/letters/design.tsx
 msgid "Larger text"
 msgstr "Chữ lớn hơn"
@@ -5712,6 +5734,11 @@ msgstr "Máy chủ MCP"
 #: src/features/applications-board/insights-screen.tsx
 msgid "median to first reply"
 msgstr "trung bình đến câu trả lời đầu tiên"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/career/offers.tsx
 msgid "Meets your minimum base salary."
@@ -6801,6 +6828,11 @@ msgstr "Lỗi thời: văn bản đã thay đổi kể từ đó."
 msgid "Outcome"
 msgstr "Kết quả"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/page.tsx
 #: app/letter/[id]/_layout.tsx
@@ -7041,6 +7073,11 @@ msgstr "Chọn hai ví dụ"
 msgid "Picking your stories"
 msgstr "Đang chọn câu chuyện của bạn"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Pipeline flow"
 msgstr "Luồng quy trình"
@@ -7253,6 +7290,7 @@ msgid "Previous workspace tabs"
 msgstr "Các tab không gian làm việc trước đó"
 
 #: src/features/design/advanced.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Primary color"
 msgstr "Màu chủ đạo"
 
@@ -8198,6 +8236,11 @@ msgstr "Xoay"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "Kết xuất PDF không hỗ trợ xoay."
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Row order"
 msgstr "Thứ tự hàng"
@@ -8741,6 +8784,10 @@ msgstr "Màu bóng"
 msgid "Shadow width"
 msgstr "Độ rộng bóng"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Shape"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/share.tsx
 msgid "Share"
@@ -9047,6 +9094,7 @@ msgstr "Tình huống, Nhiệm vụ và Hành động là bắt buộc. Để tr
 msgid "Situation, Task, Action, Result, Reflection. Link each story to facts you can support; leave unknown outcomes blank."
 msgstr "Tình huống, Nhiệm vụ, Hành động, Kết quả, Suy ngẫm. Liên kết mỗi câu chuyện với dữ kiện bạn có thể chứng minh; để trống những kết quả chưa biết."
 
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/picture-screen.tsx
 msgid "Size"
 msgstr "Kích thước"
@@ -9080,6 +9128,11 @@ msgstr "Tiếng Slovenia"
 msgid "Slug"
 msgstr "Định danh URL"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "Con số nhỏ nhưng đáng lưu ý."
@@ -9087,6 +9140,11 @@ msgstr "Con số nhỏ nhưng đáng lưu ý."
 #: src/features/letters/design.tsx
 msgid "Smaller text"
 msgstr "Chữ nhỏ hơn"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -9213,6 +9271,11 @@ msgstr "Đang tìm điểm thay đổi"
 #: src/features/write/picture-screen.tsx
 msgid "Square"
 msgstr "Vuông"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/design/style-groups.tsx
 msgctxt "Entry header layout"
@@ -9342,6 +9405,10 @@ msgstr "Gạch ngang"
 #: src/features/write/improve.tsx
 msgid "Stronger verb"
 msgstr "Động từ mạnh hơn"
+
+#: src/features/write/badge-design-page.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/workspace/tabs/apply.tsx
 msgid "Submission is recorded. Review checks only reflect what you checked yourself."

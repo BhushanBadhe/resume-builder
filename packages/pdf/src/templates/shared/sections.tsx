@@ -5,6 +5,7 @@ import type { StyleInput, TemplatePlacement } from "./styles";
 import type { CustomItemSection, ItemSection } from "./types";
 import type {
 	AwardItem,
+	BadgeDesign,
 	CertificationItem,
 	CoverLetterItem,
 	CustomSectionType,
@@ -22,7 +23,7 @@ import type {
 } from "@reactive-resume/schema/resume/data";
 import type { ReactNode } from "react";
 import { Children, createContext, Fragment, isValidElement, use } from "react";
-import { entryHeaderOf } from "@reactive-resume/schema/resume/data";
+import { defaultBadgeDesign, entryHeaderOf } from "@reactive-resume/schema/resume/data";
 import { isDarkColor } from "@reactive-resume/utils/color";
 import { View } from "#react-pdf-renderer";
 import { useRender } from "../../context";
@@ -471,7 +472,13 @@ const SectionItems = ({ children, columns = 1, wrap = false }: SectionItemsProps
 	const rtlHelpers = createRtlStyleHelpers(data.rtl);
 	const rtlRowStyle = rtlHelpers.gridRowStyle;
 	const wrapStyle: Style | undefined = wrap
-		? { flexDirection: rtlHelpers.row, flexWrap: "wrap", columnGap: metrics.gapX(0.5), rowGap: metrics.gapY(0.5) }
+		? {
+				flexDirection: rtlHelpers.row,
+				flexWrap: "wrap",
+				// At least the gap between badges inside one item, so separate items never read as one.
+				columnGap: Math.max(4, metrics.gapX(0.5)),
+				rowGap: Math.max(4, metrics.gapY(0.5)),
+			}
 		: undefined;
 	if (!visible) return null;
 
@@ -1525,20 +1532,25 @@ const getSkillsItemStyle = (isInline: boolean, item: SkillItem, metrics: ReturnT
 	return { rowGap: metrics.gapY(0.25) };
 };
 
-const badgeStyle = {
-	borderRadius: 999,
-	paddingHorizontal: 6,
-	paddingVertical: 2,
-} satisfies Style;
-
 const badgeHeaderResetStyle = {
 	borderLeftWidth: 0,
 	paddingLeft: 0,
 	paddingVertical: 0,
 } satisfies Style;
 
-/** Bootstrap-style pill badge styles: a fill in the primary color with readable text, and a soft tint for secondary badges. */
-const useBadgeStyles = () => {
+const badgeRadius = { pill: 999, rounded: 3, square: 0 } as const satisfies Record<BadgeDesign["shape"], number>;
+const badgeSize = {
+	small: { scale: 0.85, paddingHorizontal: 4, paddingVertical: 1 },
+	medium: { scale: 1, paddingHorizontal: 6, paddingVertical: 2 },
+	large: { scale: 1.15, paddingHorizontal: 8, paddingVertical: 3 },
+} as const satisfies Record<BadgeDesign["size"], { scale: number; paddingHorizontal: number; paddingVertical: number }>;
+
+/**
+ * Bootstrap-style badge styles for a section's badge design: the main badge (`name*`) and a lighter secondary badge
+ * (`tint*`) for keywords. Without a custom color, badges use the primary color.
+ */
+const useBadgeStyles = (design: BadgeDesign = defaultBadgeDesign) => {
+	const data = useRender();
 	const colors = useTemplateColors();
 	const placement = useTemplatePlacement();
 	// A primary badge blends into a sidebar of similar lightness (e.g. a solid primary fill); use the sidebar's text color there.
@@ -1548,17 +1560,53 @@ const useBadgeStyles = () => {
 		sidebarBackground !== undefined &&
 		isDarkColor(sidebarBackground) === isDarkColor(colors.primary);
 	const primary = blendsIntoSidebar && sidebarForeground ? sidebarForeground : colors.primary;
+	const color = design.color.trim() || primary;
+
+	const size = badgeSize[design.size];
+	const bodySize = data.metadata.typography.body.fontSize;
+	const box = {
+		borderRadius: badgeRadius[design.shape],
+		borderWidth: 1,
+		paddingHorizontal: size.paddingHorizontal,
+		paddingVertical: size.paddingVertical,
+	} satisfies Style;
+	const text = { lineHeight: 1.2, fontSize: bodySize * size.scale } satisfies Style;
+	const smallText = { lineHeight: 1.2, fontSize: bodySize * 0.875 * size.scale } satisfies Style;
+	const tint = (opacity: number) => getPrimaryTint(color, opacity);
+
+	const variants = {
+		filled: {
+			name: { backgroundColor: color, borderColor: color },
+			nameText: { color: isDarkColor(color) ? "#ffffff" : "#000000" },
+			tint: { backgroundColor: tint(0.15), borderColor: tint(0.15) },
+		},
+		soft: {
+			name: { backgroundColor: tint(0.15), borderColor: tint(0.15) },
+			nameText: { color },
+			tint: { backgroundColor: tint(0.07), borderColor: tint(0.07) },
+		},
+		outline: {
+			name: { borderColor: color },
+			nameText: { color },
+			tint: { borderColor: tint(0.4) },
+		},
+	} satisfies Record<BadgeDesign["style"], { name: Style; nameText: Style; tint: Style }>;
+	const variant = variants[design.style];
 
 	return {
-		nameStyle: composeStyles(badgeStyle, { backgroundColor: primary }),
-		nameTextStyle: { color: isDarkColor(primary) ? "#ffffff" : "#000000", lineHeight: 1.2 } satisfies Style,
-		tintStyle: composeStyles(badgeStyle, { backgroundColor: getPrimaryTint(primary, 0.15) }),
+		nameStyle: composeStyles(box, variant.name),
+		nameTextStyle: composeStyles(text, variant.nameText),
+		nameSmallTextStyle: composeStyles(smallText, variant.nameText, { opacity: 0.85 }),
+		tintStyle: composeStyles(box, variant.tint),
+		tintTextStyle: smallText,
 	};
 };
 
-/** The skill name as a filled badge, its keywords as tinted badges. */
-const SkillBadges = ({ item }: { item: SkillItem }) => {
-	const { nameStyle, nameTextStyle, tintStyle: keywordStyle } = useBadgeStyles();
+type SkillBadgesProps = { item: SkillItem; design: BadgeDesign | undefined };
+
+/** The skill name as the main badge, its keywords as lighter badges. */
+const SkillBadges = ({ item, design }: SkillBadgesProps) => {
+	const { nameStyle, nameTextStyle, tintStyle: keywordStyle, tintTextStyle } = useBadgeStyles(design);
 
 	return (
 		<>
@@ -1572,7 +1620,7 @@ const SkillBadges = ({ item }: { item: SkillItem }) => {
 			</SectionItemHeader>
 			{item.keywords.map((keyword, index) => (
 				<View key={index} style={keywordStyle}>
-					<Small semanticField="keywords" style={{ lineHeight: 1.2 }}>
+					<Small semanticField="keywords" style={tintTextStyle}>
 						{keyword}
 					</Small>
 				</View>
@@ -1608,7 +1656,7 @@ const SkillsSection = ({ sectionId = "skills", sectionData }: ItemSectionProps<S
 				<SectionItems wrap>
 					{items.map((item) => (
 						<SectionItem key={item.id} itemId={item.id} style={badgeItemStyle}>
-							<SkillBadges item={item} />
+							<SkillBadges item={item} design={sectionData ? undefined : data.sections.skills.badge} />
 						</SectionItem>
 					))}
 				</SectionItems>
@@ -1650,9 +1698,11 @@ const SkillsSection = ({ sectionId = "skills", sectionData }: ItemSectionProps<S
 	);
 };
 
-/** One filled badge per language, holding its name and fluency. */
-const LanguageBadge = ({ item }: { item: LanguageItem }) => {
-	const { nameStyle, nameTextStyle } = useBadgeStyles();
+type LanguageBadgeProps = { item: LanguageItem; design: BadgeDesign | undefined };
+
+/** One badge per language, holding its name and fluency. */
+const LanguageBadge = ({ item, design }: LanguageBadgeProps) => {
+	const { nameStyle, nameTextStyle, nameSmallTextStyle } = useBadgeStyles(design);
 
 	return (
 		<SectionItemHeader style={badgeHeaderResetStyle}>
@@ -1663,7 +1713,7 @@ const LanguageBadge = ({ item }: { item: LanguageItem }) => {
 					{item.language}
 				</Bold>
 				{item.fluency.trim() && (
-					<Small semanticField="fluency" style={composeStyles(nameTextStyle, { opacity: 0.85 })}>
+					<Small semanticField="fluency" style={nameSmallTextStyle}>
 						{item.fluency}
 					</Small>
 				)}
@@ -1685,7 +1735,7 @@ const LanguagesSection = ({ sectionId = "languages", sectionData }: ItemSectionP
 				<SectionItems wrap>
 					{items.map((item) => (
 						<SectionItem key={item.id} itemId={item.id} style={badgeItemStyle}>
-							<LanguageBadge item={item} />
+							<LanguageBadge item={item} design={sectionData ? undefined : data.sections.languages.badge} />
 						</SectionItem>
 					))}
 				</SectionItems>

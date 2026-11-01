@@ -1805,6 +1805,14 @@ msgid "Background color"
 msgstr "ಹಿನ್ನೆಲೆ ಬಣ್ಣ"
 
 #: src/features/write/section-sheet.tsx
+msgid "Badge color"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
+msgid "Badge design"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
 msgid "Badges"
 msgstr ""
 
@@ -3244,6 +3252,10 @@ msgstr "ಕರೆನ್ಸಿ"
 msgid "Custom"
 msgstr "ಕಸ್ಟಮ್"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Custom color"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "ಕಸ್ಟಮ್ ಬಣ್ಣ (ಹೆಕ್ಸ್)"
@@ -4174,6 +4186,11 @@ msgstr "ವಿವರಗಳನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ �
 #: src/features/applications/add-sheet.tsx
 msgid "Fill empty fields with AI"
 msgstr "ಖಾಲಿ ಜಾಗಗಳನ್ನು AI ನೊಂದಿಗೆ ಭರ್ತಿ ಮಾಡಿ"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/features/letters/write.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -5135,6 +5152,11 @@ msgstr "ಭಾಷೆ"
 msgid "Languages"
 msgstr "ಭಾಷೆಗಳು"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #: src/features/letters/design.tsx
 msgid "Larger text"
 msgstr "ದೊಡ್ಡ ಪಠ್ಯ"
@@ -5712,6 +5734,11 @@ msgstr "MCP ಸರ್ವರ್"
 #: src/features/applications-board/insights-screen.tsx
 msgid "median to first reply"
 msgstr "ಮೊದಲ ಪ್ರತ್ಯುತ್ತರಕ್ಕೆ ಸರಾಸರಿ"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/career/offers.tsx
 msgid "Meets your minimum base salary."
@@ -6801,6 +6828,11 @@ msgstr "ಅವಧಿ ಮೀರಿದೆ: ಪಠ್ಯವು ಅಂದಿನಿ�
 msgid "Outcome"
 msgstr "ಫಲಿತಾಂಶ"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/page.tsx
 #: app/letter/[id]/_layout.tsx
@@ -7041,6 +7073,11 @@ msgstr "ಎರಡು ಉದಾಹರಣೆಗಳನ್ನು ಆರಿಸಿ"
 msgid "Picking your stories"
 msgstr "ನಿಮ್ಮ ಕಥೆಗಳನ್ನು ಆರಿಸಲಾಗುತ್ತಿದೆ"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Pipeline flow"
 msgstr "ಪೈಪ್‌ಲೈನ್ ಹರಿವು"
@@ -7253,6 +7290,7 @@ msgid "Previous workspace tabs"
 msgstr "ಹಿಂದಿನ ಕಾರ್ಯಸ್ಥಳದ ಟ್ಯಾಬ್‌ಗಳು"
 
 #: src/features/design/advanced.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Primary color"
 msgstr "ಪ್ರಾಥಮಿಕ ಬಣ್ಣ"
 
@@ -8198,6 +8236,11 @@ msgstr "ಭ್ರಮನ"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "PDF ರೆಂಡರಿಂಗ್ ಮೂಲಕ ತಿರುಗುವಿಕೆಯನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ."
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Row order"
 msgstr "ಸಾಲುಗಳ ಕ್ರಮ"
@@ -8741,6 +8784,10 @@ msgstr "ನೆರಳಿನ ಬಣ್ಣ"
 msgid "Shadow width"
 msgstr "ನೆರಳಿನ ಅಗಲ"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Shape"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/share.tsx
 msgid "Share"
@@ -9047,6 +9094,7 @@ msgstr "ಸನ್ನಿವೇಶ, ಕಾರ್ಯ ಮತ್ತು ಕ್ರಮ �
 msgid "Situation, Task, Action, Result, Reflection. Link each story to facts you can support; leave unknown outcomes blank."
 msgstr "ಸನ್ನಿವೇಶ, ಕಾರ್ಯ, ಕ್ರಮ, ಫಲಿತಾಂಶ, ಆತ್ಮಾವಲೋಕನ. ಪ್ರತಿ ಕಥೆಯನ್ನು ನೀವು ಬೆಂಬಲಿಸಬಹುದಾದ ಸಂಗತಿಗಳಿಗೆ ಲಿಂಕ್ ಮಾಡಿ; ತಿಳಿಯದ ಫಲಿತಾಂಶಗಳನ್ನು ಖಾಲಿ ಬಿಡಿ."
 
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/picture-screen.tsx
 msgid "Size"
 msgstr "ಗಾತ್ರ"
@@ -9080,6 +9128,11 @@ msgstr "ಸ್ಲೋವೇನಿಯನ್"
 msgid "Slug"
 msgstr "ಲಿಂಕ್‌ನ ಕೊನೆಯ ಭಾಗ"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "ಸಣ್ಣ ಸಂಖ್ಯೆಗಳು, ಆದರೆ ಗಮನಕ್ಕೆ ಯೋಗ್ಯವಾಗಿದೆ."
@@ -9087,6 +9140,11 @@ msgstr "ಸಣ್ಣ ಸಂಖ್ಯೆಗಳು, ಆದರೆ ಗಮನಕ್�
 #: src/features/letters/design.tsx
 msgid "Smaller text"
 msgstr "ಚಿಕ್ಕ ಪಠ್ಯ"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -9213,6 +9271,11 @@ msgstr "ಏನು ಬದಲಾಗಿದೆ ಎಂದು ಗುರುತಿಸಲ
 #: src/features/write/picture-screen.tsx
 msgid "Square"
 msgstr "ಚೌಕ"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/design/style-groups.tsx
 msgctxt "Entry header layout"
@@ -9342,6 +9405,10 @@ msgstr "ಸ್ಟ್ರೈಕ್‌ಥ್ರೂ"
 #: src/features/write/improve.tsx
 msgid "Stronger verb"
 msgstr "ಬಲವಾದ ಕ್ರಿಯಾಪದ"
+
+#: src/features/write/badge-design-page.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/workspace/tabs/apply.tsx
 msgid "Submission is recorded. Review checks only reflect what you checked yourself."

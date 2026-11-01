@@ -1805,6 +1805,14 @@ msgid "Background color"
 msgstr ""
 
 #: src/features/write/section-sheet.tsx
+msgid "Badge color"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
+msgid "Badge design"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
 msgid "Badges"
 msgstr ""
 
@@ -3244,6 +3252,10 @@ msgstr ""
 msgid "Custom"
 msgstr ""
 
+#: src/features/write/badge-design-page.tsx
+msgid "Custom color"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr ""
@@ -4173,6 +4185,11 @@ msgstr ""
 
 #: src/features/applications/add-sheet.tsx
 msgid "Fill empty fields with AI"
+msgstr ""
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
 msgstr ""
 
 #: src/features/letters/write.tsx
@@ -5135,6 +5152,11 @@ msgstr ""
 msgid "Languages"
 msgstr ""
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #: src/features/letters/design.tsx
 msgid "Larger text"
 msgstr ""
@@ -5711,6 +5733,11 @@ msgstr ""
 
 #: src/features/applications-board/insights-screen.tsx
 msgid "median to first reply"
+msgstr ""
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Medium"
 msgstr ""
 
 #: src/features/career/offers.tsx
@@ -6801,6 +6828,11 @@ msgstr ""
 msgid "Outcome"
 msgstr ""
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/page.tsx
 #: app/letter/[id]/_layout.tsx
@@ -7041,6 +7073,11 @@ msgstr ""
 msgid "Picking your stories"
 msgstr ""
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Pipeline flow"
 msgstr ""
@@ -7253,6 +7290,7 @@ msgid "Previous workspace tabs"
 msgstr ""
 
 #: src/features/design/advanced.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Primary color"
 msgstr ""
 
@@ -8198,6 +8236,11 @@ msgstr ""
 msgid "Rotation isn't supported by PDF rendering."
 msgstr ""
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Row order"
 msgstr ""
@@ -8741,6 +8784,10 @@ msgstr ""
 msgid "Shadow width"
 msgstr ""
 
+#: src/features/write/badge-design-page.tsx
+msgid "Shape"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/share.tsx
 msgid "Share"
@@ -9047,6 +9094,7 @@ msgstr ""
 msgid "Situation, Task, Action, Result, Reflection. Link each story to facts you can support; leave unknown outcomes blank."
 msgstr ""
 
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/picture-screen.tsx
 msgid "Size"
 msgstr ""
@@ -9080,12 +9128,22 @@ msgstr ""
 msgid "Slug"
 msgstr ""
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Small numbers, but worth noticing."
 msgstr ""
 
 #: src/features/letters/design.tsx
 msgid "Smaller text"
+msgstr ""
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
 msgstr ""
 
 #: src/features/check/issues.ts
@@ -9211,6 +9269,11 @@ msgstr ""
 
 #: src/features/design/advanced.tsx
 #: src/features/write/picture-screen.tsx
+msgid "Square"
+msgstr ""
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: sharp corners"
 msgid "Square"
 msgstr ""
 
@@ -9341,6 +9404,10 @@ msgstr ""
 
 #: src/features/write/improve.tsx
 msgid "Stronger verb"
+msgstr ""
+
+#: src/features/write/badge-design-page.tsx
+msgid "Style"
 msgstr ""
 
 #: src/features/workspace/tabs/apply.tsx

@@ -107,3 +107,33 @@ describe("languages badges layout", () => {
 		expect(text).toEqual(expect.arrayContaining(["Marathi", "Native", "English"]));
 	});
 });
+
+describe("badge design", () => {
+	it("defaults to filled medium pills in the primary color", () => {
+		const parsed = resumeDataSchema.parse(structuredClone(defaultResumeData));
+		expect(parsed.sections.skills.badge).toEqual({ style: "filled", shape: "pill", size: "medium", color: "" });
+		expect(parsed.sections.languages.badge).toEqual({ style: "filled", shape: "pill", size: "medium", color: "" });
+	});
+
+	it("fills in a missing design and replaces invalid values with defaults", () => {
+		const data = structuredClone(defaultResumeData);
+		Reflect.deleteProperty(data.sections.skills, "badge");
+		Object.assign(data.sections.languages, { badge: { style: "glow", shape: "square", size: 3 } });
+		const parsed = resumeDataSchema.parse(data);
+		expect(parsed.sections.skills.badge).toEqual({ style: "filled", shape: "pill", size: "medium", color: "" });
+		expect(parsed.sections.languages.badge).toEqual({ style: "filled", shape: "square", size: "medium", color: "" });
+	});
+
+	it.each([
+		{ style: "soft", shape: "rounded", size: "small", color: "" },
+		{ style: "outline", shape: "square", size: "large", color: "rgba(22, 163, 74, 1)" },
+	] as const)("prints every badge with style $style, shape $shape, size $size", async (badge) => {
+		const skills = badgesFixture();
+		skills.sections.skills.badge = { ...badge };
+		expect(await renderText(skills)).toEqual(expect.arrayContaining(["MS Excel", "Pivot tables", "Communication"]));
+
+		const languages = languagesFixture();
+		languages.sections.languages.badge = { ...badge };
+		expect(await renderText(languages)).toEqual(expect.arrayContaining(["Marathi", "Native", "English"]));
+	});
+});

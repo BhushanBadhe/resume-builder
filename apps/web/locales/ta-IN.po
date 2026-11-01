@@ -2272,6 +2272,10 @@ msgstr "காப்பு குறியீடு"
 msgid "Backup codes copied"
 msgstr "காப்பு குறியீடுகள் நகலெடுக்கப்பட்டன"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Badge design"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Badges"
 msgstr ""
@@ -2936,6 +2940,7 @@ msgstr "ஆலோசகர்"
 msgid "Code"
 msgstr "குறியீடு"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-components/design-panel.tsx
 #: src/routes/builder/letter/-components/design-panel.tsx
 msgid "Color"
@@ -4101,6 +4106,10 @@ msgstr "தனிப்பயன்"
 #: src/features/resume/editor/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "தனிப்பயன் நிறம் (hex)"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Custom color…"
+msgstr ""
 
 #: src/features/resume/editor/write/dates-field.tsx
 msgid "Custom date text"
@@ -5301,6 +5310,11 @@ msgstr "பணி மற்றும் நிறுவனத்தை நிர
 #: src/features/applications/components/add-application-dialog.tsx
 msgid "Fill in the role and company. The posting is saved with the application."
 msgstr "பங்கு மற்றும் நிறுவனத்தை நிரப்பவும். வேலை விண்ணப்பத்துடன் வேலை இடுகை சேமிக்கப்படுகிறது."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/routes/builder/letter/-components/write-panel.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -6631,6 +6645,11 @@ msgstr "மொழி"
 msgid "Languages"
 msgstr "மொழிகள்"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #. placeholder {0}: monthYear(new Date(password.updatedAt))
 #: src/features/settings/account/security.tsx
 msgid "Last changed in {0}"
@@ -7313,6 +7332,11 @@ msgstr "முதல் பதிலுக்கான இடைநிலை"
 #: src/features/resume/editor/check/writing-tab.tsx
 msgid "Medium"
 msgstr "நடுத்தர"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/homepage/prepare.tsx
 msgid "Mentor other designers"
@@ -8577,6 +8601,11 @@ msgstr "முடிவு"
 msgid "Outdent"
 msgstr "உள்தள்ளலைக் குறை"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: src/features/homepage/prepare.tsx
 msgid "Own and evolve a design system"
 msgstr "வடிவமைப்பு அமைப்பைப் பொறுப்பேற்று மேம்படுத்துதல்"
@@ -8868,6 +8897,11 @@ msgstr "உங்கள் கதைகளைத் தேர்ந்தெட�
 msgid "Picture"
 msgstr "படம்"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Pipeline flow"
 msgstr "பைப்லைன் ஓட்டம்"
@@ -9113,6 +9147,7 @@ msgstr "ஆவண விவரங்கள் உட்பட முந்தை
 msgid "Previous month"
 msgstr "முந்தைய மாதம்"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Primary color"
 msgstr "முதன்மை நிறம்"
@@ -10216,6 +10251,11 @@ msgstr "சுழற்சி"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "PDF ரெண்டரிங் மூலம் சுழற்சி ஆதரிக்கப்படவில்லை."
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #. placeholder {0}: fieldLabel(field)
 #: src/features/applications/components/import-applications-sheet.tsx
 msgid "Row {row}, {0}: “{value}” is invalid."
@@ -10886,6 +10926,10 @@ msgstr "நிழல் நிறம்"
 msgid "Shadow width"
 msgstr "நிழல் அகலம்"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Shape"
+msgstr ""
+
 #: src/features/homepage/footer.tsx
 #: src/features/homepage/header.tsx
 #: src/features/homepage/share.tsx
@@ -11193,6 +11237,7 @@ msgstr "சூழ்நிலை, பணி, செயல், முடிவு
 msgid "Six product teams"
 msgstr "ஆறு தயாரிப்பு குழுக்கள்"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Size"
 msgstr "அளவு"
@@ -11241,6 +11286,11 @@ msgstr "ஸ்லோவாக்"
 msgid "Slovenian"
 msgstr "ஸ்லோவேனியன்"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "சிறிய எண்கள், ஆனால் கவனிக்க வேண்டியவை."
@@ -11248,6 +11298,11 @@ msgstr "சிறிய எண்கள், ஆனால் கவனிக்�
 #: src/features/homepage/remember.tsx
 msgid "So I talked to 14 customers, found the three places people dropped off, and we prototyped a shorter setup."
 msgstr "அதனால் 14 வாடிக்கையாளர்களிடம் பேசினேன், மக்கள் விலகிய மூன்று இடங்களைக் கண்டறிந்தேன், நாங்கள் சுருக்கமான அமைவுக்கு முன்மாதிரி உருவாக்கினோம்."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/resume/editor/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -11365,6 +11420,11 @@ msgstr "என்ன மாறியது எனக் கண்டறிகி
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Square"
 msgstr "சதுரம்"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/resume/editor/design/entries-group.tsx
 msgctxt "Entry header layout"
@@ -11595,6 +11655,10 @@ msgstr "அடித்தல்"
 #: src/features/resume/editor/write/improve.tsx
 msgid "Stronger verb"
 msgstr "வலுவான வினைச்சொல்"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/resume/stylesheet/toolbar.tsx
 msgid "Stylesheet editor"

@@ -1805,6 +1805,14 @@ msgid "Background color"
 msgstr "Colore di sfondo"
 
 #: src/features/write/section-sheet.tsx
+msgid "Badge color"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
+msgid "Badge design"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
 msgid "Badges"
 msgstr ""
 
@@ -3244,6 +3252,10 @@ msgstr "Valuta"
 msgid "Custom"
 msgstr "Personalizzato"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Custom color"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "Colore personalizzato (esadecimale)"
@@ -4174,6 +4186,11 @@ msgstr "Compila i dettagli manualmente"
 #: src/features/applications/add-sheet.tsx
 msgid "Fill empty fields with AI"
 msgstr "Compila i campi vuoti con AI"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/features/letters/write.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -5135,6 +5152,11 @@ msgstr "Lingua"
 msgid "Languages"
 msgstr "Lingue"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #: src/features/letters/design.tsx
 msgid "Larger text"
 msgstr "Testo più grande"
@@ -5712,6 +5734,11 @@ msgstr "Server MCP"
 #: src/features/applications-board/insights-screen.tsx
 msgid "median to first reply"
 msgstr "mediana alla prima risposta"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/career/offers.tsx
 msgid "Meets your minimum base salary."
@@ -6801,6 +6828,11 @@ msgstr "Non aggiornato: il testo è cambiato da allora."
 msgid "Outcome"
 msgstr "Risultato"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/page.tsx
 #: app/letter/[id]/_layout.tsx
@@ -7041,6 +7073,11 @@ msgstr "Scegli due esempi"
 msgid "Picking your stories"
 msgstr "Scelgo le tue storie"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Pipeline flow"
 msgstr "Flusso della pipeline"
@@ -7253,6 +7290,7 @@ msgid "Previous workspace tabs"
 msgstr "Schede dell'area di lavoro precedenti"
 
 #: src/features/design/advanced.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Primary color"
 msgstr "Colore primario"
 
@@ -8198,6 +8236,11 @@ msgstr "Rotazione"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "La rotazione non è supportata dal rendering PDF."
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Row order"
 msgstr "Ordine delle righe"
@@ -8741,6 +8784,10 @@ msgstr "Colore dell'ombra"
 msgid "Shadow width"
 msgstr "Larghezza ombra"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Shape"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/share.tsx
 msgid "Share"
@@ -9047,6 +9094,7 @@ msgstr "Situazione, Compito e Azione sono obbligatori. Lascia vuoti Risultato e 
 msgid "Situation, Task, Action, Result, Reflection. Link each story to facts you can support; leave unknown outcomes blank."
 msgstr "Situazione, Compito, Azione, Risultato, Riflessione. Collega ogni storia a fatti che puoi supportare; lascia vuoti i risultati che non conosci."
 
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/picture-screen.tsx
 msgid "Size"
 msgstr "Dimensione"
@@ -9080,6 +9128,11 @@ msgstr "Sloveno"
 msgid "Slug"
 msgstr "Identificativo URL"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "Numeri piccoli, ma degni di nota."
@@ -9087,6 +9140,11 @@ msgstr "Numeri piccoli, ma degni di nota."
 #: src/features/letters/design.tsx
 msgid "Smaller text"
 msgstr "Testo più piccolo"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -9213,6 +9271,11 @@ msgstr "Individuo cosa è cambiato"
 #: src/features/write/picture-screen.tsx
 msgid "Square"
 msgstr "Quadrato"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/design/style-groups.tsx
 msgctxt "Entry header layout"
@@ -9342,6 +9405,10 @@ msgstr "Barrato"
 #: src/features/write/improve.tsx
 msgid "Stronger verb"
 msgstr "Verbo più forte"
+
+#: src/features/write/badge-design-page.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/workspace/tabs/apply.tsx
 msgid "Submission is recorded. Review checks only reflect what you checked yourself."

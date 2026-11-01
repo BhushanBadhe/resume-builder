@@ -1807,6 +1807,14 @@ msgid "Background color"
 msgstr "ପୃଷ୍ଠଭୂମି ରଙ୍ଗ"
 
 #: src/features/write/section-sheet.tsx
+msgid "Badge color"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
+msgid "Badge design"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
 msgid "Badges"
 msgstr ""
 
@@ -3252,6 +3260,10 @@ msgstr "ମୁଦ୍ରା"
 msgid "Custom"
 msgstr "କଷ୍ଟମ୍"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Custom color"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "କଷ୍ଟମ୍ ରଙ୍ଗ (ହେକ୍ସ)"
@@ -4188,6 +4200,11 @@ msgstr "ନିଜେ ବିବରଣୀ ଭରନ୍ତୁ"
 #: src/features/applications/add-sheet.tsx
 msgid "Fill empty fields with AI"
 msgstr "AI ସହିତ ଖାଲି କ୍ଷେତ୍ର ପୁରଣ କର।"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/features/letters/write.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -5152,6 +5169,11 @@ msgstr "ଭାଷା"
 msgid "Languages"
 msgstr "ଭାଷାଗୁଡିକ"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #: src/features/letters/design.tsx
 msgid "Larger text"
 msgstr "ବଡ଼ ଅକ୍ଷର"
@@ -5729,6 +5751,11 @@ msgstr "MCP ସର୍ଭର |"
 #: src/features/applications-board/insights-screen.tsx
 msgid "median to first reply"
 msgstr "ପ୍ରଥମ ଉତ୍ତର ଦେବାକୁ ମଧ୍ୟମ"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/career/offers.tsx
 msgid "Meets your minimum base salary."
@@ -6822,6 +6849,11 @@ msgstr "ପୁରୁଣା: ପାଠଟି ବଦଳି ଯାଇଛି |"
 msgid "Outcome"
 msgstr "ଫଳାଫଳ"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/page.tsx
 #: app/letter/[id]/_layout.tsx
@@ -7062,6 +7094,11 @@ msgstr "ଦୁଇଟି ଉଦାହରଣ ବାଛନ୍ତୁ"
 msgid "Picking your stories"
 msgstr "ଆପଣଙ୍କ କାହାଣୀ ବାଛୁଛି"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Pipeline flow"
 msgstr "ପାଇପଲାଇନ ପ୍ରବାହ |"
@@ -7278,6 +7315,7 @@ msgstr "|\n"
 "ପୂର୍ବ କାର୍ଯ୍ୟକ୍ଷେତ୍ର ଟ୍ୟାବଗୁଡ଼ିକ |"
 
 #: src/features/design/advanced.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Primary color"
 msgstr "ମୁଖ୍ୟ ରଙ୍ଗ"
 
@@ -8227,6 +8265,11 @@ msgstr "ଘୁର୍ଣ୍ଣନ"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "PDF ରେଣ୍ଡରିଂ ଦ୍ୱାରା ଘୂର୍ଣ୍ଣନ ସମର୍ଥିତ ନୁହେଁ |"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Row order"
 msgstr "ଧାଡ଼ିର କ୍ରମ"
@@ -8774,6 +8817,10 @@ msgstr "ଛାୟା ରଙ୍ଗ |"
 msgid "Shadow width"
 msgstr "ଛାୟା ପ୍ରସ୍ଥ"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Shape"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/share.tsx
 msgid "Share"
@@ -9084,6 +9131,7 @@ msgstr "ପରିସ୍ଥିତି, କାର୍ଯ୍ୟ ଓ ପଦକ୍ଷ�
 msgid "Situation, Task, Action, Result, Reflection. Link each story to facts you can support; leave unknown outcomes blank."
 msgstr "ପରିସ୍ଥିତି, କାର୍ଯ୍ୟ, ପଦକ୍ଷେପ, ଫଳାଫଳ, ପ୍ରତିଫଳନ। ପ୍ରତ୍ୟେକ କାହାଣୀକୁ ଆପଣ ସମର୍ଥନ କରିପାରୁଥିବା ତଥ୍ୟ ସହ ଲିଙ୍କ୍ କରନ୍ତୁ; ଅଜଣା ପରିଣାମ ଖାଲି ରଖନ୍ତୁ।"
 
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/picture-screen.tsx
 msgid "Size"
 msgstr "ଆକାର"
@@ -9117,6 +9165,11 @@ msgstr "ସ୍ଲୋଭେନିଆନ୍"
 msgid "Slug"
 msgstr "URL ପରିଚୟ"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "ଛୋଟ ସଂଖ୍ୟା, କିନ୍ତୁ ଧ୍ୟାନ ଦେବା ଯୋଗ୍ୟ |"
@@ -9124,6 +9177,11 @@ msgstr "ଛୋଟ ସଂଖ୍ୟା, କିନ୍ତୁ ଧ୍ୟାନ ଦେ�
 #: src/features/letters/design.tsx
 msgid "Smaller text"
 msgstr "ଛୋଟ ଅକ୍ଷର"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -9250,6 +9308,11 @@ msgstr "କ'ଣ ବଦଳିଛି ଚିହ୍ନଟ କରୁଛି"
 #: src/features/write/picture-screen.tsx
 msgid "Square"
 msgstr "ଚଔକ"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/design/style-groups.tsx
 msgctxt "Entry header layout"
@@ -9379,6 +9442,10 @@ msgstr "ଷ୍ଟ୍ରାଇକଥ୍ରୁ"
 #: src/features/write/improve.tsx
 msgid "Stronger verb"
 msgstr "ଶକ୍ତିଶାଳୀ କ୍ରିୟା"
+
+#: src/features/write/badge-design-page.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/workspace/tabs/apply.tsx
 msgid "Submission is recorded. Review checks only reflect what you checked yourself."

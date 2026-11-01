@@ -280,6 +280,11 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `sections.skills.items[].keywords[]` | `string` | — | — | — |
 | `sections.skills.keywordLayout` | `string` | no | enum: ["inline","list"]; default: "inline" | How skill keywords are displayed: inline separated by commas, or one bullet per keyword. |
 | `sections.skills.layout` | `string` | no | enum: ["default","inline","badges"]; default: "default" | The layout style for skill items. 'inline' places item fields next to name; 'badges' prints each skill and keyword as a rounded badge. |
+| `sections.skills.badge` | `object` | no | default: {"style":"filled","shape":"pill","size":"medium","color":""} | How badges look when the section uses the 'badges' layout. |
+| `sections.skills.badge.style` | `string` | no | enum: ["filled","soft","outline"]; default: "filled" | 'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border. |
+| `sections.skills.badge.shape` | `string` | no | enum: ["pill","rounded","square"]; default: "pill" | 'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none. |
+| `sections.skills.badge.size` | `string` | no | enum: ["small","medium","large"]; default: "medium" | The text size and padding of each badge. |
+| `sections.skills.badge.color` | `string` | no | default: "" | Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color. |
 | `sections.languages` | `object` | yes | — | The section to display the languages of the author. |
 | `sections.languages.title` | `string` | yes | — | The title of the section. |
 | `sections.languages.icon` | `string` | yes | default: "" | Phosphor icon name to display before the section title in the PDF output. Empty string uses the default section icon; 'none' hides the icon. |
@@ -296,6 +301,11 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `sections.languages.items[].fluency` | `string` | yes | — | The fluency level of the language. Can be any text, such as 'Native', 'Fluent', 'Conversational', etc. or can also be a CEFR level (A1, A2, B1, B2, C1, C2). |
 | `sections.languages.items[].level` | `number` | yes | minimum: 0; maximum: 5; default: 0 | The proficiency level of the language, defined as a number between 0 and 5. If set to 0, the icons displaying the level will be hidden. |
 | `sections.languages.layout` | `string` | no | enum: ["default","badges"]; default: "default" | The layout style for language items. 'badges' prints each language and its fluency as a rounded badge. |
+| `sections.languages.badge` | `object` | no | default: {"style":"filled","shape":"pill","size":"medium","color":""} | How badges look when the section uses the 'badges' layout. |
+| `sections.languages.badge.style` | `string` | no | enum: ["filled","soft","outline"]; default: "filled" | 'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border. |
+| `sections.languages.badge.shape` | `string` | no | enum: ["pill","rounded","square"]; default: "pill" | 'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none. |
+| `sections.languages.badge.size` | `string` | no | enum: ["small","medium","large"]; default: "medium" | The text size and padding of each badge. |
+| `sections.languages.badge.color` | `string` | no | default: "" | Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color. |
 | `sections.interests` | `object` | yes | — | The section to display the interests of the author. |
 | `sections.interests.title` | `string` | yes | — | The title of the section. |
 | `sections.interests.icon` | `string` | yes | default: "" | Phosphor icon name to display before the section title in the PDF output. Empty string uses the default section icon; 'none' hides the icon. |

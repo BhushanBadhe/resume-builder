@@ -1194,6 +1194,53 @@ This snapshot comes from `resumeDataSchema`. For the current schema, use [schema
 								"inline",
 								"badges"
 							]
+						},
+						"badge": {
+							"default": {
+								"style": "filled",
+								"shape": "pill",
+								"size": "medium",
+								"color": ""
+							},
+							"description": "How badges look when the section uses the 'badges' layout.",
+							"type": "object",
+							"properties": {
+								"style": {
+									"default": "filled",
+									"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border.",
+									"type": "string",
+									"enum": [
+										"filled",
+										"soft",
+										"outline"
+									]
+								},
+								"shape": {
+									"default": "pill",
+									"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none.",
+									"type": "string",
+									"enum": [
+										"pill",
+										"rounded",
+										"square"
+									]
+								},
+								"size": {
+									"default": "medium",
+									"description": "The text size and padding of each badge.",
+									"type": "string",
+									"enum": [
+										"small",
+										"medium",
+										"large"
+									]
+								},
+								"color": {
+									"default": "",
+									"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color.",
+									"type": "string"
+								}
+							}
 						}
 					},
 					"required": [
@@ -1291,6 +1338,53 @@ This snapshot comes from `resumeDataSchema`. For the current schema, use [schema
 								"default",
 								"badges"
 							]
+						},
+						"badge": {
+							"default": {
+								"style": "filled",
+								"shape": "pill",
+								"size": "medium",
+								"color": ""
+							},
+							"description": "How badges look when the section uses the 'badges' layout.",
+							"type": "object",
+							"properties": {
+								"style": {
+									"default": "filled",
+									"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border.",
+									"type": "string",
+									"enum": [
+										"filled",
+										"soft",
+										"outline"
+									]
+								},
+								"shape": {
+									"default": "pill",
+									"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none.",
+									"type": "string",
+									"enum": [
+										"pill",
+										"rounded",
+										"square"
+									]
+								},
+								"size": {
+									"default": "medium",
+									"description": "The text size and padding of each badge.",
+									"type": "string",
+									"enum": [
+										"small",
+										"medium",
+										"large"
+									]
+								},
+								"color": {
+									"default": "",
+									"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color.",
+									"type": "string"
+								}
+							}
 						}
 					},
 					"required": [

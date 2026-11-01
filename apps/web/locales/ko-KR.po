@@ -2272,6 +2272,10 @@ msgstr "백업 코드"
 msgid "Backup codes copied"
 msgstr "백업 코드가 복사되었습니다"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Badge design"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Badges"
 msgstr ""
@@ -2936,6 +2940,7 @@ msgstr "코치"
 msgid "Code"
 msgstr "코드"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-components/design-panel.tsx
 #: src/routes/builder/letter/-components/design-panel.tsx
 msgid "Color"
@@ -4101,6 +4106,10 @@ msgstr "사용자 지정"
 #: src/features/resume/editor/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "사용자 지정 색상 (16진수)"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Custom color…"
+msgstr ""
 
 #: src/features/resume/editor/write/dates-field.tsx
 msgid "Custom date text"
@@ -5301,6 +5310,11 @@ msgstr "직무와 회사를 입력하세요. 설정에서 AI 제공자를 연결
 #: src/features/applications/components/add-application-dialog.tsx
 msgid "Fill in the role and company. The posting is saved with the application."
 msgstr "역할과 회사를 입력하세요. 채용 공고는 채용 지원서와 함께 저장됩니다."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/routes/builder/letter/-components/write-panel.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -6631,6 +6645,11 @@ msgstr "언어"
 msgid "Languages"
 msgstr "언어"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #. placeholder {0}: monthYear(new Date(password.updatedAt))
 #: src/features/settings/account/security.tsx
 msgid "Last changed in {0}"
@@ -7313,6 +7332,11 @@ msgstr "첫 번째 응답의 중앙값"
 #: src/features/resume/editor/check/writing-tab.tsx
 msgid "Medium"
 msgstr "중간"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/homepage/prepare.tsx
 msgid "Mentor other designers"
@@ -8577,6 +8601,11 @@ msgstr "결과"
 msgid "Outdent"
 msgstr "내어쓰기"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: src/features/homepage/prepare.tsx
 msgid "Own and evolve a design system"
 msgstr "디자인 시스템 운영 및 발전"
@@ -8868,6 +8897,11 @@ msgstr "스토리 고르는 중"
 msgid "Picture"
 msgstr "사진"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Pipeline flow"
 msgstr "파이프라인 흐름"
@@ -9113,6 +9147,7 @@ msgstr "문서 세부정보를 포함한 이전 메시지도 전송됩니다."
 msgid "Previous month"
 msgstr "지난달"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Primary color"
 msgstr "기본 색상"
@@ -10216,6 +10251,11 @@ msgstr "회전"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "PDF 렌더링에서는 회전이 지원되지 않습니다."
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #. placeholder {0}: fieldLabel(field)
 #: src/features/applications/components/import-applications-sheet.tsx
 msgid "Row {row}, {0}: “{value}” is invalid."
@@ -10886,6 +10926,10 @@ msgstr "그림자 색상"
 msgid "Shadow width"
 msgstr "그림자 너비"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Shape"
+msgstr ""
+
 #: src/features/homepage/footer.tsx
 #: src/features/homepage/header.tsx
 #: src/features/homepage/share.tsx
@@ -11193,6 +11237,7 @@ msgstr "상황, 과제, 행동, 결과, 성찰. 각 스토리를 뒷받침할 �
 msgid "Six product teams"
 msgstr "6개 제품팀"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Size"
 msgstr "크기"
@@ -11241,6 +11286,11 @@ msgstr "슬로바키아어"
 msgid "Slovenian"
 msgstr "슬로베니아어"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "숫자는 적지만 주목할 가치가 있습니다."
@@ -11248,6 +11298,11 @@ msgstr "숫자는 적지만 주목할 가치가 있습니다."
 #: src/features/homepage/remember.tsx
 msgid "So I talked to 14 customers, found the three places people dropped off, and we prototyped a shorter setup."
 msgstr "그래서 고객 14명과 이야기해 사람들이 이탈하는 세 지점을 찾았고, 더 짧은 설정 과정의 프로토타입을 만들었습니다."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/resume/editor/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -11365,6 +11420,11 @@ msgstr "변경 사항 찾는 중"
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Square"
 msgstr "정사각형"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/resume/editor/design/entries-group.tsx
 msgctxt "Entry header layout"
@@ -11595,6 +11655,10 @@ msgstr "취소선"
 #: src/features/resume/editor/write/improve.tsx
 msgid "Stronger verb"
 msgstr "더 강한 동사"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/resume/stylesheet/toolbar.tsx
 msgid "Stylesheet editor"

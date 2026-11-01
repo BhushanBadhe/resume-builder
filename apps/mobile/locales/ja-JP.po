@@ -1805,6 +1805,14 @@ msgid "Background color"
 msgstr "背景色"
 
 #: src/features/write/section-sheet.tsx
+msgid "Badge color"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
+msgid "Badge design"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
 msgid "Badges"
 msgstr ""
 
@@ -3244,6 +3252,10 @@ msgstr "通貨"
 msgid "Custom"
 msgstr "カスタム"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Custom color"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "カスタムカラー (16 進数)"
@@ -4174,6 +4186,11 @@ msgstr "詳細を手動で入力します"
 #: src/features/applications/add-sheet.tsx
 msgid "Fill empty fields with AI"
 msgstr "空欄をAIで入力"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/features/letters/write.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -5135,6 +5152,11 @@ msgstr "言語"
 msgid "Languages"
 msgstr "語学"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #: src/features/letters/design.tsx
 msgid "Larger text"
 msgstr "文字を大きく"
@@ -5712,6 +5734,11 @@ msgstr "MCPサーバー"
 #: src/features/applications-board/insights-screen.tsx
 msgid "median to first reply"
 msgstr "最初の返信までの中央値"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/career/offers.tsx
 msgid "Meets your minimum base salary."
@@ -6801,6 +6828,11 @@ msgstr "期限切れ: テキストは変更されています。"
 msgid "Outcome"
 msgstr "結果"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/page.tsx
 #: app/letter/[id]/_layout.tsx
@@ -7041,6 +7073,11 @@ msgstr "例を2つ選ぶ"
 msgid "Picking your stories"
 msgstr "ストーリーを選定中"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Pipeline flow"
 msgstr "パイプラインの流れ"
@@ -7253,6 +7290,7 @@ msgid "Previous workspace tabs"
 msgstr "以前のワークスペース タブ"
 
 #: src/features/design/advanced.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Primary color"
 msgstr "メインカラー"
 
@@ -8198,6 +8236,11 @@ msgstr "回転"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "回転は、PDF レンダリングではサポートされていません。"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Row order"
 msgstr "行の順序"
@@ -8741,6 +8784,10 @@ msgstr "影の色"
 msgid "Shadow width"
 msgstr "影の幅"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Shape"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/share.tsx
 msgid "Share"
@@ -9047,6 +9094,7 @@ msgstr "「状況」「課題」「行動」は必須です。「結果」と「
 msgid "Situation, Task, Action, Result, Reflection. Link each story to facts you can support; leave unknown outcomes blank."
 msgstr "状況、課題、行動、結果、学び。各ストーリーを裏付けられる事実にリンクし、わからない成果は空欄のままにしてください。"
 
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/picture-screen.tsx
 msgid "Size"
 msgstr "サイズ"
@@ -9080,6 +9128,11 @@ msgstr "スロベニア語"
 msgid "Slug"
 msgstr "URL識別子"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "数字は小さいですが、注目に値します。"
@@ -9087,6 +9140,11 @@ msgstr "数字は小さいですが、注目に値します。"
 #: src/features/letters/design.tsx
 msgid "Smaller text"
 msgstr "文字を小さく"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -9213,6 +9271,11 @@ msgstr "変更点を確認中"
 #: src/features/write/picture-screen.tsx
 msgid "Square"
 msgstr "正方形"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/design/style-groups.tsx
 msgctxt "Entry header layout"
@@ -9342,6 +9405,10 @@ msgstr "取り消し線"
 #: src/features/write/improve.tsx
 msgid "Stronger verb"
 msgstr "より強い動詞"
+
+#: src/features/write/badge-design-page.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/workspace/tabs/apply.tsx
 msgid "Submission is recorded. Review checks only reflect what you checked yourself."

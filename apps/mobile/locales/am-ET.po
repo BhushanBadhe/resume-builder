@@ -1805,6 +1805,14 @@ msgid "Background color"
 msgstr "የመደብ ቀለም"
 
 #: src/features/write/section-sheet.tsx
+msgid "Badge color"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
+msgid "Badge design"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
 msgid "Badges"
 msgstr ""
 
@@ -3244,6 +3252,10 @@ msgstr "ምንዛሪ"
 msgid "Custom"
 msgstr "ብጁ"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Custom color"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "ብጁ ቀለም (ሄክስ)"
@@ -4174,6 +4186,11 @@ msgstr "ዝርዝሮችን በእጅ ይሙሉ"
 #: src/features/applications/add-sheet.tsx
 msgid "Fill empty fields with AI"
 msgstr "ባዶ መስኮችን በAI ሙላ"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/features/letters/write.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -5135,6 +5152,11 @@ msgstr "ቋንቋ"
 msgid "Languages"
 msgstr "ቋንቋዎች"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #: src/features/letters/design.tsx
 msgid "Larger text"
 msgstr "ትልቅ ጽሑፍ"
@@ -5712,6 +5734,11 @@ msgstr "MCP አገልጋይ"
 #: src/features/applications-board/insights-screen.tsx
 msgid "median to first reply"
 msgstr "መጀመሪያ መልስ ለመስጠት መካከለኛ"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/career/offers.tsx
 msgid "Meets your minimum base salary."
@@ -6801,6 +6828,11 @@ msgstr "ጊዜው ያለፈበት፡ ጽሑፉ ከዚያ ጊዜ ጀምሮ ተቀ
 msgid "Outcome"
 msgstr "ውጤት"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/page.tsx
 #: app/letter/[id]/_layout.tsx
@@ -7041,6 +7073,11 @@ msgstr "ሁለት ምሳሌዎችን ይምረጡ"
 msgid "Picking your stories"
 msgstr "ታሪኮችዎን በመምረጥ ላይ"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Pipeline flow"
 msgstr "የሂደቱ ፍሰት"
@@ -7253,6 +7290,7 @@ msgid "Previous workspace tabs"
 msgstr "ቀዳሚ የስራ ቦታ ትሮች"
 
 #: src/features/design/advanced.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Primary color"
 msgstr "ዋና ቀለም"
 
@@ -8198,6 +8236,11 @@ msgstr "ማሽከርከር"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "ማሽከርከር በPDF አተረጓጎም አይደገፍም።"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Row order"
 msgstr "የረድፎች ቅደም ተከተል"
@@ -8741,6 +8784,10 @@ msgstr "የጥላ ቀለም"
 msgid "Shadow width"
 msgstr "የጥላ ወፍራምነት"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Shape"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/share.tsx
 msgid "Share"
@@ -9047,6 +9094,7 @@ msgstr "«ሁኔታ»፣ «ተግባር» እና «እርምጃ» ግዴታ ና�
 msgid "Situation, Task, Action, Result, Reflection. Link each story to facts you can support; leave unknown outcomes blank."
 msgstr "ሁኔታ፣ ተግባር፣ እርምጃ፣ ውጤት፣ ትምህርት። እያንዳንዱን ታሪክ መደገፍ ከሚችሉት እውነታዎች ጋር ያገናኙ፤ ያልታወቁ ውጤቶችን ባዶ ይተዉ።"
 
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/picture-screen.tsx
 msgid "Size"
 msgstr "መጠን"
@@ -9080,6 +9128,11 @@ msgstr "ስሎቬንያኛ"
 msgid "Slug"
 msgstr "የURL ስም"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "ትንሽ ቁጥሮች, ግን ትኩረት ሊሰጠው የሚገባ."
@@ -9087,6 +9140,11 @@ msgstr "ትንሽ ቁጥሮች, ግን ትኩረት ሊሰጠው የሚገባ."
 #: src/features/letters/design.tsx
 msgid "Smaller text"
 msgstr "ትንሽ ጽሑፍ"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -9213,6 +9271,11 @@ msgstr "የተቀየረውን በመለየት ላይ"
 #: src/features/write/picture-screen.tsx
 msgid "Square"
 msgstr "መስቀል"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/design/style-groups.tsx
 msgctxt "Entry header layout"
@@ -9342,6 +9405,10 @@ msgstr "በመሃል አስምር"
 #: src/features/write/improve.tsx
 msgid "Stronger verb"
 msgstr "የበለጠ ጠንካራ ግስ"
+
+#: src/features/write/badge-design-page.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/workspace/tabs/apply.tsx
 msgid "Submission is recorded. Review checks only reflect what you checked yourself."

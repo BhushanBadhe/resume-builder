@@ -1805,6 +1805,14 @@ msgid "Background color"
 msgstr "Farba pozadia"
 
 #: src/features/write/section-sheet.tsx
+msgid "Badge color"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
+msgid "Badge design"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
 msgid "Badges"
 msgstr ""
 
@@ -3244,6 +3252,10 @@ msgstr "Mena"
 msgid "Custom"
 msgstr "Vlastné"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Custom color"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "Vlastná farba (hex)"
@@ -4174,6 +4186,11 @@ msgstr "Vyplňte podrobnosti ručne"
 #: src/features/applications/add-sheet.tsx
 msgid "Fill empty fields with AI"
 msgstr "Vyplňte prázdne polia AI"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/features/letters/write.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -5135,6 +5152,11 @@ msgstr "Jazyk"
 msgid "Languages"
 msgstr "Jazyky"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #: src/features/letters/design.tsx
 msgid "Larger text"
 msgstr "Väčší text"
@@ -5712,6 +5734,11 @@ msgstr "Server MCP"
 #: src/features/applications-board/insights-screen.tsx
 msgid "median to first reply"
 msgstr "medián k prvej odpovedi"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/career/offers.tsx
 msgid "Meets your minimum base salary."
@@ -6801,6 +6828,11 @@ msgstr "Neaktuálne: text sa odvtedy zmenil."
 msgid "Outcome"
 msgstr "Výsledok"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/page.tsx
 #: app/letter/[id]/_layout.tsx
@@ -7041,6 +7073,11 @@ msgstr "Vyberte dva príklady"
 msgid "Picking your stories"
 msgstr "Vyberáme vaše príbehy"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Pipeline flow"
 msgstr "Priebeh procesu"
@@ -7253,6 +7290,7 @@ msgid "Previous workspace tabs"
 msgstr "Predchádzajúce karty pracovného priestoru"
 
 #: src/features/design/advanced.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Primary color"
 msgstr "Hlavná farba"
 
@@ -8198,6 +8236,11 @@ msgstr "Otočenie"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "Otáčanie nie je podporované vykresľovaním PDF."
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Row order"
 msgstr "Poradie riadkov"
@@ -8741,6 +8784,10 @@ msgstr "Farba tieňa"
 msgid "Shadow width"
 msgstr "Šírka tieňa"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Shape"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/share.tsx
 msgid "Share"
@@ -9047,6 +9094,7 @@ msgstr "Situácia, Úloha a Akcia sú povinné. Polia Výsledok a Reflexia necha
 msgid "Situation, Task, Action, Result, Reflection. Link each story to facts you can support; leave unknown outcomes blank."
 msgstr "Situácia, Úloha, Akcia, Výsledok, Reflexia. Prepojte každý príbeh s faktami, ktoré viete podložiť; neznáme výsledky nechajte prázdne."
 
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/picture-screen.tsx
 msgid "Size"
 msgstr "Veľkosť"
@@ -9080,6 +9128,11 @@ msgstr "Slovinčina"
 msgid "Slug"
 msgstr "Identifikátor URL"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "Malé čísla, ale stojí za povšimnutie."
@@ -9087,6 +9140,11 @@ msgstr "Malé čísla, ale stojí za povšimnutie."
 #: src/features/letters/design.tsx
 msgid "Smaller text"
 msgstr "Menší text"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -9213,6 +9271,11 @@ msgstr "Hľadáme, čo sa zmenilo"
 #: src/features/write/picture-screen.tsx
 msgid "Square"
 msgstr "Štvorec"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/design/style-groups.tsx
 msgctxt "Entry header layout"
@@ -9342,6 +9405,10 @@ msgstr "Prečiarknuté"
 #: src/features/write/improve.tsx
 msgid "Stronger verb"
 msgstr "Silnejšie sloveso"
+
+#: src/features/write/badge-design-page.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/workspace/tabs/apply.tsx
 msgid "Submission is recorded. Review checks only reflect what you checked yourself."

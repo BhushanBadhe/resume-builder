@@ -2272,6 +2272,10 @@ msgstr "Kode cadangan"
 msgid "Backup codes copied"
 msgstr "Kode cadangan disalin"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Badge design"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Badges"
 msgstr ""
@@ -2936,6 +2940,7 @@ msgstr "Coach"
 msgid "Code"
 msgstr "Kode"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-components/design-panel.tsx
 #: src/routes/builder/letter/-components/design-panel.tsx
 msgid "Color"
@@ -4101,6 +4106,10 @@ msgstr "Kustom"
 #: src/features/resume/editor/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "Warna khusus (hex)"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Custom color…"
+msgstr ""
 
 #: src/features/resume/editor/write/dates-field.tsx
 msgid "Custom date text"
@@ -5301,6 +5310,11 @@ msgstr "Isi posisi dan perusahaan. Hubungkan penyedia AI di Pengaturan untuk mem
 #: src/features/applications/components/add-application-dialog.tsx
 msgid "Fill in the role and company. The posting is saved with the application."
 msgstr "Isi peran dan perusahaan. Postingan pekerjaan disimpan bersama lamaran pekerjaan."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/routes/builder/letter/-components/write-panel.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -6631,6 +6645,11 @@ msgstr "Bahasa"
 msgid "Languages"
 msgstr "Bahasa"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #. placeholder {0}: monthYear(new Date(password.updatedAt))
 #: src/features/settings/account/security.tsx
 msgid "Last changed in {0}"
@@ -7313,6 +7332,11 @@ msgstr "median untuk balasan pertama"
 #: src/features/resume/editor/check/writing-tab.tsx
 msgid "Medium"
 msgstr "Sedang"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/homepage/prepare.tsx
 msgid "Mentor other designers"
@@ -8577,6 +8601,11 @@ msgstr "Hasil"
 msgid "Outdent"
 msgstr "Kurangi indentasi"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: src/features/homepage/prepare.tsx
 msgid "Own and evolve a design system"
 msgstr "Memiliki dan mengembangkan design system"
@@ -8868,6 +8897,11 @@ msgstr "Memilih cerita Anda"
 msgid "Picture"
 msgstr "Gambar"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Pipeline flow"
 msgstr "Alur pipeline"
@@ -9113,6 +9147,7 @@ msgstr "Pesan sebelumnya, termasuk rincian dokumen, juga dikirim."
 msgid "Previous month"
 msgstr "Bulan sebelumnya"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Primary color"
 msgstr "Warna utama"
@@ -10216,6 +10251,11 @@ msgstr "Rotasi"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "Rotasi tidak didukung oleh rendering PDF."
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #. placeholder {0}: fieldLabel(field)
 #: src/features/applications/components/import-applications-sheet.tsx
 msgid "Row {row}, {0}: “{value}” is invalid."
@@ -10886,6 +10926,10 @@ msgstr "Warna bayangan"
 msgid "Shadow width"
 msgstr "Lebar bayangan"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Shape"
+msgstr ""
+
 #: src/features/homepage/footer.tsx
 #: src/features/homepage/header.tsx
 #: src/features/homepage/share.tsx
@@ -11193,6 +11237,7 @@ msgstr "Situasi, Tugas, Tindakan, Hasil, Refleksi. Tautkan setiap cerita ke fakt
 msgid "Six product teams"
 msgstr "Enam tim produk"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Size"
 msgstr "Ukuran"
@@ -11241,6 +11286,11 @@ msgstr "Slovak"
 msgid "Slovenian"
 msgstr "Slovenia"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "Jumlahnya kecil, namun perlu diperhatikan."
@@ -11248,6 +11298,11 @@ msgstr "Jumlahnya kecil, namun perlu diperhatikan."
 #: src/features/homepage/remember.tsx
 msgid "So I talked to 14 customers, found the three places people dropped off, and we prototyped a shorter setup."
 msgstr "Jadi saya berbicara dengan 14 pelanggan, menemukan tiga titik tempat orang berhenti, dan kami membuat prototipe penyiapan yang lebih singkat."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/resume/editor/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -11365,6 +11420,11 @@ msgstr "Mencari yang berubah"
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Square"
 msgstr "Persegi"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/resume/editor/design/entries-group.tsx
 msgctxt "Entry header layout"
@@ -11595,6 +11655,10 @@ msgstr "Coret"
 #: src/features/resume/editor/write/improve.tsx
 msgid "Stronger verb"
 msgstr "Kata kerja yang lebih kuat"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/resume/stylesheet/toolbar.tsx
 msgid "Stylesheet editor"

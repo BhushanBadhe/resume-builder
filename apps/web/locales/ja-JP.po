@@ -2272,6 +2272,10 @@ msgstr "バックアップコード"
 msgid "Backup codes copied"
 msgstr "バックアップコードをコピーしました"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Badge design"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Badges"
 msgstr ""
@@ -2936,6 +2940,7 @@ msgstr "コーチ"
 msgid "Code"
 msgstr "コード"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-components/design-panel.tsx
 #: src/routes/builder/letter/-components/design-panel.tsx
 msgid "Color"
@@ -4101,6 +4106,10 @@ msgstr "カスタム"
 #: src/features/resume/editor/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "カスタムカラー (16 進数)"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Custom color…"
+msgstr ""
 
 #: src/features/resume/editor/write/dates-field.tsx
 msgid "Custom date text"
@@ -5301,6 +5310,11 @@ msgstr "職種と会社名を入力してください。設定で AI プロバ�
 #: src/features/applications/components/add-application-dialog.tsx
 msgid "Fill in the role and company. The posting is saved with the application."
 msgstr "役割と会社名を入力します。求人情報は求人応募書とともに保存されます。"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/routes/builder/letter/-components/write-panel.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -6631,6 +6645,11 @@ msgstr "言語"
 msgid "Languages"
 msgstr "語学"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #. placeholder {0}: monthYear(new Date(password.updatedAt))
 #: src/features/settings/account/security.tsx
 msgid "Last changed in {0}"
@@ -7313,6 +7332,11 @@ msgstr "最初の返信までの中央値"
 #: src/features/resume/editor/check/writing-tab.tsx
 msgid "Medium"
 msgstr "中くらい"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/homepage/prepare.tsx
 msgid "Mentor other designers"
@@ -8577,6 +8601,11 @@ msgstr "結果"
 msgid "Outdent"
 msgstr "インデントを減らす"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: src/features/homepage/prepare.tsx
 msgid "Own and evolve a design system"
 msgstr "デザインシステムを管理・発展させる"
@@ -8868,6 +8897,11 @@ msgstr "ストーリーを選定中"
 msgid "Picture"
 msgstr "プロフィール写真"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Pipeline flow"
 msgstr "パイプラインの流れ"
@@ -9113,6 +9147,7 @@ msgstr "ドキュメントの詳細を含む以前のメッセージも送信さ
 msgid "Previous month"
 msgstr "前月"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Primary color"
 msgstr "メインカラー"
@@ -10216,6 +10251,11 @@ msgstr "回転"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "回転は、PDF レンダリングではサポートされていません。"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #. placeholder {0}: fieldLabel(field)
 #: src/features/applications/components/import-applications-sheet.tsx
 msgid "Row {row}, {0}: “{value}” is invalid."
@@ -10886,6 +10926,10 @@ msgstr "影の色"
 msgid "Shadow width"
 msgstr "影の幅"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Shape"
+msgstr ""
+
 #: src/features/homepage/footer.tsx
 #: src/features/homepage/header.tsx
 #: src/features/homepage/share.tsx
@@ -11193,6 +11237,7 @@ msgstr "状況、課題、行動、結果、学び。各ストーリーを裏付
 msgid "Six product teams"
 msgstr "6 つの製品チーム"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Size"
 msgstr "サイズ"
@@ -11241,6 +11286,11 @@ msgstr "スロバキア語"
 msgid "Slovenian"
 msgstr "スロベニア語"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "数字は小さいですが、注目に値します。"
@@ -11248,6 +11298,11 @@ msgstr "数字は小さいですが、注目に値します。"
 #: src/features/homepage/remember.tsx
 msgid "So I talked to 14 customers, found the three places people dropped off, and we prototyped a shorter setup."
 msgstr "そこで14人の顧客と話し、離脱が起きている3つの箇所を見つけ、短いセットアップを試作しました。"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/resume/editor/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -11365,6 +11420,11 @@ msgstr "変更点を確認中"
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Square"
 msgstr "正方形"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/resume/editor/design/entries-group.tsx
 msgctxt "Entry header layout"
@@ -11595,6 +11655,10 @@ msgstr "取り消し線"
 #: src/features/resume/editor/write/improve.tsx
 msgid "Stronger verb"
 msgstr "より強い動詞"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/resume/stylesheet/toolbar.tsx
 msgid "Stylesheet editor"

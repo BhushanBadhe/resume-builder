@@ -1,4 +1,5 @@
 import type { ResumeData } from "./data";
+import { defaultBadgeDesign } from "./data";
 
 /** The shared fields every section starts with, minus its items or content. */
 export const sectionDefaults = (icon: string) => ({
@@ -42,8 +43,13 @@ export const defaultResumeData: ResumeData = {
 		experience: section("briefcase"),
 		education: section("graduation-cap"),
 		projects: section("code-simple"),
-		skills: { ...section("compass-tool"), layout: "default", keywordLayout: "inline" },
-		languages: { ...section("translate"), layout: "default" },
+		skills: {
+			...section("compass-tool"),
+			layout: "default",
+			keywordLayout: "inline",
+			badge: { ...defaultBadgeDesign },
+		},
+		languages: { ...section("translate"), layout: "default", badge: { ...defaultBadgeDesign } },
 		interests: section("football"),
 		awards: section("trophy"),
 		certifications: section("certificate"),

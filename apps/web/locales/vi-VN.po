@@ -2272,6 +2272,10 @@ msgstr "Mã dự phòng"
 msgid "Backup codes copied"
 msgstr "Đã sao chép mã dự phòng"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Badge design"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Badges"
 msgstr ""
@@ -2936,6 +2940,7 @@ msgstr "Cố vấn"
 msgid "Code"
 msgstr "Mã"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-components/design-panel.tsx
 #: src/routes/builder/letter/-components/design-panel.tsx
 msgid "Color"
@@ -4101,6 +4106,10 @@ msgstr "Tùy chỉnh"
 #: src/features/resume/editor/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "Màu tùy chỉnh (hex)"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Custom color…"
+msgstr ""
 
 #: src/features/resume/editor/write/dates-field.tsx
 msgid "Custom date text"
@@ -5301,6 +5310,11 @@ msgstr "Điền vai trò và công ty. Kết nối nhà cung cấp AI trong Cài
 #: src/features/applications/components/add-application-dialog.tsx
 msgid "Fill in the role and company. The posting is saved with the application."
 msgstr "Điền vào vai trò và công ty. Tin tuyển dụng được lưu cùng với đơn xin việc."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/routes/builder/letter/-components/write-panel.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -6631,6 +6645,11 @@ msgstr "Ngôn ngữ"
 msgid "Languages"
 msgstr "Ngôn ngữ"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #. placeholder {0}: monthYear(new Date(password.updatedAt))
 #: src/features/settings/account/security.tsx
 msgid "Last changed in {0}"
@@ -7313,6 +7332,11 @@ msgstr "trung bình đến câu trả lời đầu tiên"
 #: src/features/resume/editor/check/writing-tab.tsx
 msgid "Medium"
 msgstr "Trung bình"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/homepage/prepare.tsx
 msgid "Mentor other designers"
@@ -8577,6 +8601,11 @@ msgstr "Kết quả"
 msgid "Outdent"
 msgstr "Giảm thụt lề"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: src/features/homepage/prepare.tsx
 msgid "Own and evolve a design system"
 msgstr "Phụ trách và phát triển hệ thống thiết kế"
@@ -8868,6 +8897,11 @@ msgstr "Đang chọn câu chuyện của bạn"
 msgid "Picture"
 msgstr "Hình ảnh"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Pipeline flow"
 msgstr "Luồng quy trình"
@@ -9113,6 +9147,7 @@ msgstr "Các tin nhắn trước đó, bao gồm cả chi tiết tài liệu, c�
 msgid "Previous month"
 msgstr "Tháng trước"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Primary color"
 msgstr "Màu chủ đạo"
@@ -10216,6 +10251,11 @@ msgstr "Xoay"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "Kết xuất PDF không hỗ trợ xoay."
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #. placeholder {0}: fieldLabel(field)
 #: src/features/applications/components/import-applications-sheet.tsx
 msgid "Row {row}, {0}: “{value}” is invalid."
@@ -10886,6 +10926,10 @@ msgstr "Màu bóng"
 msgid "Shadow width"
 msgstr "Độ rộng bóng"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Shape"
+msgstr ""
+
 #: src/features/homepage/footer.tsx
 #: src/features/homepage/header.tsx
 #: src/features/homepage/share.tsx
@@ -11193,6 +11237,7 @@ msgstr "Tình huống, Nhiệm vụ, Hành động, Kết quả, Suy ngẫm. Li�
 msgid "Six product teams"
 msgstr "Sáu nhóm sản phẩm"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Size"
 msgstr "Kích thước"
@@ -11241,6 +11286,11 @@ msgstr "Slovak"
 msgid "Slovenian"
 msgstr "Tiếng Slovenia"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "Con số nhỏ nhưng đáng lưu ý."
@@ -11248,6 +11298,11 @@ msgstr "Con số nhỏ nhưng đáng lưu ý."
 #: src/features/homepage/remember.tsx
 msgid "So I talked to 14 customers, found the three places people dropped off, and we prototyped a shorter setup."
 msgstr "Vậy nên tôi đã nói chuyện với 14 khách hàng, tìm ra ba chỗ người dùng bỏ dở, và chúng tôi làm nguyên mẫu cho quy trình thiết lập ngắn hơn."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/resume/editor/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -11365,6 +11420,11 @@ msgstr "Đang tìm điểm thay đổi"
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Square"
 msgstr "Vuông"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/resume/editor/design/entries-group.tsx
 msgctxt "Entry header layout"
@@ -11595,6 +11655,10 @@ msgstr "Gạch ngang"
 #: src/features/resume/editor/write/improve.tsx
 msgid "Stronger verb"
 msgstr "Động từ mạnh hơn"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/resume/stylesheet/toolbar.tsx
 msgid "Stylesheet editor"

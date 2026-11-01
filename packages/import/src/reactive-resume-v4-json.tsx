@@ -1,7 +1,7 @@
 import type { ResumeData } from "@reactive-resume/schema/resume/data";
 import type { Template } from "@reactive-resume/schema/templates";
 import z, { ZodError } from "zod";
-import { resumeDataSchema } from "@reactive-resume/schema/resume/data";
+import { defaultBadgeDesign, resumeDataSchema } from "@reactive-resume/schema/resume/data";
 import { templateSchema } from "@reactive-resume/schema/templates";
 import { parseColorString } from "@reactive-resume/utils/color";
 import { generateId } from "@reactive-resume/utils/string";
@@ -340,6 +340,7 @@ export function parseReactiveResumeV4JSON(json: string): ResumeData {
 				skills: {
 					...baseSection(v4Data.sections.skills),
 					layout: "default",
+					badge: { ...defaultBadgeDesign },
 					keywordLayout: "inline",
 					items: (v4Data.sections.skills?.items ?? [])
 						.filter((item) => item.name && item.name.length > 0)
@@ -357,6 +358,7 @@ export function parseReactiveResumeV4JSON(json: string): ResumeData {
 				languages: {
 					...baseSection(v4Data.sections.languages),
 					layout: "default",
+					badge: { ...defaultBadgeDesign },
 					items: (v4Data.sections.languages?.items ?? [])
 						.filter((item) => item.name && item.name.length > 0)
 						.map((item) => ({

@@ -1805,6 +1805,14 @@ msgid "Background color"
 msgstr "Taustaväri"
 
 #: src/features/write/section-sheet.tsx
+msgid "Badge color"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
+msgid "Badge design"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
 msgid "Badges"
 msgstr ""
 
@@ -3244,6 +3252,10 @@ msgstr "Valuutta"
 msgid "Custom"
 msgstr "Custom"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Custom color"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "Mukautettu väri (heksadesimaali)"
@@ -4174,6 +4186,11 @@ msgstr "Täytä tiedot manuaalisesti"
 #: src/features/applications/add-sheet.tsx
 msgid "Fill empty fields with AI"
 msgstr "Täytä tyhjät kentät AI:llä"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/features/letters/write.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -5135,6 +5152,11 @@ msgstr "Kieli"
 msgid "Languages"
 msgstr "Kielet"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #: src/features/letters/design.tsx
 msgid "Larger text"
 msgstr "Suurempi teksti"
@@ -5712,6 +5734,11 @@ msgstr "MCP palvelin"
 #: src/features/applications-board/insights-screen.tsx
 msgid "median to first reply"
 msgstr "mediaani ensimmäiseen vastaukseen"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/career/offers.tsx
 msgid "Meets your minimum base salary."
@@ -6801,6 +6828,11 @@ msgstr "Vanhentunut: teksti on muuttunut sen jälkeen."
 msgid "Outcome"
 msgstr "Lopputulos"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/page.tsx
 #: app/letter/[id]/_layout.tsx
@@ -7041,6 +7073,11 @@ msgstr "Valitse kaksi esimerkkiä"
 msgid "Picking your stories"
 msgstr "Valitaan tarinoitasi"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Pipeline flow"
 msgstr "Prosessin kulku"
@@ -7253,6 +7290,7 @@ msgid "Previous workspace tabs"
 msgstr "Aiemmat työtilan välilehdet"
 
 #: src/features/design/advanced.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Primary color"
 msgstr "Pääväri"
 
@@ -8198,6 +8236,11 @@ msgstr "Kierrätys"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "PDF-renderöinti ei tue kiertoa."
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Row order"
 msgstr "Rivien järjestys"
@@ -8741,6 +8784,10 @@ msgstr "Varjon väri"
 msgid "Shadow width"
 msgstr "Varjon leveys"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Shape"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/share.tsx
 msgid "Share"
@@ -9047,6 +9094,7 @@ msgstr "Tilanne, Tehtävä ja Toiminta ovat pakollisia. Jätä Tulos ja Pohdinta
 msgid "Situation, Task, Action, Result, Reflection. Link each story to facts you can support; leave unknown outcomes blank."
 msgstr "Tilanne, tehtävä, toiminta, tulos, pohdinta. Linkitä jokainen tarina faktoihin, jotka voit perustella; jätä tuntemattomat tulokset tyhjiksi."
 
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/picture-screen.tsx
 msgid "Size"
 msgstr "Koko"
@@ -9080,6 +9128,11 @@ msgstr "Sloveeni"
 msgid "Slug"
 msgstr "URL-tunnus"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "Pieniä lukuja, mutta huomioimisen arvoisia."
@@ -9087,6 +9140,11 @@ msgstr "Pieniä lukuja, mutta huomioimisen arvoisia."
 #: src/features/letters/design.tsx
 msgid "Smaller text"
 msgstr "Pienempi teksti"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -9213,6 +9271,11 @@ msgstr "Etsitään muutoksia"
 #: src/features/write/picture-screen.tsx
 msgid "Square"
 msgstr "Neliö"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/design/style-groups.tsx
 msgctxt "Entry header layout"
@@ -9342,6 +9405,10 @@ msgstr "Yliviivaus"
 #: src/features/write/improve.tsx
 msgid "Stronger verb"
 msgstr "Vahvempi verbi"
+
+#: src/features/write/badge-design-page.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/workspace/tabs/apply.tsx
 msgid "Submission is recorded. Review checks only reflect what you checked yourself."

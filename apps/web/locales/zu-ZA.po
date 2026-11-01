@@ -2267,6 +2267,10 @@ msgstr ""
 msgid "Backup codes copied"
 msgstr ""
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Badge design"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Badges"
 msgstr ""
@@ -2931,6 +2935,7 @@ msgstr ""
 msgid "Code"
 msgstr ""
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-components/design-panel.tsx
 #: src/routes/builder/letter/-components/design-panel.tsx
 msgid "Color"
@@ -4095,6 +4100,10 @@ msgstr ""
 
 #: src/features/resume/editor/design/style-groups.tsx
 msgid "Custom color (hex)"
+msgstr ""
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Custom color…"
 msgstr ""
 
 #: src/features/resume/editor/write/dates-field.tsx
@@ -5295,6 +5304,11 @@ msgstr ""
 
 #: src/features/applications/components/add-application-dialog.tsx
 msgid "Fill in the role and company. The posting is saved with the application."
+msgstr ""
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
 msgstr ""
 
 #: src/routes/builder/letter/-components/write-panel.tsx
@@ -6626,6 +6640,11 @@ msgstr ""
 msgid "Languages"
 msgstr ""
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #. placeholder {0}: monthYear(new Date(password.updatedAt))
 #: src/features/settings/account/security.tsx
 msgid "Last changed in {0}"
@@ -7306,6 +7325,11 @@ msgid "median to first reply"
 msgstr ""
 
 #: src/features/resume/editor/check/writing-tab.tsx
+msgid "Medium"
+msgstr ""
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
 msgid "Medium"
 msgstr ""
 
@@ -8572,6 +8596,11 @@ msgstr ""
 msgid "Outdent"
 msgstr ""
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: src/features/homepage/prepare.tsx
 msgid "Own and evolve a design system"
 msgstr ""
@@ -8863,6 +8892,11 @@ msgstr ""
 msgid "Picture"
 msgstr ""
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Pipeline flow"
 msgstr ""
@@ -9108,6 +9142,7 @@ msgstr ""
 msgid "Previous month"
 msgstr ""
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Primary color"
 msgstr ""
@@ -10211,6 +10246,11 @@ msgstr ""
 msgid "Rotation isn't supported by PDF rendering."
 msgstr ""
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #. placeholder {0}: fieldLabel(field)
 #: src/features/applications/components/import-applications-sheet.tsx
 msgid "Row {row}, {0}: “{value}” is invalid."
@@ -10881,6 +10921,10 @@ msgstr ""
 msgid "Shadow width"
 msgstr ""
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Shape"
+msgstr ""
+
 #: src/features/homepage/footer.tsx
 #: src/features/homepage/header.tsx
 #: src/features/homepage/share.tsx
@@ -11188,6 +11232,7 @@ msgstr ""
 msgid "Six product teams"
 msgstr ""
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Size"
 msgstr ""
@@ -11236,12 +11281,22 @@ msgstr ""
 msgid "Slovenian"
 msgstr ""
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Small numbers, but worth noticing."
 msgstr ""
 
 #: src/features/homepage/remember.tsx
 msgid "So I talked to 14 customers, found the three places people dropped off, and we prototyped a shorter setup."
+msgstr ""
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
 msgstr ""
 
 #: src/features/resume/editor/check/issues.ts
@@ -11358,6 +11413,11 @@ msgstr ""
 #. Preset button for setting picture aspect ratio to square
 #: src/components/level/combobox.tsx
 #: src/features/resume/editor/write/picture-settings.tsx
+msgid "Square"
+msgstr ""
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: sharp corners"
 msgid "Square"
 msgstr ""
 
@@ -11589,6 +11649,10 @@ msgstr ""
 
 #: src/features/resume/editor/write/improve.tsx
 msgid "Stronger verb"
+msgstr ""
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Style"
 msgstr ""
 
 #: src/features/resume/stylesheet/toolbar.tsx

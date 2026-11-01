@@ -2272,6 +2272,10 @@ msgstr "ब्याकअप कोड"
 msgid "Backup codes copied"
 msgstr "ब्याकअप कोडहरू प्रतिलिपि गरियो"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Badge design"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Badges"
 msgstr ""
@@ -2936,6 +2940,7 @@ msgstr "कोच"
 msgid "Code"
 msgstr "कोड"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-components/design-panel.tsx
 #: src/routes/builder/letter/-components/design-panel.tsx
 msgid "Color"
@@ -4101,6 +4106,10 @@ msgstr "अनुकूलित"
 #: src/features/resume/editor/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "आफू अनुकूल रंग (हेक्स)"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Custom color…"
+msgstr ""
 
 #: src/features/resume/editor/write/dates-field.tsx
 msgid "Custom date text"
@@ -5301,6 +5310,11 @@ msgstr "भूमिका र कम्पनी भर्नुहोस्।
 #: src/features/applications/components/add-application-dialog.tsx
 msgid "Fill in the role and company. The posting is saved with the application."
 msgstr "भूमिका र कम्पनी भर्नुहोस्। जागिरको पोस्टिङ जागिर आवेदनको साथ सुरक्षित गरिएको छ।"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/routes/builder/letter/-components/write-panel.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -6631,6 +6645,11 @@ msgstr "भाषा"
 msgid "Languages"
 msgstr "भाषाहरू"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #. placeholder {0}: monthYear(new Date(password.updatedAt))
 #: src/features/settings/account/security.tsx
 msgid "Last changed in {0}"
@@ -7313,6 +7332,11 @@ msgstr "पहिलो जवाफको मध्य"
 #: src/features/resume/editor/check/writing-tab.tsx
 msgid "Medium"
 msgstr "मध्यम"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/homepage/prepare.tsx
 msgid "Mentor other designers"
@@ -8577,6 +8601,11 @@ msgstr "नतिजा"
 msgid "Outdent"
 msgstr "इन्डेन्ट घटाउनुहोस्"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: src/features/homepage/prepare.tsx
 msgid "Own and evolve a design system"
 msgstr "डिजाइन प्रणालीको जिम्मा लिनुहोस् र यसलाई विकसित गर्नुहोस्"
@@ -8868,6 +8897,11 @@ msgstr "तपाईंका कथाहरू छान्दै"
 msgid "Picture"
 msgstr "तस्बिर"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Pipeline flow"
 msgstr "पाइपलाइन प्रवाह"
@@ -9113,6 +9147,7 @@ msgstr "कागजात विवरण सहित अघिल्लो �
 msgid "Previous month"
 msgstr "अघिल्लो महिना"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Primary color"
 msgstr "मुख्य रङ"
@@ -10216,6 +10251,11 @@ msgstr "घुमाउने कोण (Rotation)"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "PDF रेन्डरिङद्वारा रोटेशन समर्थित छैन।"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #. placeholder {0}: fieldLabel(field)
 #: src/features/applications/components/import-applications-sheet.tsx
 msgid "Row {row}, {0}: “{value}” is invalid."
@@ -10886,6 +10926,10 @@ msgstr "छाया रंग"
 msgid "Shadow width"
 msgstr "छायाँ चौडाइ"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Shape"
+msgstr ""
+
 #: src/features/homepage/footer.tsx
 #: src/features/homepage/header.tsx
 #: src/features/homepage/share.tsx
@@ -11193,6 +11237,7 @@ msgstr "स्थिति, कार्य, कदम, नतिजा, प्�
 msgid "Six product teams"
 msgstr "छ उत्पादन टोलीहरू"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Size"
 msgstr "आकार"
@@ -11241,6 +11286,11 @@ msgstr "स्लोभाक"
 msgid "Slovenian"
 msgstr "स्लोभेनियन"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "सानो संख्या, तर ध्यान लायक।"
@@ -11248,6 +11298,11 @@ msgstr "सानो संख्या, तर ध्यान लायक।"
 #: src/features/homepage/remember.tsx
 msgid "So I talked to 14 customers, found the three places people dropped off, and we prototyped a shorter setup."
 msgstr "त्यसैले मैले 14 ग्राहकसँग कुरा गरेँ, मानिसहरू छोडेर जाने तीन ठाउँ पत्ता लगाएँ, र हामीले छोटो सेटअपको प्रोटोटाइप बनायौँ।"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/resume/editor/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -11365,6 +11420,11 @@ msgstr "के परिवर्तन भयो पत्ता लगाउ�
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Square"
 msgstr "वर्ग (Square)"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/resume/editor/design/entries-group.tsx
 msgctxt "Entry header layout"
@@ -11595,6 +11655,10 @@ msgstr "स्ट्राइकथ्रु"
 #: src/features/resume/editor/write/improve.tsx
 msgid "Stronger verb"
 msgstr "बलियो क्रिया"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/resume/stylesheet/toolbar.tsx
 msgid "Stylesheet editor"

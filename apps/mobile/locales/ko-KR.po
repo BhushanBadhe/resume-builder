@@ -1805,6 +1805,14 @@ msgid "Background color"
 msgstr "배경색"
 
 #: src/features/write/section-sheet.tsx
+msgid "Badge color"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
+msgid "Badge design"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
 msgid "Badges"
 msgstr ""
 
@@ -3244,6 +3252,10 @@ msgstr "통화"
 msgid "Custom"
 msgstr "사용자 지정"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Custom color"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "사용자 지정 색상 (16진수)"
@@ -4174,6 +4186,11 @@ msgstr "세부사항을 수동으로 입력하세요"
 #: src/features/applications/add-sheet.tsx
 msgid "Fill empty fields with AI"
 msgstr "AI로 빈 필드 채우기"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/features/letters/write.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -5135,6 +5152,11 @@ msgstr "언어"
 msgid "Languages"
 msgstr "언어"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #: src/features/letters/design.tsx
 msgid "Larger text"
 msgstr "글자 크게"
@@ -5712,6 +5734,11 @@ msgstr "MCP 서버"
 #: src/features/applications-board/insights-screen.tsx
 msgid "median to first reply"
 msgstr "첫 번째 응답의 중앙값"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/career/offers.tsx
 msgid "Meets your minimum base salary."
@@ -6801,6 +6828,11 @@ msgstr "오래됨: 이후 텍스트가 변경되었습니다."
 msgid "Outcome"
 msgstr "결과"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/page.tsx
 #: app/letter/[id]/_layout.tsx
@@ -7041,6 +7073,11 @@ msgstr "사례 두 개 고르기"
 msgid "Picking your stories"
 msgstr "스토리 고르는 중"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Pipeline flow"
 msgstr "파이프라인 흐름"
@@ -7253,6 +7290,7 @@ msgid "Previous workspace tabs"
 msgstr "이전 작업공간 탭"
 
 #: src/features/design/advanced.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Primary color"
 msgstr "기본 색상"
 
@@ -8198,6 +8236,11 @@ msgstr "회전"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "PDF 렌더링에서는 회전이 지원되지 않습니다."
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Row order"
 msgstr "행 순서"
@@ -8741,6 +8784,10 @@ msgstr "그림자 색상"
 msgid "Shadow width"
 msgstr "그림자 너비"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Shape"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/share.tsx
 msgid "Share"
@@ -9047,6 +9094,7 @@ msgstr "상황, 과제, 행동은 필수입니다. 결과와 성찰은 근거를
 msgid "Situation, Task, Action, Result, Reflection. Link each story to facts you can support; leave unknown outcomes blank."
 msgstr "상황, 과제, 행동, 결과, 성찰. 각 스토리를 뒷받침할 수 있는 사실과 연결하고, 모르는 결과는 비워 두세요."
 
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/picture-screen.tsx
 msgid "Size"
 msgstr "크기"
@@ -9080,6 +9128,11 @@ msgstr "슬로베니아어"
 msgid "Slug"
 msgstr "URL 식별자"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "숫자는 적지만 주목할 가치가 있습니다."
@@ -9087,6 +9140,11 @@ msgstr "숫자는 적지만 주목할 가치가 있습니다."
 #: src/features/letters/design.tsx
 msgid "Smaller text"
 msgstr "글자 작게"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -9213,6 +9271,11 @@ msgstr "변경 사항 찾는 중"
 #: src/features/write/picture-screen.tsx
 msgid "Square"
 msgstr "정사각형"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/design/style-groups.tsx
 msgctxt "Entry header layout"
@@ -9342,6 +9405,10 @@ msgstr "취소선"
 #: src/features/write/improve.tsx
 msgid "Stronger verb"
 msgstr "더 강한 동사"
+
+#: src/features/write/badge-design-page.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/workspace/tabs/apply.tsx
 msgid "Submission is recorded. Review checks only reflect what you checked yourself."

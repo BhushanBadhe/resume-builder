@@ -2272,6 +2272,10 @@ msgstr "Rezervna koda"
 msgid "Backup codes copied"
 msgstr "Varnostne kode kopirane"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Badge design"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Badges"
 msgstr ""
@@ -2936,6 +2940,7 @@ msgstr "Svetovalec"
 msgid "Code"
 msgstr "Koda"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-components/design-panel.tsx
 #: src/routes/builder/letter/-components/design-panel.tsx
 msgid "Color"
@@ -4101,6 +4106,10 @@ msgstr "Po meri"
 #: src/features/resume/editor/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "Barva po meri (hex)"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Custom color…"
+msgstr ""
 
 #: src/features/resume/editor/write/dates-field.tsx
 msgid "Custom date text"
@@ -5301,6 +5310,11 @@ msgstr "Izpolnite vlogo in podjetje. V Nastavitvah povežite ponudnika AI, da ju
 #: src/features/applications/components/add-application-dialog.tsx
 msgid "Fill in the role and company. The posting is saved with the application."
 msgstr "Izpolnite vlogo in podjetje. Zaposlitveni oglas se shrani skupaj s prošnjo za delo."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/routes/builder/letter/-components/write-panel.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -6631,6 +6645,11 @@ msgstr "Jezik"
 msgid "Languages"
 msgstr "Jeziki"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #. placeholder {0}: monthYear(new Date(password.updatedAt))
 #: src/features/settings/account/security.tsx
 msgid "Last changed in {0}"
@@ -7313,6 +7332,11 @@ msgstr "mediana do prvega odgovora"
 #: src/features/resume/editor/check/writing-tab.tsx
 msgid "Medium"
 msgstr "Srednje"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/homepage/prepare.tsx
 msgid "Mentor other designers"
@@ -8577,6 +8601,11 @@ msgstr "Izid"
 msgid "Outdent"
 msgstr "Zmanjšaj zamik"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: src/features/homepage/prepare.tsx
 msgid "Own and evolve a design system"
 msgstr "Skrbeti za sistem oblikovanja in ga razvijati"
@@ -8868,6 +8897,11 @@ msgstr "Izbiranje vaših zgodb"
 msgid "Picture"
 msgstr "Slika"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Pipeline flow"
 msgstr "Potek postopka"
@@ -9113,6 +9147,7 @@ msgstr "Poslana so tudi prejšnja sporočila, vključno s podrobnostmi dokumenta
 msgid "Previous month"
 msgstr "Prejšnji mesec"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Primary color"
 msgstr "Primarna barva"
@@ -10216,6 +10251,11 @@ msgstr "Rotacija"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "Upodabljanje PDF ne podpira rotacije."
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #. placeholder {0}: fieldLabel(field)
 #: src/features/applications/components/import-applications-sheet.tsx
 msgid "Row {row}, {0}: “{value}” is invalid."
@@ -10886,6 +10926,10 @@ msgstr "Barva sence"
 msgid "Shadow width"
 msgstr "Širina sence"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Shape"
+msgstr ""
+
 #: src/features/homepage/footer.tsx
 #: src/features/homepage/header.tsx
 #: src/features/homepage/share.tsx
@@ -11193,6 +11237,7 @@ msgstr "Situacija, naloga, dejanje, rezultat, refleksija. Vsako zgodbo povežite
 msgid "Six product teams"
 msgstr "Šest proizvodnih skupin"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Size"
 msgstr "Velikost"
@@ -11241,6 +11286,11 @@ msgstr "slovaščina"
 msgid "Slovenian"
 msgstr "Slovenščina"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "Majhne številke, a vredne pozornosti."
@@ -11248,6 +11298,11 @@ msgstr "Majhne številke, a vredne pozornosti."
 #: src/features/homepage/remember.tsx
 msgid "So I talked to 14 customers, found the three places people dropped off, and we prototyped a shorter setup."
 msgstr "Zato sem se pogovoril s 14 strankami, našel tri mesta, kjer so ljudje odnehali, in izdelali smo prototip krajše nastavitve."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/resume/editor/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -11365,6 +11420,11 @@ msgstr "Iskanje sprememb"
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Square"
 msgstr "Kvadrat"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/resume/editor/design/entries-group.tsx
 msgctxt "Entry header layout"
@@ -11595,6 +11655,10 @@ msgstr "Prečrtano"
 #: src/features/resume/editor/write/improve.tsx
 msgid "Stronger verb"
 msgstr "Močnejši glagol"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/resume/stylesheet/toolbar.tsx
 msgid "Stylesheet editor"

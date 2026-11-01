@@ -1805,6 +1805,14 @@ msgid "Background color"
 msgstr "பின்னணி நிறம்"
 
 #: src/features/write/section-sheet.tsx
+msgid "Badge color"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
+msgid "Badge design"
+msgstr ""
+
+#: src/features/write/section-sheet.tsx
 msgid "Badges"
 msgstr ""
 
@@ -3244,6 +3252,10 @@ msgstr "நாணயம்"
 msgid "Custom"
 msgstr "தனிப்பயன்"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Custom color"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "தனிப்பயன் நிறம் (hex)"
@@ -4174,6 +4186,11 @@ msgstr "விவரங்களை கைமுறையாக நிரப்�
 #: src/features/applications/add-sheet.tsx
 msgid "Fill empty fields with AI"
 msgstr "AI உடன் காலியான புலங்களை நிரப்பவும்"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/features/letters/write.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -5135,6 +5152,11 @@ msgstr "மொழி"
 msgid "Languages"
 msgstr "மொழிகள்"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #: src/features/letters/design.tsx
 msgid "Larger text"
 msgstr "பெரிய எழுத்துகள்"
@@ -5712,6 +5734,11 @@ msgstr "MCP சேவையகம்"
 #: src/features/applications-board/insights-screen.tsx
 msgid "median to first reply"
 msgstr "முதல் பதிலுக்கான இடைநிலை"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/career/offers.tsx
 msgid "Meets your minimum base salary."
@@ -6801,6 +6828,11 @@ msgstr "காலாவதியானது: உரை மாற்றப்ப
 msgid "Outcome"
 msgstr "விளைவு"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/page.tsx
 #: app/letter/[id]/_layout.tsx
@@ -7041,6 +7073,11 @@ msgstr "இரண்டு எடுத்துக்காட்டுகள�
 msgid "Picking your stories"
 msgstr "உங்கள் கதைகளைத் தேர்ந்தெடுக்கிறது"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Pipeline flow"
 msgstr "பைப்லைன் ஓட்டம்"
@@ -7253,6 +7290,7 @@ msgid "Previous workspace tabs"
 msgstr "முந்தைய பணியிட தாவல்கள்"
 
 #: src/features/design/advanced.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Primary color"
 msgstr "முதன்மை நிறம்"
 
@@ -8198,6 +8236,11 @@ msgstr "சுழற்சி"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "PDF ரெண்டரிங் மூலம் சுழற்சி ஆதரிக்கப்படவில்லை."
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 msgid "Row order"
 msgstr "வரிசைகளின் ஒழுங்கு"
@@ -8741,6 +8784,10 @@ msgstr "நிழல் நிறம்"
 msgid "Shadow width"
 msgstr "நிழல் அகலம்"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Shape"
+msgstr ""
+
 #: app/builder/[id]/_layout.tsx
 #: app/builder/[id]/share.tsx
 msgid "Share"
@@ -9047,6 +9094,7 @@ msgstr "சூழ்நிலை, பணி, செயல் ஆகியவை 
 msgid "Situation, Task, Action, Result, Reflection. Link each story to facts you can support; leave unknown outcomes blank."
 msgstr "சூழ்நிலை, பணி, செயல், முடிவு, பிரதிபலிப்பு. ஒவ்வொரு கதையையும் நீங்கள் ஆதாரம் தரக்கூடிய உண்மைகளுடன் இணைக்கவும்; தெரியாத விளைவுகளைக் காலியாக விடவும்."
 
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/picture-screen.tsx
 msgid "Size"
 msgstr "அளவு"
@@ -9080,6 +9128,11 @@ msgstr "ஸ்லோவேனியன்"
 msgid "Slug"
 msgstr "URL அடையாளம்"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications-board/insights-screen.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "சிறிய எண்கள், ஆனால் கவனிக்க வேண்டியவை."
@@ -9087,6 +9140,11 @@ msgstr "சிறிய எண்கள், ஆனால் கவனிக்�
 #: src/features/letters/design.tsx
 msgid "Smaller text"
 msgstr "சிறிய எழுத்துகள்"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -9213,6 +9271,11 @@ msgstr "என்ன மாறியது எனக் கண்டறிகி
 #: src/features/write/picture-screen.tsx
 msgid "Square"
 msgstr "சதுரம்"
+
+#: src/features/write/badge-design-page.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/design/style-groups.tsx
 msgctxt "Entry header layout"
@@ -9342,6 +9405,10 @@ msgstr "அடித்தல்"
 #: src/features/write/improve.tsx
 msgid "Stronger verb"
 msgstr "வலுவான வினைச்சொல்"
+
+#: src/features/write/badge-design-page.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/workspace/tabs/apply.tsx
 msgid "Submission is recorded. Review checks only reflect what you checked yourself."

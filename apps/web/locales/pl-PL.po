@@ -2272,6 +2272,10 @@ msgstr "Kod zapasowy"
 msgid "Backup codes copied"
 msgstr "Skopiowano kody zapasowe"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Badge design"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Badges"
 msgstr ""
@@ -2936,6 +2940,7 @@ msgstr "Doradca"
 msgid "Code"
 msgstr "Kod"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-components/design-panel.tsx
 #: src/routes/builder/letter/-components/design-panel.tsx
 msgid "Color"
@@ -4101,6 +4106,10 @@ msgstr "Niestandardowe"
 #: src/features/resume/editor/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "Kolor niestandardowy (szesnastkowy)"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Custom color…"
+msgstr ""
 
 #: src/features/resume/editor/write/dates-field.tsx
 msgid "Custom date text"
@@ -5301,6 +5310,11 @@ msgstr "Wpisz rolę i firmę. Połącz dostawcę AI w ustawieniach, aby odczyta�
 #: src/features/applications/components/add-application-dialog.tsx
 msgid "Fill in the role and company. The posting is saved with the application."
 msgstr "Wpisz rolę i firmę. Ogłoszenie o pracę zostaje zapisane wraz z aplikacją o pracę."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/routes/builder/letter/-components/write-panel.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -6631,6 +6645,11 @@ msgstr "Język"
 msgid "Languages"
 msgstr "Języki"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #. placeholder {0}: monthYear(new Date(password.updatedAt))
 #: src/features/settings/account/security.tsx
 msgid "Last changed in {0}"
@@ -7313,6 +7332,11 @@ msgstr "mediana do pierwszej odpowiedzi"
 #: src/features/resume/editor/check/writing-tab.tsx
 msgid "Medium"
 msgstr "Średni"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/homepage/prepare.tsx
 msgid "Mentor other designers"
@@ -8577,6 +8601,11 @@ msgstr "Wynik"
 msgid "Outdent"
 msgstr "Zmniejsz wcięcie"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: src/features/homepage/prepare.tsx
 msgid "Own and evolve a design system"
 msgstr "Rozwijanie design systemu i odpowiedzialność za niego"
@@ -8868,6 +8897,11 @@ msgstr "Wybieranie Twoich historii"
 msgid "Picture"
 msgstr "Zdjęcie"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Pipeline flow"
 msgstr "Przepływ procesu"
@@ -9113,6 +9147,7 @@ msgstr "Wysyłane są także poprzednie wiadomości, zawierające szczegóły do
 msgid "Previous month"
 msgstr "Poprzedni miesiąc"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Primary color"
 msgstr "Kolor główny"
@@ -10216,6 +10251,11 @@ msgstr "Obrót"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "Obrót nie jest obsługiwany przez renderowanie PDF."
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #. placeholder {0}: fieldLabel(field)
 #: src/features/applications/components/import-applications-sheet.tsx
 msgid "Row {row}, {0}: “{value}” is invalid."
@@ -10886,6 +10926,10 @@ msgstr "Kolor cienia"
 msgid "Shadow width"
 msgstr "Szerokość cienia"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Shape"
+msgstr ""
+
 #: src/features/homepage/footer.tsx
 #: src/features/homepage/header.tsx
 #: src/features/homepage/share.tsx
@@ -11193,6 +11237,7 @@ msgstr "Sytuacja, zadanie, działanie, rezultat, refleksja. Powiąż każdą his
 msgid "Six product teams"
 msgstr "Sześć zespołów produktowych"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Size"
 msgstr "Rozmiar"
@@ -11241,6 +11286,11 @@ msgstr "Słowacki"
 msgid "Slovenian"
 msgstr "Słoweński"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "Liczby małe, ale warte uwagi."
@@ -11248,6 +11298,11 @@ msgstr "Liczby małe, ale warte uwagi."
 #: src/features/homepage/remember.tsx
 msgid "So I talked to 14 customers, found the three places people dropped off, and we prototyped a shorter setup."
 msgstr "Rozmowy z 14 klientami pokazały trzy miejsca, w których ludzie rezygnowali, więc zrobiliśmy prototyp krótszej konfiguracji."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/resume/editor/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -11365,6 +11420,11 @@ msgstr "Wykrywanie zmian"
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Square"
 msgstr "Kwadrat"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/resume/editor/design/entries-group.tsx
 msgctxt "Entry header layout"
@@ -11595,6 +11655,10 @@ msgstr "Przekreślenie"
 #: src/features/resume/editor/write/improve.tsx
 msgid "Stronger verb"
 msgstr "Silniejszy czasownik"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/resume/stylesheet/toolbar.tsx
 msgid "Stylesheet editor"

@@ -1,4 +1,5 @@
 import type { ResumeData } from "./data";
+import { defaultBadgeDesign } from "./data";
 import { sectionDefaults } from "./default";
 
 export const sampleResumeData: ResumeData = {
@@ -167,6 +168,7 @@ export const sampleResumeData: ResumeData = {
 		skills: {
 			...sectionDefaults("compass-tool"),
 			layout: "default",
+			badge: { ...defaultBadgeDesign },
 			keywordLayout: "inline",
 			items: [
 				{
@@ -234,6 +236,7 @@ export const sampleResumeData: ResumeData = {
 		languages: {
 			...sectionDefaults("translate"),
 			layout: "default",
+			badge: { ...defaultBadgeDesign },
 			items: [
 				{
 					id: "019bef5a-93e4-7746-ad39-73807ccc48b5",

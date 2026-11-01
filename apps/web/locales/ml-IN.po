@@ -2272,6 +2272,10 @@ msgstr "ബാക്കപ്പ് കോഡ്"
 msgid "Backup codes copied"
 msgstr "ബാക്കപ്പ് കോഡുകൾ പകർത്തി"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Badge design"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Badges"
 msgstr ""
@@ -2936,6 +2940,7 @@ msgstr "കോച്ച്"
 msgid "Code"
 msgstr "കോഡ്"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-components/design-panel.tsx
 #: src/routes/builder/letter/-components/design-panel.tsx
 msgid "Color"
@@ -4101,6 +4106,10 @@ msgstr "ഇഷ്ടാനുസൃതം"
 #: src/features/resume/editor/design/style-groups.tsx
 msgid "Custom color (hex)"
 msgstr "ഇഷ്ടാനുസൃത നിറം (ഹെക്സ്)"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Custom color…"
+msgstr ""
 
 #: src/features/resume/editor/write/dates-field.tsx
 msgid "Custom date text"
@@ -5301,6 +5310,11 @@ msgstr "റോളും കമ്പനിയും പൂരിപ്പിക�
 #: src/features/applications/components/add-application-dialog.tsx
 msgid "Fill in the role and company. The posting is saved with the application."
 msgstr "റോളും കമ്പനിയും പൂരിപ്പിക്കുക. തൊഴിൽ അപേക്ഷയോടൊപ്പം ജോലി പോസ്റ്റിംഗ് സംരക്ഷിക്കപ്പെടുന്നു."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: solid background"
+msgid "Filled"
+msgstr ""
 
 #: src/routes/builder/letter/-components/write-panel.tsx
 msgid "Filled from the application. The greeting follows the name."
@@ -6631,6 +6645,11 @@ msgstr "ഭാഷ"
 msgid "Languages"
 msgstr "ഭാഷകൾ"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Large"
+msgstr ""
+
 #. placeholder {0}: monthYear(new Date(password.updatedAt))
 #: src/features/settings/account/security.tsx
 msgid "Last changed in {0}"
@@ -7313,6 +7332,11 @@ msgstr "ആദ്യ മറുപടിക്ക് ഇടത്തരം"
 #: src/features/resume/editor/check/writing-tab.tsx
 msgid "Medium"
 msgstr "ഇടത്തരം"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Medium"
+msgstr ""
 
 #: src/features/homepage/prepare.tsx
 msgid "Mentor other designers"
@@ -8577,6 +8601,11 @@ msgstr "ഫലം"
 msgid "Outdent"
 msgstr "ഇൻഡന്റ് കുറയ്ക്കുക"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: border only"
+msgid "Outline"
+msgstr ""
+
 #: src/features/homepage/prepare.tsx
 msgid "Own and evolve a design system"
 msgstr "ഒരു ഡിസൈൻ സിസ്റ്റം സ്വന്തമാക്കി വികസിപ്പിക്കുക"
@@ -8868,6 +8897,11 @@ msgstr "നിങ്ങളുടെ കഥകൾ തിരഞ്ഞെടുക�
 msgid "Picture"
 msgstr "ചിത്രം"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: fully rounded ends"
+msgid "Pill"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Pipeline flow"
 msgstr "പൈപ്പ്ലൈൻ ഒഴുക്ക്"
@@ -9113,6 +9147,7 @@ msgstr "ഡോക്യുമെൻ്റ് വിശദാംശങ്ങൾ �
 msgid "Previous month"
 msgstr "മുൻ മാസം"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Primary color"
 msgstr "പ്രൈമറി നിറം"
@@ -10216,6 +10251,11 @@ msgstr "ററോട്ടേഷൻ"
 msgid "Rotation isn't supported by PDF rendering."
 msgstr "PDF റെൻഡറിംഗ് റൊട്ടേഷനെ പിന്തുണയ്ക്കുന്നില്ല."
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: slightly rounded corners"
+msgid "Rounded"
+msgstr ""
+
 #. placeholder {0}: fieldLabel(field)
 #: src/features/applications/components/import-applications-sheet.tsx
 msgid "Row {row}, {0}: “{value}” is invalid."
@@ -10886,6 +10926,10 @@ msgstr "ഷാഡോ നിറം"
 msgid "Shadow width"
 msgstr "ഷാഡോ വീതി"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Shape"
+msgstr ""
+
 #: src/features/homepage/footer.tsx
 #: src/features/homepage/header.tsx
 #: src/features/homepage/share.tsx
@@ -11193,6 +11237,7 @@ msgstr "സാഹചര്യം, ചുമതല, പ്രവർത്തന�
 msgid "Six product teams"
 msgstr "ആറ് ഉൽപ്പന്ന ടീമുകൾ"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Size"
 msgstr "സൈസ്"
@@ -11241,6 +11286,11 @@ msgstr "സ്ലൊവാക്"
 msgid "Slovenian"
 msgstr "സ്ലോവേനിയൻ"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge size"
+msgid "Small"
+msgstr ""
+
 #: src/features/applications/components/insights-view.tsx
 msgid "Small numbers, but worth noticing."
 msgstr "ചെറിയ സംഖ്യകൾ, പക്ഷേ ശ്രദ്ധിക്കേണ്ടതാണ്."
@@ -11248,6 +11298,11 @@ msgstr "ചെറിയ സംഖ്യകൾ, പക്ഷേ ശ്രദ്�
 #: src/features/homepage/remember.tsx
 msgid "So I talked to 14 customers, found the three places people dropped off, and we prototyped a shorter setup."
 msgstr "അങ്ങനെ ഞാൻ 14 ഉപഭോക്താക്കളോട് സംസാരിച്ചു, ആളുകൾ പിന്മാറിയ മൂന്ന് ഇടങ്ങൾ കണ്ടെത്തി, ഞങ്ങൾ ചെറിയൊരു സെറ്റപ്പിന്റെ പ്രോട്ടോടൈപ്പ് ഉണ്ടാക്കി."
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge style: light tinted background"
+msgid "Soft"
+msgstr ""
 
 #: src/features/resume/editor/check/issues.ts
 msgid "Some application systems ask for one before you can apply."
@@ -11365,6 +11420,11 @@ msgstr "മാറിയത് കണ്ടെത്തുന്നു"
 #: src/features/resume/editor/write/picture-settings.tsx
 msgid "Square"
 msgstr "സ്ക്വയർ"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Badge shape: sharp corners"
+msgid "Square"
+msgstr ""
 
 #: src/features/resume/editor/design/entries-group.tsx
 msgctxt "Entry header layout"
@@ -11595,6 +11655,10 @@ msgstr "സ്ട്രൈക്ക്ത്രൂ"
 #: src/features/resume/editor/write/improve.tsx
 msgid "Stronger verb"
 msgstr "ശക്തമായ ക്രിയ"
+
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Style"
+msgstr ""
 
 #: src/features/resume/stylesheet/toolbar.tsx
 msgid "Stylesheet editor"

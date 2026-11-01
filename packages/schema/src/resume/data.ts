@@ -375,6 +375,42 @@ const certificationsSectionSchema = itemSection(
 const educationSectionSchema = itemSection(educationItemSchema, "The items to display in the education section.");
 const experienceSectionSchema = itemSection(experienceItemSchema, "The items to display in the experience section.");
 const interestsSectionSchema = itemSection(interestItemSchema, "The items to display in the interests section.");
+export const badgeStyles = ["filled", "soft", "outline"] as const;
+export const badgeShapes = ["pill", "rounded", "square"] as const;
+export const badgeSizes = ["small", "medium", "large"] as const;
+
+export const defaultBadgeDesign = {
+	style: "filled",
+	shape: "pill",
+	size: "medium",
+	color: "",
+} as const satisfies Record<string, string>;
+
+const badgeDesignSchema = z
+	.object({
+		style: z
+			.enum(badgeStyles)
+			.default("filled")
+			.catch("filled")
+			.describe("'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."),
+		shape: z
+			.enum(badgeShapes)
+			.default("pill")
+			.catch("pill")
+			.describe("'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."),
+		size: z.enum(badgeSizes).default("medium").catch("medium").describe("The text size and padding of each badge."),
+		color: z
+			.string()
+			.default("")
+			.catch("")
+			.describe("Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."),
+	})
+	.default({ ...defaultBadgeDesign })
+	.catch({ ...defaultBadgeDesign })
+	.describe("How badges look when the section uses the 'badges' layout.");
+
+export type BadgeDesign = z.infer<typeof badgeDesignSchema>;
+
 const languagesSectionSchema = itemSection(languageItemSchema, "The items to display in the languages section.").extend(
 	{
 		layout: z
@@ -384,6 +420,7 @@ const languagesSectionSchema = itemSection(languageItemSchema, "The items to dis
 			.describe(
 				"The layout style for language items. 'badges' prints each language and its fluency as a rounded badge.",
 			),
+		badge: badgeDesignSchema,
 	},
 );
 const profilesSectionSchema = itemSection(profileItemSchema, "The items to display in the profiles section.");
@@ -409,6 +446,7 @@ export const skillsSectionSchema = itemSection(skillItemSchema, "The items to di
 			.describe(
 				"The layout style for skill items. 'inline' places item fields next to name; 'badges' prints each skill and keyword as a rounded badge.",
 			),
+		badge: badgeDesignSchema,
 	})
 	.transform((section) => (section.layout === "default" ? section : { ...section, columns: 1 }));
 const volunteerSectionSchema = itemSection(volunteerItemSchema, "The items to display in the volunteer section.");
