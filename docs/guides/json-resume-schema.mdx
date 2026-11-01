@@ -1187,11 +1187,12 @@ This snapshot comes from `resumeDataSchema`. For the current schema, use [schema
 						},
 						"layout": {
 							"default": "default",
-							"description": "The layout style for skill items. 'inline' places item fields next to name",
+							"description": "The layout style for skill items. 'inline' places item fields next to name; 'badges' prints each skill and keyword as a rounded badge.",
 							"type": "string",
 							"enum": [
 								"default",
-								"inline"
+								"inline",
+								"badges"
 							]
 						}
 					},
@@ -1281,6 +1282,15 @@ This snapshot comes from `resumeDataSchema`. For the current schema, use [schema
 								]
 							},
 							"description": "The items to display in the languages section."
+						},
+						"layout": {
+							"default": "default",
+							"description": "The layout style for language items. 'badges' prints each language and its fluency as a rounded badge.",
+							"type": "string",
+							"enum": [
+								"default",
+								"badges"
+							]
 						}
 					},
 					"required": [

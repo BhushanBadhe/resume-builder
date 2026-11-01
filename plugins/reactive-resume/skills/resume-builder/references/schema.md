@@ -279,7 +279,7 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `sections.skills.items[].keywords` | `array` | yes | default: [] | The keywords associated with the skill, if any. These are displayed as tags below the name. |
 | `sections.skills.items[].keywords[]` | `string` | — | — | — |
 | `sections.skills.keywordLayout` | `string` | no | enum: ["inline","list"]; default: "inline" | How skill keywords are displayed: inline separated by commas, or one bullet per keyword. |
-| `sections.skills.layout` | `string` | no | enum: ["default","inline"]; default: "default" | The layout style for skill items. 'inline' places item fields next to name |
+| `sections.skills.layout` | `string` | no | enum: ["default","inline","badges"]; default: "default" | The layout style for skill items. 'inline' places item fields next to name; 'badges' prints each skill and keyword as a rounded badge. |
 | `sections.languages` | `object` | yes | — | The section to display the languages of the author. |
 | `sections.languages.title` | `string` | yes | — | The title of the section. |
 | `sections.languages.icon` | `string` | yes | default: "" | Phosphor icon name to display before the section title in the PDF output. Empty string uses the default section icon; 'none' hides the icon. |
@@ -295,6 +295,7 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `sections.languages.items[].language` | `string` | yes | — | The name of the language the author knows. Empty while the entry is a draft, which isn't printed. |
 | `sections.languages.items[].fluency` | `string` | yes | — | The fluency level of the language. Can be any text, such as 'Native', 'Fluent', 'Conversational', etc. or can also be a CEFR level (A1, A2, B1, B2, C1, C2). |
 | `sections.languages.items[].level` | `number` | yes | minimum: 0; maximum: 5; default: 0 | The proficiency level of the language, defined as a number between 0 and 5. If set to 0, the icons displaying the level will be hidden. |
+| `sections.languages.layout` | `string` | no | enum: ["default","badges"]; default: "default" | The layout style for language items. 'badges' prints each language and its fluency as a rounded badge. |
 | `sections.interests` | `object` | yes | — | The section to display the interests of the author. |
 | `sections.interests.title` | `string` | yes | — | The title of the section. |
 | `sections.interests.icon` | `string` | yes | default: "" | Phosphor icon name to display before the section title in the PDF output. Empty string uses the default section icon; 'none' hides the icon. |

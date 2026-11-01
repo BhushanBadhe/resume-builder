@@ -356,6 +356,7 @@ export function parseReactiveResumeV4JSON(json: string): ResumeData {
 				},
 				languages: {
 					...baseSection(v4Data.sections.languages),
+					layout: "default",
 					items: (v4Data.sections.languages?.items ?? [])
 						.filter((item) => item.name && item.name.length > 0)
 						.map((item) => ({

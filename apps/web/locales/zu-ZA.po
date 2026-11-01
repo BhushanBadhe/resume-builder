@@ -2267,6 +2267,10 @@ msgstr ""
 msgid "Backup codes copied"
 msgstr ""
 
+#: src/features/resume/editor/write/section-row.tsx
+msgid "Badges"
+msgstr ""
+
 #: src/features/resume/editor/design/entries-group.tsx
 msgctxt "Entry header accent: a tinted background behind the header"
 msgid "Band"

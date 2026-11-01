@@ -43,7 +43,7 @@ export const defaultResumeData: ResumeData = {
 		education: section("graduation-cap"),
 		projects: section("code-simple"),
 		skills: { ...section("compass-tool"), layout: "default", keywordLayout: "inline" },
-		languages: section("translate"),
+		languages: { ...section("translate"), layout: "default" },
 		interests: section("football"),
 		awards: section("trophy"),
 		certifications: section("certificate"),

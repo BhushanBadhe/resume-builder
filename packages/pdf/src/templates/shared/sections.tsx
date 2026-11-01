@@ -23,6 +23,7 @@ import type {
 import type { ReactNode } from "react";
 import { Children, createContext, Fragment, isValidElement, use } from "react";
 import { entryHeaderOf } from "@reactive-resume/schema/resume/data";
+import { isDarkColor } from "@reactive-resume/utils/color";
 import { View } from "#react-pdf-renderer";
 import { useRender } from "../../context";
 import { HEADING_NODE_PROP } from "../../page-map";
@@ -93,6 +94,8 @@ type SectionShellProps = {
 type SectionItemsProps = {
 	children: ReactNode;
 	columns?: number;
+	/** Flows items side by side and wraps them onto new lines, sized to their content. */
+	wrap?: boolean;
 };
 
 type SectionItemProps = {
@@ -426,7 +429,7 @@ const SectionShell = ({ sectionId, title, showHeading = true, children }: Sectio
 	);
 };
 
-const SectionItems = ({ children, columns = 1 }: SectionItemsProps) => {
+const SectionItems = ({ children, columns = 1, wrap = false }: SectionItemsProps) => {
 	const data = useRender();
 	const sectionNodeKey = useSemanticNodeKey();
 	const sectionItemsNodeKey = sectionNodeKey ? semanticNodeKeys.sectionItems(sectionNodeKey) : undefined;
@@ -444,11 +447,13 @@ const SectionItems = ({ children, columns = 1 }: SectionItemsProps) => {
 		rowGap: metrics.itemGapY,
 		columnGap: metrics.itemGapX,
 	});
-	const useTimeline = shouldUseSectionTimeline({
-		sectionTimeline,
-		placement,
-		columns: layout.columns,
-	});
+	const useTimeline =
+		!wrap &&
+		shouldUseSectionTimeline({
+			sectionTimeline,
+			placement,
+			columns: layout.columns,
+		});
 	const context = { itemStyle: layout.itemStyle, useTimeline };
 	const authoredChildren = Children.toArray(children);
 	const childrenByNodeKey = new Map(
@@ -463,7 +468,11 @@ const SectionItems = ({ children, columns = 1 }: SectionItemsProps) => {
 				return child ? [child] : [];
 			})
 		: authoredChildren;
-	const rtlRowStyle = createRtlStyleHelpers(data.rtl).gridRowStyle;
+	const rtlHelpers = createRtlStyleHelpers(data.rtl);
+	const rtlRowStyle = rtlHelpers.gridRowStyle;
+	const wrapStyle: Style | undefined = wrap
+		? { flexDirection: rtlHelpers.row, flexWrap: "wrap", columnGap: metrics.gapX(0.5), rowGap: metrics.gapY(0.5) }
+		: undefined;
 	if (!visible) return null;
 
 	if (!useTimeline) {
@@ -496,7 +505,7 @@ const SectionItems = ({ children, columns = 1 }: SectionItemsProps) => {
 				<SectionItemsContext.Provider value={context}>
 					<View
 						{...resolvedPdfFlowProps(resolved)}
-						style={composeStyles(layout.containerStyle, sectionItemsStyle, resolved.style)}
+						style={composeStyles(layout.containerStyle, sectionItemsStyle, wrapStyle, resolved.style)}
 					>
 						{resolvedChildren}
 					</View>
@@ -1516,6 +1525,71 @@ const getSkillsItemStyle = (isInline: boolean, item: SkillItem, metrics: ReturnT
 	return { rowGap: metrics.gapY(0.25) };
 };
 
+const badgeStyle = {
+	borderRadius: 999,
+	paddingHorizontal: 6,
+	paddingVertical: 2,
+} satisfies Style;
+
+const badgeHeaderResetStyle = {
+	borderLeftWidth: 0,
+	paddingLeft: 0,
+	paddingVertical: 0,
+} satisfies Style;
+
+/** Bootstrap-style pill badge styles: a fill in the primary color with readable text, and a soft tint for secondary badges. */
+const useBadgeStyles = () => {
+	const colors = useTemplateColors();
+	const placement = useTemplatePlacement();
+	// A primary badge blends into a sidebar of similar lightness (e.g. a solid primary fill); use the sidebar's text color there.
+	const { sidebarBackground, sidebarForeground } = colors;
+	const blendsIntoSidebar =
+		placement === "sidebar" &&
+		sidebarBackground !== undefined &&
+		isDarkColor(sidebarBackground) === isDarkColor(colors.primary);
+	const primary = blendsIntoSidebar && sidebarForeground ? sidebarForeground : colors.primary;
+
+	return {
+		nameStyle: composeStyles(badgeStyle, { backgroundColor: primary }),
+		nameTextStyle: { color: isDarkColor(primary) ? "#ffffff" : "#000000", lineHeight: 1.2 } satisfies Style,
+		tintStyle: composeStyles(badgeStyle, { backgroundColor: getPrimaryTint(primary, 0.15) }),
+	};
+};
+
+/** The skill name as a filled badge, its keywords as tinted badges. */
+const SkillBadges = ({ item }: { item: SkillItem }) => {
+	const { nameStyle, nameTextStyle, tintStyle: keywordStyle } = useBadgeStyles();
+
+	return (
+		<>
+			{/* The name only prints inside an item header; clear template header chrome (Ditgar's accent border). */}
+			<SectionItemHeader style={badgeHeaderResetStyle}>
+				<View style={nameStyle}>
+					<Bold semanticField="name" style={nameTextStyle}>
+						{item.name}
+					</Bold>
+				</View>
+			</SectionItemHeader>
+			{item.keywords.map((keyword, index) => (
+				<View key={index} style={keywordStyle}>
+					<Small semanticField="keywords" style={{ lineHeight: 1.2 }}>
+						{keyword}
+					</Small>
+				</View>
+			))}
+		</>
+	);
+};
+
+const badgeItemStyle = {
+	flexDirection: "row",
+	flexWrap: "wrap",
+	alignItems: "center",
+	columnGap: 4,
+	rowGap: 4,
+	maxWidth: "100%",
+} satisfies Style;
+
 const SkillsSection = ({ sectionId = "skills", sectionData }: ItemSectionProps<SkillItem> = {}) => {
 	const data = useRender();
 	const skills = sectionData ?? data.sections.skills;
@@ -1527,6 +1601,20 @@ const SkillsSection = ({ sectionId = "skills", sectionData }: ItemSectionProps<S
 	if (items.length === 0) return null;
 
 	const isInlineSkillsItem = "layout" in skills && skills.layout === "inline";
+
+	if ("layout" in skills && skills.layout === "badges") {
+		return (
+			<SectionShell sectionId={sectionId} title={skills.title}>
+				<SectionItems wrap>
+					{items.map((item) => (
+						<SectionItem key={item.id} itemId={item.id} style={badgeItemStyle}>
+							<SkillBadges item={item} />
+						</SectionItem>
+					))}
+				</SectionItems>
+			</SectionShell>
+		);
+	}
 
 	return (
 		<SectionShell sectionId={sectionId} title={skills.title}>
@@ -1562,12 +1650,48 @@ const SkillsSection = ({ sectionId = "skills", sectionData }: ItemSectionProps<S
 	);
 };
 
+/** One filled badge per language, holding its name and fluency. */
+const LanguageBadge = ({ item }: { item: LanguageItem }) => {
+	const { nameStyle, nameTextStyle } = useBadgeStyles();
+
+	return (
+		<SectionItemHeader style={badgeHeaderResetStyle}>
+			<View
+				style={composeStyles(nameStyle, { flexDirection: "row", flexWrap: "wrap", alignItems: "center", columnGap: 4 })}
+			>
+				<Bold semanticField="language" style={nameTextStyle}>
+					{item.language}
+				</Bold>
+				{item.fluency.trim() && (
+					<Small semanticField="fluency" style={composeStyles(nameTextStyle, { opacity: 0.85 })}>
+						{item.fluency}
+					</Small>
+				)}
+			</View>
+		</SectionItemHeader>
+	);
+};
+
 const LanguagesSection = ({ sectionId = "languages", sectionData }: ItemSectionProps<LanguageItem> = {}) => {
 	const data = useRender();
 	const languages = sectionData ?? data.sections.languages;
 	const items = getVisibleItems(languages, "languages");
 
 	if (items.length === 0) return null;
+
+	if ("layout" in languages && languages.layout === "badges") {
+		return (
+			<SectionShell sectionId={sectionId} title={languages.title}>
+				<SectionItems wrap>
+					{items.map((item) => (
+						<SectionItem key={item.id} itemId={item.id} style={badgeItemStyle}>
+							<LanguageBadge item={item} />
+						</SectionItem>
+					))}
+				</SectionItems>
+			</SectionShell>
+		);
+	}
 
 	return (
 		<SectionShell sectionId={sectionId} title={languages.title}>

@@ -1804,6 +1804,10 @@ msgstr "Sustentado por"
 msgid "Background color"
 msgstr "Cor de fundo"
 
+#: src/features/write/section-sheet.tsx
+msgid "Badges"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 #: src/features/letters/design-presets.ts
 msgid "Balanced"

@@ -1804,6 +1804,10 @@ msgstr "근거"
 msgid "Background color"
 msgstr "배경색"
 
+#: src/features/write/section-sheet.tsx
+msgid "Badges"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 #: src/features/letters/design-presets.ts
 msgid "Balanced"

@@ -198,8 +198,11 @@ function SectionMenu({ section, title, onMove }: SectionMenuProps) {
 
 	const isSkills = section.type === "skills";
 	const canSort = section.type === "experience" || section.type === "education";
+	// Only the built-in Skills and Languages sections store a layout, so only they offer badges.
+	const hasBadges = section.kind === "builtin" && (isSkills || section.type === "languages");
+	const layout = isSkills || hasBadges ? (settings as { layout?: string }).layout : undefined;
 	const columns =
-		isSkills && (settings as { layout?: string }).layout === "inline" ? "inline" : String(settings.columns);
+		(isSkills && layout === "inline") || (hasBadges && layout === "badges") ? layout : String(settings.columns);
 
 	const sortByDate = () => {
 		let unresolved: string[] = [];
@@ -324,9 +327,10 @@ function SectionMenu({ section, title, onMove }: SectionMenuProps) {
 								value={columns}
 								onValueChange={(value) =>
 									edit((target) => {
-										const skills = target as { layout?: string };
-										if (isSkills) skills.layout = value === "inline" ? "inline" : "default";
-										target.columns = value === "inline" ? 1 : Number(value);
+										const withLayout = target as { layout?: string };
+										const isLayout = value === "inline" || value === "badges";
+										if (isSkills || hasBadges) withLayout.layout = isLayout ? value : "default";
+										target.columns = isLayout ? 1 : Number(value);
 									})
 								}
 							>
@@ -338,6 +342,11 @@ function SectionMenu({ section, title, onMove }: SectionMenuProps) {
 								{isSkills && (
 									<DropdownMenuRadioItem value="inline">
 										<Trans>1 column, inline</Trans>
+									</DropdownMenuRadioItem>
+								)}
+								{hasBadges && (
+									<DropdownMenuRadioItem value="badges">
+										<Trans>Badges</Trans>
 									</DropdownMenuRadioItem>
 								)}
 							</DropdownMenuRadioGroup>

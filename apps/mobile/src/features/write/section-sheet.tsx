@@ -48,8 +48,13 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 	};
 	const isSkills = section.type === "skills";
 	const canSort = section.type === "experience" || section.type === "education";
+	// Only the built-in Skills and Languages sections store a layout, so only they offer badges.
+	const hasBadges = section.kind === "builtin" && (isSkills || section.type === "languages");
 	const skills = settings as { layout?: string; keywordLayout?: string };
-	const columns = isSkills && skills.layout === "inline" ? "inline" : String(settings.columns);
+	const columns =
+		(isSkills && skills.layout === "inline") || (hasBadges && skills.layout === "badges")
+			? skills.layout
+			: String(settings.columns);
 	const switchRow = (
 		label: string,
 		icon: Parameters<typeof ListRow>[0]["leading"],
@@ -104,7 +109,7 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 								columns === String(count),
 								() =>
 									change((target) => {
-										if (isSkills) (target as { layout?: string }).layout = "default";
+										if (isSkills || hasBadges) (target as { layout?: string }).layout = "default";
 										target.columns = count;
 									}),
 							),
@@ -113,6 +118,14 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 							? radio("inline", t`1 column, inline`, columns === "inline", () =>
 									change((target) => {
 										(target as { layout?: string }).layout = "inline";
+										target.columns = 1;
+									}),
+								)
+							: null}
+						{hasBadges
+							? radio("badges", t`Badges`, columns === "badges", () =>
+									change((target) => {
+										(target as { layout?: string }).layout = "badges";
 										target.columns = 1;
 									}),
 								)
@@ -242,7 +255,9 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 							subtitle={
 								columns === "inline"
 									? t`1 column, inline`
-									: plural(Number(columns), { one: "# column", other: "# columns" })
+									: columns === "badges"
+										? t`Badges`
+										: plural(Number(columns), { one: "# column", other: "# columns" })
 							}
 							leading="squares-four"
 							chevron

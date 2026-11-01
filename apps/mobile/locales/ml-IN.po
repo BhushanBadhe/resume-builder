@@ -1804,6 +1804,10 @@ msgstr "പിന്തുണ നൽകുന്നത്"
 msgid "Background color"
 msgstr "ബാക്ക്ഗ്രൗണ്ട് നിറം"
 
+#: src/features/write/section-sheet.tsx
+msgid "Badges"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 #: src/features/letters/design-presets.ts
 msgid "Balanced"

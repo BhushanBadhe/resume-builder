@@ -1804,6 +1804,10 @@ msgstr "যার সমর্থনে"
 msgid "Background color"
 msgstr "ব্যাকগ্রাউন্ডের রং"
 
+#: src/features/write/section-sheet.tsx
+msgid "Badges"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 #: src/features/letters/design-presets.ts
 msgid "Balanced"

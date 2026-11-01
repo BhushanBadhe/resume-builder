@@ -375,7 +375,17 @@ const certificationsSectionSchema = itemSection(
 const educationSectionSchema = itemSection(educationItemSchema, "The items to display in the education section.");
 const experienceSectionSchema = itemSection(experienceItemSchema, "The items to display in the experience section.");
 const interestsSectionSchema = itemSection(interestItemSchema, "The items to display in the interests section.");
-const languagesSectionSchema = itemSection(languageItemSchema, "The items to display in the languages section.");
+const languagesSectionSchema = itemSection(languageItemSchema, "The items to display in the languages section.").extend(
+	{
+		layout: z
+			.enum(["default", "badges"])
+			.default("default")
+			.catch("default")
+			.describe(
+				"The layout style for language items. 'badges' prints each language and its fluency as a rounded badge.",
+			),
+	},
+);
 const profilesSectionSchema = itemSection(profileItemSchema, "The items to display in the profiles section.");
 const projectsSectionSchema = itemSection(projectItemSchema, "The items to display in the projects section.");
 const publicationsSectionSchema = itemSection(
@@ -393,12 +403,14 @@ export const skillsSectionSchema = itemSection(skillItemSchema, "The items to di
 	.extend({
 		keywordLayout: skillKeywordLayoutSchema,
 		layout: z
-			.enum(["default", "inline"])
+			.enum(["default", "inline", "badges"])
 			.default("default")
 			.catch("default")
-			.describe("The layout style for skill items. 'inline' places item fields next to name"),
+			.describe(
+				"The layout style for skill items. 'inline' places item fields next to name; 'badges' prints each skill and keyword as a rounded badge.",
+			),
 	})
-	.transform((section) => (section.layout === "inline" ? { ...section, columns: 1 } : section));
+	.transform((section) => (section.layout === "default" ? section : { ...section, columns: 1 }));
 const volunteerSectionSchema = itemSection(volunteerItemSchema, "The items to display in the volunteer section.");
 
 const sectionsSchema = z.object({

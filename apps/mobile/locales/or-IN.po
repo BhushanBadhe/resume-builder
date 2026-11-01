@@ -1806,6 +1806,10 @@ msgstr "ସମର୍ଥନ"
 msgid "Background color"
 msgstr "ପୃଷ୍ଠଭୂମି ରଙ୍ଗ"
 
+#: src/features/write/section-sheet.tsx
+msgid "Badges"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 #: src/features/letters/design-presets.ts
 msgid "Balanced"

@@ -1804,6 +1804,10 @@ msgstr "ஆதாரமாக"
 msgid "Background color"
 msgstr "பின்னணி நிறம்"
 
+#: src/features/write/section-sheet.tsx
+msgid "Badges"
+msgstr ""
+
 #: src/features/design/style-groups.tsx
 #: src/features/letters/design-presets.ts
 msgid "Balanced"

@@ -233,6 +233,7 @@ export const sampleResumeData: ResumeData = {
 		},
 		languages: {
 			...sectionDefaults("translate"),
+			layout: "default",
 			items: [
 				{
 					id: "019bef5a-93e4-7746-ad39-73807ccc48b5",
