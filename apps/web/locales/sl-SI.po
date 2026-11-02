@@ -5412,6 +5412,11 @@ msgstr "Sploščite obrazec, da besedilo postane del strani."
 msgid "Fluency"
 msgstr "Stopnja znanja"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/career/workspace/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "Fokus, izkušnje, zakaj ta vloga"
@@ -6579,6 +6584,10 @@ msgstr "Ključ shranjen šifriran"
 msgid "Keys act as you and can read and edit your documents."
 msgstr "Ključi delujejo kot vi in ​​lahko berejo ter urejajo vaše dokumente."
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Keyword layout"
 msgstr "Postavitev ključnih besed"
@@ -6632,6 +6641,7 @@ msgstr "Ležeče (Landscape)"
 #: src/features/command-palette/pages/navigation.tsx
 #: src/features/command-palette/pages/preferences/language.tsx
 #: src/features/resume/editor/design/style-groups.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/entries.tsx
 #: src/features/settings/preferences.tsx
 #: src/features/user/dropdown-menu.tsx
@@ -9121,6 +9131,10 @@ msgstr "Pritisnite <0>{RETURN_KEY}</0>, da dodate ali shranite trenutno ključno
 msgid "Press <0>Enter</0> to open"
 msgstr "Pritisnite <0>Enter</0>, da odprete"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Preview"
+msgstr ""
+
 #: src/features/templates/gallery.tsx
 msgid "Preview {name} sample PDF"
 msgstr "Predogled {name} vzorca PDF"
@@ -11025,6 +11039,10 @@ msgstr "Pokaži znova"
 msgid "Show all types"
 msgstr "Prikaži vse vrste"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/routes/dashboard/applications/index.tsx
 msgid "Show closed"
 msgstr "Oddaja zaprta"
@@ -11243,6 +11261,7 @@ msgid "Size"
 msgstr "Velikost"
 
 #: src/features/career/knowledge/facts.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 msgid "Skill"
 msgstr "Spretnost"
 

@@ -4261,6 +4261,11 @@ msgstr "உரை பக்கத்தின் ஒரு பகுதியா
 msgid "Fluency"
 msgstr "வழக்காற்றுத் திறன்"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "கவனம், அனுபவம், ஏன் இந்தப் பதவி"
@@ -5089,6 +5094,10 @@ msgstr "குறியாக்கம் செய்யப்பட்ட வ�
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr "API விசைகள் உங்கள் சார்பாக செயல்படுகின்றன மற்றும் உங்கள் ஆவணங்களை அணுக முடியும். உங்கள் உலாவியின் கணக்கு அமைப்புகளில் புதிய விசைகளை உருவாக்கவும்."
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr "முக்கியச்சொல் அடுக்கு அமைப்பு"
@@ -5144,6 +5153,7 @@ msgstr "நிலைகள் உங்கள் விண்ணப்பப் 
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr "மொழி"
@@ -6510,6 +6520,7 @@ msgid "Odia"
 msgstr "ஒடியா"
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr "ஆஃப்"
 
@@ -6568,6 +6579,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr "ஆஃப்லைன். இந்தச் சாதனத்தில் திருத்தங்கள் சேமிக்கப்பட்டு மீண்டும் இணைக்கப்படும்போது ஒத்திசைக்கப்படும்."
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr "இயக்கத்தில்"
 
@@ -7259,6 +7271,10 @@ msgstr "பக்கத்தில் முன்னோட்டம் பா�
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
 msgstr "அழுத்திப் பிடிக்கவும், பின்னர் மற்றொரு நெடுவரிசை அல்லது பக்கத்திற்கு இழுக்கவும்."
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
+msgstr ""
 
 #: src/features/share/web-page.tsx
 msgid "Preview web page"
@@ -8869,6 +8885,10 @@ msgstr "பக்கத்தில் {title} ஐக் காட்டு"
 msgid "Show all"
 msgstr "அனைத்தையும் காட்டு"
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr "காட்சி மூடப்பட்டது"
@@ -9100,6 +9120,7 @@ msgid "Size"
 msgstr "அளவு"
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr "திறன்"
 

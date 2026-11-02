@@ -5412,6 +5412,11 @@ msgstr "ทำให้แบบฟอร์มแบนราบเพื่อ
 msgid "Fluency"
 msgstr "ความคล่องแคล่ว"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/career/workspace/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "โฟกัส ประสบการณ์ เหตุผลที่สนใจตำแหน่งนี้"
@@ -6579,6 +6584,10 @@ msgstr "คีย์ที่เก็บไว้มีการเข้าร
 msgid "Keys act as you and can read and edit your documents."
 msgstr "คีย์จะทำหน้าที่เป็นคุณและสามารถอ่านและแก้ไขเอกสารของคุณได้"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Keyword layout"
 msgstr "เค้าโครงคำหลัก"
@@ -6632,6 +6641,7 @@ msgstr "แนวนอน"
 #: src/features/command-palette/pages/navigation.tsx
 #: src/features/command-palette/pages/preferences/language.tsx
 #: src/features/resume/editor/design/style-groups.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/entries.tsx
 #: src/features/settings/preferences.tsx
 #: src/features/user/dropdown-menu.tsx
@@ -9121,6 +9131,10 @@ msgstr "กด <0>{RETURN_KEY}</0> เพื่อเพิ่มหรือบ
 msgid "Press <0>Enter</0> to open"
 msgstr "กด<0>Enter</0>เพื่อเปิด"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Preview"
+msgstr ""
+
 #: src/features/templates/gallery.tsx
 msgid "Preview {name} sample PDF"
 msgstr "ดูตัวอย่าง {name} PDF"
@@ -11025,6 +11039,10 @@ msgstr "แสดงอีกครั้ง"
 msgid "Show all types"
 msgstr "แสดงทุกประเภท"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/routes/dashboard/applications/index.tsx
 msgid "Show closed"
 msgstr "ปิดการแสดง"
@@ -11243,6 +11261,7 @@ msgid "Size"
 msgstr "ขนาด"
 
 #: src/features/career/knowledge/facts.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 msgid "Skill"
 msgstr "ทักษะ"
 

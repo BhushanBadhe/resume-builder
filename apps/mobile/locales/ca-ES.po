@@ -4261,6 +4261,11 @@ msgstr "Aplana el formulari perquè el text formi part de la pàgina."
 msgid "Fluency"
 msgstr "Fluïdesa"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "Focus, experiència, per què aquest lloc"
@@ -5089,6 +5094,10 @@ msgstr "Clau emmagatzemada encriptada"
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr "Les claus actuen com tu i poden accedir als teus documents. Es creen claus noves a la configuració del compte del navegador."
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr "Disposició de les paraules clau"
@@ -5144,6 +5153,7 @@ msgstr "Les etapes organitzen el tauler. La seva categoria manté la coherència
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr "Idioma"
@@ -6510,6 +6520,7 @@ msgid "Odia"
 msgstr "Odia"
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr "Apagat"
 
@@ -6568,6 +6579,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr "Fora de línia. Les modificacions es desen en aquest dispositiu i se sincronitzen quan us torneu a connectar."
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr "Activat"
 
@@ -7259,6 +7271,10 @@ msgstr "Manteniu premut per previsualitzar-lo a la pàgina."
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
 msgstr "Manteniu premut i, a continuació, arrossegueu a una altra columna o pàgina."
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
+msgstr ""
 
 #: src/features/share/web-page.tsx
 msgid "Preview web page"
@@ -8869,6 +8885,10 @@ msgstr "Mostra {title} a la pàgina"
 msgid "Show all"
 msgstr "Mostra-ho tot"
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr "Espectacle tancat"
@@ -9100,6 +9120,7 @@ msgid "Size"
 msgstr "Mida"
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr "Habilitat"
 

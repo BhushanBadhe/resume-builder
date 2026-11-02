@@ -5412,6 +5412,11 @@ msgstr "Metnin sayfanın bir parçası olması için formu düzleştirin."
 msgid "Fluency"
 msgstr "Akıcılık"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/career/workspace/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "Odak, deneyim, neden bu pozisyon"
@@ -6579,6 +6584,10 @@ msgstr "Anahtar şifrelenmiş olarak saklandı"
 msgid "Keys act as you and can read and edit your documents."
 msgstr "Anahtarlar sizin gibi davranır ve belgelerinizi okuyabilir ve düzenleyebilir."
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Keyword layout"
 msgstr "Anahtar kelime düzeni"
@@ -6632,6 +6641,7 @@ msgstr "Yatay"
 #: src/features/command-palette/pages/navigation.tsx
 #: src/features/command-palette/pages/preferences/language.tsx
 #: src/features/resume/editor/design/style-groups.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/entries.tsx
 #: src/features/settings/preferences.tsx
 #: src/features/user/dropdown-menu.tsx
@@ -9121,6 +9131,10 @@ msgstr "Geçerli anahtar kelimeyi eklemek veya kaydetmek için <0>{RETURN_KEY}</
 msgid "Press <0>Enter</0> to open"
 msgstr "Açmak için <0>Enter</0> tuşuna basın"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Preview"
+msgstr ""
+
 #: src/features/templates/gallery.tsx
 msgid "Preview {name} sample PDF"
 msgstr "{name} örnek PDF'sini önizleyin"
@@ -11025,6 +11039,10 @@ msgstr "Tekrar göster"
 msgid "Show all types"
 msgstr "Tüm türleri göster"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/routes/dashboard/applications/index.tsx
 msgid "Show closed"
 msgstr "Kapalı olanı göster"
@@ -11243,6 +11261,7 @@ msgid "Size"
 msgstr "Boyut"
 
 #: src/features/career/knowledge/facts.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 msgid "Skill"
 msgstr "Yetenek"
 

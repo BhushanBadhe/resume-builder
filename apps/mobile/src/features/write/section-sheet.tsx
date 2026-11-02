@@ -21,6 +21,9 @@ type SectionSheetProps = {
 	onMove?: ((direction: "up" | "down") => void) | undefined;
 };
 
+// A stable fallback: a fresh object from a selector re-renders forever.
+const NO_COLORS = { primary: "", background: "#ffffff", text: "#000000" };
+
 type Page = "menu" | "columns" | "keywords" | "badge" | "move";
 
 /** Every web section action: add, sort, move, rename, icon, show, heading, columns, layout, clear or delete. */
@@ -39,7 +42,7 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 	const [renaming, setRenaming] = useState(false);
 	const [iconOpen, setIconOpen] = useState(false);
 	const [badgeColorOpen, setBadgeColorOpen] = useState(false);
-	const primaryColor = useWriteData((data) => data.metadata.design.colors.primary, "");
+	const resumeColors = useWriteData((data) => data.metadata.design.colors, NO_COLORS);
 	if (!settings) return null;
 
 	const change = (mutate: (target: NonNullable<typeof settings>) => void) =>
@@ -53,22 +56,29 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 	};
 	const isSkills = section.type === "skills";
 	const canSort = section.type === "experience" || section.type === "education";
-	// Only the built-in Skills and Languages sections store a layout, so only they offer badges.
-	const hasBadges = section.kind === "builtin" && (isSkills || section.type === "languages");
+	// Skills and Languages sections, built-in or custom, can print as badges.
+	const hasBadges = isSkills || section.type === "languages";
 	const skills = settings as { layout?: string; keywordLayout?: string };
 	const columns =
 		(isSkills && skills.layout === "inline") || (hasBadges && skills.layout === "badges")
 			? skills.layout
 			: String(settings.columns);
-	// Badge design settings, shown while a built-in Skills or Languages section uses the Badges layout.
-	const badgeDesign =
-		hasBadges && skills.layout === "badges"
-			? { ...defaultBadgeDesign, ...(settings as { badge?: Partial<BadgeDesign> }).badge }
-			: undefined;
+	// Badge design settings for Skills and Languages sections, available whatever the current layout.
+	const badgeDesign = hasBadges
+		? { ...defaultBadgeDesign, ...(settings as { badge?: Partial<BadgeDesign> }).badge }
+		: undefined;
+	const setBadgesLayout = (enabled: boolean) =>
+		change((target) => {
+			(target as { layout?: string }).layout = enabled ? "badges" : "default";
+			if (enabled) target.columns = 1;
+		});
+	// Choosing a design is a request to see it, so it also turns the Badges layout on.
 	const changeBadge = (patch: Partial<BadgeDesign>) =>
 		change((target) => {
-			const withBadge = target as { badge?: BadgeDesign };
+			const withBadge = target as { badge?: BadgeDesign; layout?: string };
 			withBadge.badge = { ...defaultBadgeDesign, ...withBadge.badge, ...patch };
+			withBadge.layout = "badges";
+			target.columns = 1;
 		});
 	const switchRow = (
 		label: string,
@@ -126,7 +136,7 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 								columns === String(count),
 								() =>
 									change((target) => {
-										if (isSkills || hasBadges) (target as { layout?: string }).layout = "default";
+										if (hasBadges) (target as { layout?: string }).layout = "default";
 										target.columns = count;
 									}),
 							),
@@ -168,9 +178,11 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 				) : page === "badge" && badgeDesign ? (
 					<>
 						{back}
+						{switchRow(t`Show as badges`, "tag", skills.layout === "badges", setBadgesLayout)}
 						<BadgeDesignPage
 							design={badgeDesign}
-							primaryColor={primaryColor}
+							sectionType={isSkills ? "skills" : "languages"}
+							resumeColors={resumeColors}
 							onChange={changeBadge}
 							onPickColor={() => setBadgeColorOpen(true)}
 						/>
@@ -291,7 +303,13 @@ export function SectionSheet({ resumeId, section, open, onClose, onMove }: Secti
 							onPress={() => setPage("columns")}
 						/>
 						{badgeDesign ? (
-							<ListRow title={t`Badge design`} leading="palette" chevron onPress={() => setPage("badge")} />
+							<ListRow
+								title={t`Badge design`}
+								subtitle={skills.layout === "badges" ? t`On` : t`Off`}
+								leading="palette"
+								chevron
+								onPress={() => setPage("badge")}
+							/>
 						) : null}
 						{isSkills ? (
 							<ListRow

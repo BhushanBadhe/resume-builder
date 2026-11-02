@@ -4261,6 +4261,11 @@ msgstr "Flachen Sie das Formular ab, sodass der Text Teil der Seite wird."
 msgid "Fluency"
 msgstr "Kompetenz"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "Schwerpunkt, Erfahrung, warum diese Stelle"
@@ -5089,6 +5094,10 @@ msgstr "Schlüssel verschlüsselt gespeichert"
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr "Schlüssel handeln in Ihrem Namen und können auf Ihre Dokumente zugreifen. Neue Schlüssel erstellen Sie in den Kontoeinstellungen im Browser."
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr "Layout der Schlüsselwörter"
@@ -5144,6 +5153,7 @@ msgstr "Phasen ordnen dein Board. Ihre Kategorie sorgt dafür, dass Einreichung,
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr "Sprache"
@@ -6510,6 +6520,7 @@ msgid "Odia"
 msgstr "Odia"
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr "Aus"
 
@@ -6568,6 +6579,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr "Offline. Änderungen werden auf diesem Gerät gespeichert und synchronisiert, wenn Sie die Verbindung wiederherstellen."
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr "Aktiviert"
 
@@ -7259,6 +7271,10 @@ msgstr "Halten Sie gedrückt, um eine Vorschau auf der Seite anzuzeigen."
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
 msgstr "Halten Sie gedrückt und ziehen Sie dann in eine andere Spalte oder Seite."
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
+msgstr ""
 
 #: src/features/share/web-page.tsx
 msgid "Preview web page"
@@ -8869,6 +8885,10 @@ msgstr "Zeigen Sie {title} auf der Seite an"
 msgid "Show all"
 msgstr "Alle anzeigen"
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr "Show geschlossen"
@@ -9100,6 +9120,7 @@ msgid "Size"
 msgstr "Größe"
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr "Fähigkeit"
 

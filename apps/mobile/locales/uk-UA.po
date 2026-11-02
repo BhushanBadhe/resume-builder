@@ -4261,6 +4261,11 @@ msgstr "Сплющіть форму, щоб текст став частиною
 msgid "Fluency"
 msgstr "Володіння мовою"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "Фокус, досвід, чому ця посада"
@@ -5089,6 +5094,10 @@ msgstr "Ключ зберігається в зашифрованому вигл
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr "Ключі діють як ви і можуть отримати доступ до ваших документів. Нові ключі створюються в налаштуваннях облікового запису браузера."
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr "Макет ключових слів"
@@ -5144,6 +5153,7 @@ msgstr "Етапи впорядковують вашу дошку. Їхня ка
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr "Мова"
@@ -6510,6 +6520,7 @@ msgid "Odia"
 msgstr "Одія"
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr "Вимкнено"
 
@@ -6568,6 +6579,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr "Офлайн. Зміни зберігаються на цьому пристрої та синхронізуються під час повторного підключення."
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr "Увімкнено"
 
@@ -7259,6 +7271,10 @@ msgstr "Натисніть і утримуйте, щоб переглянути 
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
 msgstr "Натисніть і утримуйте, а потім перетягніть до іншого стовпця або сторінки."
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
+msgstr ""
 
 #: src/features/share/web-page.tsx
 msgid "Preview web page"
@@ -8869,6 +8885,10 @@ msgstr "Показати {title} на сторінці"
 msgid "Show all"
 msgstr "Показати все"
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr "Шоу закрито"
@@ -9100,6 +9120,7 @@ msgid "Size"
 msgstr "Розмір"
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr "Навичка"
 

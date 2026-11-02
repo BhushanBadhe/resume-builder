@@ -5412,6 +5412,11 @@ msgstr "Platta till formuläret så att texten blir en del av sidan."
 msgid "Fluency"
 msgstr "Språknivå"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/career/workspace/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "Fokus, erfarenhet, varför den här rollen"
@@ -6579,6 +6584,10 @@ msgstr "Nyckel lagrad krypterad"
 msgid "Keys act as you and can read and edit your documents."
 msgstr "Nycklar fungerar som du och kan läsa och redigera dina dokument."
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Keyword layout"
 msgstr "Nyckelordslayout"
@@ -6632,6 +6641,7 @@ msgstr "Liggande"
 #: src/features/command-palette/pages/navigation.tsx
 #: src/features/command-palette/pages/preferences/language.tsx
 #: src/features/resume/editor/design/style-groups.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/entries.tsx
 #: src/features/settings/preferences.tsx
 #: src/features/user/dropdown-menu.tsx
@@ -9121,6 +9131,10 @@ msgstr "Tryck på <0>{RETURN_KEY}</0> för att lägga till eller spara det aktue
 msgid "Press <0>Enter</0> to open"
 msgstr "Tryck på <0>Enter</0> för att öppna"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Preview"
+msgstr ""
+
 #: src/features/templates/gallery.tsx
 msgid "Preview {name} sample PDF"
 msgstr "Förhandsgranska {name} exempel-PDF"
@@ -11025,6 +11039,10 @@ msgstr "Visa igen"
 msgid "Show all types"
 msgstr "Visa alla typer"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/routes/dashboard/applications/index.tsx
 msgid "Show closed"
 msgstr "Visa stängd"
@@ -11243,6 +11261,7 @@ msgid "Size"
 msgstr "Storlek"
 
 #: src/features/career/knowledge/facts.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 msgid "Skill"
 msgstr "Färdighet"
 

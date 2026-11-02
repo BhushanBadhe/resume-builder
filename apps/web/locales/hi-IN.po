@@ -5412,6 +5412,11 @@ msgstr "फ़ॉर्म को फ़्लैट करें ताकि �
 msgid "Fluency"
 msgstr "धाराप्रवाहता"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/career/workspace/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "फ़ोकस, अनुभव, यह पद क्यों"
@@ -6579,6 +6584,10 @@ msgstr "कुंजी एन्क्रिप्टेड संग्रह�
 msgid "Keys act as you and can read and edit your documents."
 msgstr "कुंजियाँ आपकी तरह कार्य करती हैं और आपके दस्तावेज़ों को पढ़ और संपादित कर सकती हैं।"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Keyword layout"
 msgstr "कीवर्ड लेआउट"
@@ -6632,6 +6641,7 @@ msgstr "लैंडस्केप"
 #: src/features/command-palette/pages/navigation.tsx
 #: src/features/command-palette/pages/preferences/language.tsx
 #: src/features/resume/editor/design/style-groups.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/entries.tsx
 #: src/features/settings/preferences.tsx
 #: src/features/user/dropdown-menu.tsx
@@ -9121,6 +9131,10 @@ msgstr "मौजूदा कीवर्ड जोड़ने या सह�
 msgid "Press <0>Enter</0> to open"
 msgstr "खोलने के लिए <0>Enter</0> दबाएँ"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Preview"
+msgstr ""
+
 #: src/features/templates/gallery.tsx
 msgid "Preview {name} sample PDF"
 msgstr "पूर्वावलोकन {name} नमूना PDF"
@@ -11025,6 +11039,10 @@ msgstr "फिर से दिखाओ"
 msgid "Show all types"
 msgstr "सभी प्रकार दिखाएँ"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/routes/dashboard/applications/index.tsx
 msgid "Show closed"
 msgstr "दिखाएँ बंद"
@@ -11243,6 +11261,7 @@ msgid "Size"
 msgstr "आकार"
 
 #: src/features/career/knowledge/facts.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 msgid "Skill"
 msgstr "कौशल"
 

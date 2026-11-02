@@ -137,3 +137,55 @@ describe("badge design", () => {
 		expect(await renderText(languages)).toEqual(expect.arrayContaining(["Marathi", "Native", "English"]));
 	});
 });
+
+describe("badges in custom sections", () => {
+	it("keeps layout and badge design on custom Skills and Languages sections only", () => {
+		const data = structuredClone(defaultResumeData);
+		const base = {
+			title: "More",
+			icon: "",
+			columns: 1,
+			hidden: false,
+			keepTogether: false,
+			startOnNewPage: false,
+			items: [],
+		};
+		Object.assign(data, {
+			customSections: [
+				{ ...base, id: "c-skills", type: "skills", layout: "badges", badge: { style: "outline" } },
+				{ ...base, id: "c-languages", type: "languages", layout: "badges" },
+				{ ...base, id: "c-awards", type: "awards", layout: "badges", badge: { style: "soft" } },
+			],
+		});
+		const [skills, languages, awards] = resumeDataSchema.parse(data).customSections;
+		expect(skills).toMatchObject({ layout: "badges", badge: { style: "outline", shape: "pill" } });
+		expect(languages).toMatchObject({ layout: "badges", badge: { style: "filled" } });
+		expect(awards).not.toHaveProperty("badge", expect.anything());
+		expect(awards).not.toHaveProperty("layout", expect.anything());
+	});
+
+	it("prints a custom Skills section as badges", async () => {
+		const data = badgesFixture();
+		const { items } = data.sections.skills;
+		data.customSections = [
+			{
+				id: "c-skills",
+				type: "skills",
+				title: "Tools",
+				icon: "",
+				columns: 1,
+				hidden: false,
+				keepTogether: false,
+				startOnNewPage: false,
+				keywordLayout: "inline",
+				layout: "badges",
+				badge: { style: "soft", shape: "square", size: "small", color: "" },
+				items,
+			},
+		];
+		data.metadata.layout.pages = [{ fullWidth: true, main: ["c-skills"], sidebar: [] }];
+		const text = await renderText(data);
+		expect(text).toEqual(expect.arrayContaining(["Tools", "MS Excel", "Pivot tables", "Charts"]));
+		expect(text.join(" ")).not.toContain("Pivot tables, Charts");
+	});
+});

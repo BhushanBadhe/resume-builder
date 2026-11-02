@@ -5412,6 +5412,11 @@ msgstr "Làm phẳng biểu mẫu để văn bản trở thành một phần c�
 msgid "Fluency"
 msgstr "Trình độ thành thạo"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/career/workspace/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "Trọng tâm, kinh nghiệm, lý do chọn vị trí này"
@@ -6579,6 +6584,10 @@ msgstr "Khóa được lưu trữ được mã hóa"
 msgid "Keys act as you and can read and edit your documents."
 msgstr "Các phím hoạt động như bạn và có thể đọc và chỉnh sửa tài liệu của bạn."
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Keyword layout"
 msgstr "Bố cục từ khóa"
@@ -6632,6 +6641,7 @@ msgstr "Ngang"
 #: src/features/command-palette/pages/navigation.tsx
 #: src/features/command-palette/pages/preferences/language.tsx
 #: src/features/resume/editor/design/style-groups.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/entries.tsx
 #: src/features/settings/preferences.tsx
 #: src/features/user/dropdown-menu.tsx
@@ -9121,6 +9131,10 @@ msgstr "Nhấn <0>{RETURN_KEY}</0> để thêm hoặc lưu từ khóa hiện t�
 msgid "Press <0>Enter</0> to open"
 msgstr "Nhấn <0>phím Enter</0> để mở"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Preview"
+msgstr ""
+
 #: src/features/templates/gallery.tsx
 msgid "Preview {name} sample PDF"
 msgstr "Xem trước bản PDF mẫu của {name}"
@@ -11025,6 +11039,10 @@ msgstr "Hiển thị lại"
 msgid "Show all types"
 msgstr "Hiện mọi loại"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/routes/dashboard/applications/index.tsx
 msgid "Show closed"
 msgstr "Hiển thị đã đóng"
@@ -11243,6 +11261,7 @@ msgid "Size"
 msgstr "Kích thước"
 
 #: src/features/career/knowledge/facts.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 msgid "Skill"
 msgstr "Kỹ năng"
 

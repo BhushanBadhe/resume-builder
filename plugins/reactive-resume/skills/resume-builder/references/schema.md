@@ -470,6 +470,8 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type summary, schema summaryItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type summary, schema summaryItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `any` | no (type summary, schema summaryItemSchema at customSections[]) | — | — |
+| `customSections[].layout` | `any` | no (type summary, schema summaryItemSchema at customSections[]) | — | — |
+| `customSections[].badge` | `any` | no (type summary, schema summaryItemSchema at customSections[]) | — | — |
 | `customSections[].id` | `string` | yes (type summary, schema summaryItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type summary, schema summaryItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type summary, schema summaryItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |
@@ -486,6 +488,8 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type profiles, schema profileItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type profiles, schema profileItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `any` | no (type profiles, schema profileItemSchema at customSections[]) | — | — |
+| `customSections[].layout` | `any` | no (type profiles, schema profileItemSchema at customSections[]) | — | — |
+| `customSections[].badge` | `any` | no (type profiles, schema profileItemSchema at customSections[]) | — | — |
 | `customSections[].id` | `string` | yes (type profiles, schema profileItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type profiles, schema profileItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type profiles, schema profileItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |
@@ -509,6 +513,8 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type experience, schema experienceItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type experience, schema experienceItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `any` | no (type experience, schema experienceItemSchema at customSections[]) | — | — |
+| `customSections[].layout` | `any` | no (type experience, schema experienceItemSchema at customSections[]) | — | — |
+| `customSections[].badge` | `any` | no (type experience, schema experienceItemSchema at customSections[]) | — | — |
 | `customSections[].id` | `string` | yes (type experience, schema experienceItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type experience, schema experienceItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type experience, schema experienceItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |
@@ -557,6 +563,8 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type education, schema educationItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type education, schema educationItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `any` | no (type education, schema educationItemSchema at customSections[]) | — | — |
+| `customSections[].layout` | `any` | no (type education, schema educationItemSchema at customSections[]) | — | — |
+| `customSections[].badge` | `any` | no (type education, schema educationItemSchema at customSections[]) | — | — |
 | `customSections[].id` | `string` | yes (type education, schema educationItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type education, schema educationItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type education, schema educationItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |
@@ -592,6 +600,8 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type projects, schema projectItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type projects, schema projectItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `any` | no (type projects, schema projectItemSchema at customSections[]) | — | — |
+| `customSections[].layout` | `any` | no (type projects, schema projectItemSchema at customSections[]) | — | — |
+| `customSections[].badge` | `any` | no (type projects, schema projectItemSchema at customSections[]) | — | — |
 | `customSections[].id` | `string` | yes (type projects, schema projectItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type projects, schema projectItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type projects, schema projectItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |
@@ -623,6 +633,12 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type skills, schema skillItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type skills, schema skillItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `string` | no (type skills, schema skillItemSchema at customSections[]) | enum: ["inline","list"]; default: "inline" | How skill keywords are displayed: inline separated by commas, or one bullet per keyword. |
+| `customSections[].layout` | `string` | no (type skills, schema skillItemSchema at customSections[]) | enum: ["default","inline","badges"]; default: "default" | The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge. |
+| `customSections[].badge` | `object` | no (type skills, schema skillItemSchema at customSections[]) | default: {"style":"filled","shape":"pill","size":"medium","color":""} | How badges look when the section uses the 'badges' layout. |
+| `customSections[].badge.style` | `string` | no (type skills, schema skillItemSchema at customSections[]) | enum: ["filled","soft","outline"]; default: "filled" | 'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border. |
+| `customSections[].badge.shape` | `string` | no (type skills, schema skillItemSchema at customSections[]) | enum: ["pill","rounded","square"]; default: "pill" | 'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none. |
+| `customSections[].badge.size` | `string` | no (type skills, schema skillItemSchema at customSections[]) | enum: ["small","medium","large"]; default: "medium" | The text size and padding of each badge. |
+| `customSections[].badge.color` | `string` | no (type skills, schema skillItemSchema at customSections[]) | default: "" | Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color. |
 | `customSections[].id` | `string` | yes (type skills, schema skillItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type skills, schema skillItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type skills, schema skillItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |
@@ -645,6 +661,12 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type languages, schema languageItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type languages, schema languageItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `any` | no (type languages, schema languageItemSchema at customSections[]) | — | — |
+| `customSections[].layout` | `string` | no (type languages, schema languageItemSchema at customSections[]) | enum: ["default","inline","badges"]; default: "default" | The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge. |
+| `customSections[].badge` | `object` | no (type languages, schema languageItemSchema at customSections[]) | default: {"style":"filled","shape":"pill","size":"medium","color":""} | How badges look when the section uses the 'badges' layout. |
+| `customSections[].badge.style` | `string` | no (type languages, schema languageItemSchema at customSections[]) | enum: ["filled","soft","outline"]; default: "filled" | 'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border. |
+| `customSections[].badge.shape` | `string` | no (type languages, schema languageItemSchema at customSections[]) | enum: ["pill","rounded","square"]; default: "pill" | 'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none. |
+| `customSections[].badge.size` | `string` | no (type languages, schema languageItemSchema at customSections[]) | enum: ["small","medium","large"]; default: "medium" | The text size and padding of each badge. |
+| `customSections[].badge.color` | `string` | no (type languages, schema languageItemSchema at customSections[]) | default: "" | Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color. |
 | `customSections[].id` | `string` | yes (type languages, schema languageItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type languages, schema languageItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type languages, schema languageItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |
@@ -663,6 +685,8 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type interests, schema interestItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type interests, schema interestItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `any` | no (type interests, schema interestItemSchema at customSections[]) | — | — |
+| `customSections[].layout` | `any` | no (type interests, schema interestItemSchema at customSections[]) | — | — |
+| `customSections[].badge` | `any` | no (type interests, schema interestItemSchema at customSections[]) | — | — |
 | `customSections[].id` | `string` | yes (type interests, schema interestItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type interests, schema interestItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type interests, schema interestItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |
@@ -683,6 +707,8 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type awards, schema awardItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type awards, schema awardItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `any` | no (type awards, schema awardItemSchema at customSections[]) | — | — |
+| `customSections[].layout` | `any` | no (type awards, schema awardItemSchema at customSections[]) | — | — |
+| `customSections[].badge` | `any` | no (type awards, schema awardItemSchema at customSections[]) | — | — |
 | `customSections[].id` | `string` | yes (type awards, schema awardItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type awards, schema awardItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type awards, schema awardItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |
@@ -715,6 +741,8 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type certifications, schema certificationItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type certifications, schema certificationItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `any` | no (type certifications, schema certificationItemSchema at customSections[]) | — | — |
+| `customSections[].layout` | `any` | no (type certifications, schema certificationItemSchema at customSections[]) | — | — |
+| `customSections[].badge` | `any` | no (type certifications, schema certificationItemSchema at customSections[]) | — | — |
 | `customSections[].id` | `string` | yes (type certifications, schema certificationItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type certifications, schema certificationItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type certifications, schema certificationItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |
@@ -747,6 +775,8 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type publications, schema publicationItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type publications, schema publicationItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `any` | no (type publications, schema publicationItemSchema at customSections[]) | — | — |
+| `customSections[].layout` | `any` | no (type publications, schema publicationItemSchema at customSections[]) | — | — |
+| `customSections[].badge` | `any` | no (type publications, schema publicationItemSchema at customSections[]) | — | — |
 | `customSections[].id` | `string` | yes (type publications, schema publicationItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type publications, schema publicationItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type publications, schema publicationItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |
@@ -779,6 +809,8 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type volunteer, schema volunteerItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type volunteer, schema volunteerItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `any` | no (type volunteer, schema volunteerItemSchema at customSections[]) | — | — |
+| `customSections[].layout` | `any` | no (type volunteer, schema volunteerItemSchema at customSections[]) | — | — |
+| `customSections[].badge` | `any` | no (type volunteer, schema volunteerItemSchema at customSections[]) | — | — |
 | `customSections[].id` | `string` | yes (type volunteer, schema volunteerItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type volunteer, schema volunteerItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type volunteer, schema volunteerItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |
@@ -811,6 +843,8 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type references, schema referenceItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type references, schema referenceItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `any` | no (type references, schema referenceItemSchema at customSections[]) | — | — |
+| `customSections[].layout` | `any` | no (type references, schema referenceItemSchema at customSections[]) | — | — |
+| `customSections[].badge` | `any` | no (type references, schema referenceItemSchema at customSections[]) | — | — |
 | `customSections[].id` | `string` | yes (type references, schema referenceItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type references, schema referenceItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type references, schema referenceItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |
@@ -834,6 +868,8 @@ Choose one coherent shape for each union value. Required fields are local to tha
 | `customSections[].keepTogether` | `boolean` | yes (type cover-letter, schema coverLetterItemSchema at customSections[]) | default: false | If true, the section is kept on a single page instead of splitting across a page break. |
 | `customSections[].startOnNewPage` | `boolean` | yes (type cover-letter, schema coverLetterItemSchema at customSections[]) | default: false | If true, the section always begins on a new page. |
 | `customSections[].keywordLayout` | `any` | no (type cover-letter, schema coverLetterItemSchema at customSections[]) | — | — |
+| `customSections[].layout` | `any` | no (type cover-letter, schema coverLetterItemSchema at customSections[]) | — | — |
+| `customSections[].badge` | `any` | no (type cover-letter, schema coverLetterItemSchema at customSections[]) | — | — |
 | `customSections[].id` | `string` | yes (type cover-letter, schema coverLetterItemSchema at customSections[]) | — | The unique identifier for the custom section. Usually generated as a UUID. |
 | `customSections[].type` | `string` | yes (type cover-letter, schema coverLetterItemSchema at customSections[]) | — | The type of items this custom section contains. Determines which item schema and form fields to use. |
 | `customSections[].items` | `array` | yes (type cover-letter, schema coverLetterItemSchema at customSections[]) | — | The items to display in the custom section. Items follow the schema of the section type. |

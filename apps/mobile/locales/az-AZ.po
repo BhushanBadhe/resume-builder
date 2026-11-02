@@ -4261,6 +4261,11 @@ msgstr "Formu düzləşdirin ki, mətn səhifənin bir hissəsinə çevrilsin."
 msgid "Fluency"
 msgstr "Səlislik"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "Fokus, təcrübə, niyə bu vəzifə"
@@ -5089,6 +5094,10 @@ msgstr "Açar şifrələnmiş şəkildə saxlanılır"
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr "Açarlar sizin kimi fəaliyyət göstərir və sənədlərinizə daxil ola bilər. Brauzer hesabınızın parametrlərində yeni açarlar yaradılır."
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr "Açar söz düzümü"
@@ -5144,6 +5153,7 @@ msgstr "Mərhələlər lövhənizi təşkil edir. Onların kateqoriyası müraci
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr "Dil"
@@ -6510,6 +6520,7 @@ msgid "Odia"
 msgstr "Odiya"
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr "Söndür"
 
@@ -6568,6 +6579,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr "Oflayn. Redaktələr bu cihazda yadda saxlanılır və siz yenidən qoşulduqda sinxronizasiya edilir."
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr "Aktivdir"
 
@@ -7259,6 +7271,10 @@ msgstr "Səhifədə ona baxmaq üçün basıb saxlayın."
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
 msgstr "Basıb saxlayın, sonra başqa sütuna və ya səhifəyə dartın."
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
+msgstr ""
 
 #: src/features/share/web-page.tsx
 msgid "Preview web page"
@@ -8869,6 +8885,10 @@ msgstr "Səhifədə {title} göstərin"
 msgid "Show all"
 msgstr "Hamısını göstər"
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr "Şou bağlandı"
@@ -9100,6 +9120,7 @@ msgid "Size"
 msgstr "Ölçü"
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr "Bacarıq"
 

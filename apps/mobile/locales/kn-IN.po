@@ -4261,6 +4261,11 @@ msgstr "ಪಠ್ಯವು ಪುಟದ ಭಾಗವಾಗುವಂತೆ ಫಾ
 msgid "Fluency"
 msgstr "ಪಾರಂಗತತೆ"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "ಗಮನ, ಅನುಭವ, ಈ ಹುದ್ದೆ ಏಕೆ"
@@ -5089,6 +5094,10 @@ msgstr "ಕೀಲಿಯನ್ನು ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾ�
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr "ಕೀಗಳು ನಿಮ್ಮಂತೆ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತವೆ ಮತ್ತು ನಿಮ್ಮ ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳನ್ನು ಪ್ರವೇಶಿಸಬಹುದು. ನಿಮ್ಮ ಬ್ರೌಸರ್ ಖಾತೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಹೊಸ ಕೀಗಳನ್ನು ರಚಿಸಲಾಗಿದೆ."
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr "ಕೀವರ್ಡ್ ಲೇಔಟ್"
@@ -5144,6 +5153,7 @@ msgstr "ಹಂತಗಳು ನಿಮ್ಮ ಬೋರ್ಡ್ ಅನ್ನು �
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr "ಭಾಷೆ"
@@ -6510,6 +6520,7 @@ msgid "Odia"
 msgstr "ಒಡಿಯಾ"
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr "ಆಫ್"
 
@@ -6568,6 +6579,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr "ಆಫ್‌ಲೈನ್. ಈ ಸಾಧನದಲ್ಲಿ ಸಂಪಾದನೆಗಳನ್ನು ಉಳಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ನೀವು ಮರುಸಂಪರ್ಕಿಸಿದಾಗ ಸಿಂಕ್ ಮಾಡಲಾಗುತ್ತದೆ."
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr "ಆನ್"
 
@@ -7259,6 +7271,10 @@ msgstr "ಪುಟದಲ್ಲಿ ಪೂರ್ವವೀಕ್ಷಣೆ ಮಾಡ�
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
 msgstr "ಒತ್ತಿ ಮತ್ತು ಹಿಡಿದುಕೊಳ್ಳಿ, ನಂತರ ಮತ್ತೊಂದು ಕಾಲಮ್ ಅಥವಾ ಪುಟಕ್ಕೆ ಎಳೆಯಿರಿ."
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
+msgstr ""
 
 #: src/features/share/web-page.tsx
 msgid "Preview web page"
@@ -8869,6 +8885,10 @@ msgstr "ಪುಟದಲ್ಲಿ {title} ತೋರಿಸಿ"
 msgid "Show all"
 msgstr "ಎಲ್ಲವನ್ನೂ ತೋರಿಸು"
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr "ಪ್ರದರ್ಶನ ಮುಚ್ಚಲಾಗಿದೆ"
@@ -9100,6 +9120,7 @@ msgid "Size"
 msgstr "ಗಾತ್ರ"
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr "ಕೌಶಲ್ಯ"
 

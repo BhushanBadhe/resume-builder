@@ -4261,6 +4261,11 @@ msgstr "Flat ut skjemaet slik at teksten blir en del av siden."
 msgid "Fluency"
 msgstr "Språkferdighet"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "Fokus, erfaring, hvorfor denne rollen"
@@ -5089,6 +5094,10 @@ msgstr "Nøkkel lagret kryptert"
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr "API-nøkler fungerer på dine vegne og kan få tilgang til dokumentene dine. Opprett nye nøkler i nettleserens kontoinnstillinger."
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr "Oppsett for nøkkelord"
@@ -5144,6 +5153,7 @@ msgstr "Trinnene organiserer tavlen din. Kategorien holder innsending, påminnel
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr "Språk"
@@ -6510,6 +6520,7 @@ msgid "Odia"
 msgstr "Odia"
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr "Av"
 
@@ -6568,6 +6579,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr "offline. Endringer lagres på denne enheten og synkroniseres når du kobler til på nytt."
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr "På"
 
@@ -7259,6 +7271,10 @@ msgstr "Trykk og hold for å forhåndsvise den på siden."
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
 msgstr "Trykk og hold, og dra deretter til en annen kolonne eller side."
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
+msgstr ""
 
 #: src/features/share/web-page.tsx
 msgid "Preview web page"
@@ -8869,6 +8885,10 @@ msgstr "Vis {title} på siden"
 msgid "Show all"
 msgstr "Vis alle"
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr "Show stengt"
@@ -9100,6 +9120,7 @@ msgid "Size"
 msgstr "Størrelse"
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr "Ferdighet"
 

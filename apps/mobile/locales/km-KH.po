@@ -4261,6 +4261,11 @@ msgstr "ធ្វើឱ្យទម្រង់រាបស្មើ ដើម�
 msgid "Fluency"
 msgstr "កម្រិត​ភាសា"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "ការផ្តោត បទពិសោធន៍ ហេតុអ្វីតួនាទីនេះ"
@@ -5089,6 +5094,10 @@ msgstr "កូនសោត្រូវបានរក្សាទុកដោយ
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr "សោដើរតួជាអ្នក ហើយអាចចូលប្រើឯកសាររបស់អ្នក។ សោថ្មីត្រូវបានបង្កើតនៅក្នុងការកំណត់គណនីកម្មវិធីរុករករបស់អ្នក។"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr "ប្លង់ពាក្យគន្លឹះ"
@@ -5144,6 +5153,7 @@ msgstr "ដំណាក់កាលរៀបចំក្តាររបស់អ
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr "ភាសា"
@@ -6510,6 +6520,7 @@ msgid "Odia"
 msgstr "Odia"
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr "បិទ"
 
@@ -6568,6 +6579,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr "គ្មានអ៊ីនធឺណិត។ ការកែសម្រួលត្រូវបានរក្សាទុកនៅលើឧបករណ៍នេះ ហើយធ្វើសមកាលកម្មនៅពេលអ្នកភ្ជាប់ឡើងវិញ។"
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr "បើក"
 
@@ -7259,6 +7271,10 @@ msgstr "ចុចឱ្យជាប់ ដើម្បីមើលវាជា�
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
 msgstr "ចុចឱ្យជាប់ បន្ទាប់មកអូសទៅជួរឈរ ឬទំព័រផ្សេងទៀត។"
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
+msgstr ""
 
 #: src/features/share/web-page.tsx
 msgid "Preview web page"
@@ -8869,6 +8885,10 @@ msgstr "បង្ហាញ {title} នៅលើទំព័រ"
 msgid "Show all"
 msgstr "បង្ហាញទាំងអស់។"
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr "ការបង្ហាញបិទ"
@@ -9100,6 +9120,7 @@ msgid "Size"
 msgstr "ទំហំ"
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr "ជំនាញ"
 

@@ -185,7 +185,7 @@ function SectionMenu({ section, title, onMove }: SectionMenuProps) {
 	const settings = useCurrentBuilderResumeSelector((resume) => getSectionObject(resume.data, section) ?? null);
 	const locale = useCurrentBuilderResumeSelector((resume) => resume.data.metadata.page.locale);
 	const [iconPickerOpen, setIconPickerOpen] = useState(false);
-	const primaryColor = useCurrentBuilderResumeSelector((resume) => resume.data.metadata.design.colors.primary);
+	const resumeColors = useCurrentBuilderResumeSelector((resume) => resume.data.metadata.design.colors);
 	const [badgeColorOpen, setBadgeColorOpen] = useState(false);
 	if (!settings) return null;
 
@@ -203,21 +203,28 @@ function SectionMenu({ section, title, onMove }: SectionMenuProps) {
 
 	const isSkills = section.type === "skills";
 	const canSort = section.type === "experience" || section.type === "education";
-	// Only the built-in Skills and Languages sections store a layout, so only they offer badges.
-	const hasBadges = section.kind === "builtin" && (isSkills || section.type === "languages");
-	const layout = isSkills || hasBadges ? (settings as { layout?: string }).layout : undefined;
+	// Skills and Languages sections, built-in or custom, can print as badges.
+	const hasBadges = isSkills || section.type === "languages";
+	const layout = hasBadges ? (settings as { layout?: string }).layout : undefined;
 	const columns =
 		(isSkills && layout === "inline") || (hasBadges && layout === "badges") ? layout : String(settings.columns);
 
-	// Badge design settings, shown while a built-in Skills or Languages section uses the Badges layout.
-	const badgeDesign =
-		hasBadges && layout === "badges"
-			? { ...defaultBadgeDesign, ...(settings as { badge?: Partial<BadgeDesign> }).badge }
-			: undefined;
+	// Badge design settings for Skills and Languages sections, available whatever the current layout.
+	const badgeDesign = hasBadges
+		? { ...defaultBadgeDesign, ...(settings as { badge?: Partial<BadgeDesign> }).badge }
+		: undefined;
+	const setBadgesLayout = (enabled: boolean) =>
+		edit((target) => {
+			(target as { layout?: string }).layout = enabled ? "badges" : "default";
+			if (enabled) target.columns = 1;
+		});
+	// Choosing a design is a request to see it, so it also turns the Badges layout on.
 	const editBadge = (patch: Partial<BadgeDesign>) =>
 		edit((target) => {
-			const withBadge = target as { badge?: BadgeDesign };
+			const withBadge = target as { badge?: BadgeDesign; layout?: string };
 			withBadge.badge = { ...defaultBadgeDesign, ...withBadge.badge, ...patch };
+			withBadge.layout = "badges";
+			target.columns = 1;
 		});
 
 	const sortByDate = () => {
@@ -345,7 +352,7 @@ function SectionMenu({ section, title, onMove }: SectionMenuProps) {
 									edit((target) => {
 										const withLayout = target as { layout?: string };
 										const isLayout = value === "inline" || value === "badges";
-										if (isSkills || hasBadges) withLayout.layout = isLayout ? value : "default";
+										if (hasBadges) withLayout.layout = isLayout ? value : "default";
 										target.columns = isLayout ? 1 : Number(value);
 									})
 								}
@@ -369,7 +376,15 @@ function SectionMenu({ section, title, onMove }: SectionMenuProps) {
 						</DropdownMenuSubContent>
 					</DropdownMenuSub>
 					{badgeDesign && (
-						<BadgeDesignMenu design={badgeDesign} onChange={editBadge} onPickColor={() => setBadgeColorOpen(true)} />
+						<BadgeDesignMenu
+							design={badgeDesign}
+							enabled={layout === "badges"}
+							onEnabledChange={setBadgesLayout}
+							sectionType={isSkills ? "skills" : "languages"}
+							resumeColors={resumeColors}
+							onChange={editBadge}
+							onPickColor={() => setBadgeColorOpen(true)}
+						/>
 					)}
 					{isSkills && (
 						<DropdownMenuSub>
@@ -427,7 +442,7 @@ function SectionMenu({ section, title, onMove }: SectionMenuProps) {
 			{/* The badge color picker opens from the ⋯ button the same way as the icon grid below. */}
 			{badgeDesign && (
 				<ColorPicker
-					value={badgeDesign.color || primaryColor}
+					value={badgeDesign.color || resumeColors.primary}
 					onChange={(color) => editBadge({ color })}
 					open={badgeColorOpen}
 					onOpenChange={setBadgeColorOpen}

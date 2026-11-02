@@ -4261,6 +4261,11 @@ msgstr "Sploščite obrazec, da besedilo postane del strani."
 msgid "Fluency"
 msgstr "Stopnja znanja"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "Fokus, izkušnje, zakaj ta vloga"
@@ -5089,6 +5094,10 @@ msgstr "Ključ shranjen šifriran"
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr "Ključi delujejo kot vi in lahko dostopajo do vaših dokumentov. Novi ključi se ustvarijo v nastavitvah računa vašega brskalnika."
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr "Postavitev ključnih besed"
@@ -5144,6 +5153,7 @@ msgstr "Stopnje urejajo vašo tablo. Njihova kategorija ohranja usklajene oddaje
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr "Jezik"
@@ -6510,6 +6520,7 @@ msgid "Odia"
 msgstr "odijščina"
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr "Izključeno"
 
@@ -6568,6 +6579,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr "Brez povezave. Urejanja so shranjena v tej napravi in se sinhronizirajo, ko znova vzpostavite povezavo."
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr "Vklopljeno"
 
@@ -7259,6 +7271,10 @@ msgstr "Pritisnite in držite za predogled na strani."
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
 msgstr "Pritisnite in držite, nato povlecite v drug stolpec ali stran."
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
+msgstr ""
 
 #: src/features/share/web-page.tsx
 msgid "Preview web page"
@@ -8869,6 +8885,10 @@ msgstr "Pokaži {title} na strani"
 msgid "Show all"
 msgstr "Prikaži vse"
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr "Oddaja zaprta"
@@ -9100,6 +9120,7 @@ msgid "Size"
 msgstr "Velikost"
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr "Spretnost"
 

@@ -4275,6 +4275,11 @@ msgstr "ଫର୍ମକୁ ଫ୍ଲାଟ୍ କରନ୍ତୁ ଯାହା �
 msgid "Fluency"
 msgstr "ଦକ୍ଷତା"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "ଧ୍ୟାନ, ଅନୁଭବ, କାହିଁକି ଏହି ଭୂମିକା"
@@ -5106,6 +5111,10 @@ msgstr "କି ଗଚ୍ଛିତ ଏନକ୍ରିପ୍ଟ ହୋଇଛି |"
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr "ଚାବିଗୁଡ଼ିକ ତୁମ ପରି କାର୍ଯ୍ୟ କରେ ଏବଂ ଆପଣଙ୍କ ଡକ୍ୟୁମେଣ୍ଟକୁ ପ୍ରବେଶ କରିପାରିବ। ଆପଣଙ୍କର ବ୍ରାଉଜର୍ ଆକାଉଣ୍ଟ୍ ସେଟିଂସମୂହରେ ନୂତନ କିଗୁଡ଼ିକ ସୃଷ୍ଟି ହୋଇଛି।"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr "କୀୱାର୍ଡ ଲେଆଉଟ୍ |"
@@ -5161,6 +5170,7 @@ msgstr "ପର୍ଯ୍ୟାୟଗୁଡ଼ିକ ଆପଣଙ୍କ ବୋର�
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr "ଭାଷା"
@@ -6529,6 +6539,7 @@ msgid "Odia"
 msgstr "ଓଡ଼ିଆ"
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr "ବନ୍ଦ"
 
@@ -6587,6 +6598,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr "ଅଫଲାଇନ୍। ସମ୍ପାଦନା ଏହି ଡିଭାଇସ୍‌ରେ ସେଭ୍ ହୁଏ ଓ ପୁଣି ସଂଯୋଗ ହେଲେ ସିଙ୍କ୍ ହୁଏ।"
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr "ଚାଲୁ"
 
@@ -7283,6 +7295,10 @@ msgstr "ପେଜ୍‌ରେ ପୂର୍ବଦୃଶ୍ୟ ପାଇଁ ଦବ
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
 msgstr "ଦବାଇ ଧରି ଅନ୍ୟ ସ୍ତମ୍ଭ କିମ୍ବା ପେଜ୍‌କୁ ଟାଣନ୍ତୁ।"
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
+msgstr ""
 
 #: src/features/share/web-page.tsx
 msgid "Preview web page"
@@ -8905,6 +8921,10 @@ msgstr "ପୃଷ୍ଠାରେ {title} ଦେଖାନ୍ତୁ |"
 msgid "Show all"
 msgstr "ସବୁ ଦେଖାନ୍ତୁ"
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr "ବନ୍ଦ ବନ୍ଦ ଦେଖାନ୍ତୁ |"
@@ -9137,6 +9157,7 @@ msgid "Size"
 msgstr "ଆକାର"
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr "କୌଶଳ"
 

@@ -3,6 +3,7 @@ import type { Style } from "../../forme/style-types";
 import type { CombinedTextName } from "../../semantic/node-keys";
 import type { StyleInput, TemplatePlacement } from "./styles";
 import type { CustomItemSection, ItemSection } from "./types";
+import type { BadgeColors } from "@reactive-resume/resume/badge";
 import type {
 	AwardItem,
 	BadgeDesign,
@@ -23,6 +24,7 @@ import type {
 } from "@reactive-resume/schema/resume/data";
 import type { ReactNode } from "react";
 import { Children, createContext, Fragment, isValidElement, use } from "react";
+import { badgeRadius, badgeSize, getBadgeColors } from "@reactive-resume/resume/badge";
 import { defaultBadgeDesign, entryHeaderOf } from "@reactive-resume/schema/resume/data";
 import { isDarkColor } from "@reactive-resume/utils/color";
 import { View } from "#react-pdf-renderer";
@@ -150,6 +152,12 @@ type CustomSummarySectionProps = {
 type ItemSectionProps<T> = {
 	sectionId?: string;
 	sectionData?: ItemSection<T>;
+};
+
+/** Skills and Languages, built-in or custom, can carry a badge design for the Badges layout. */
+type BadgeItemSectionProps<T> = {
+	sectionId?: string;
+	sectionData?: ItemSection<T> & { badge?: BadgeDesign | undefined };
 };
 
 type CoverLetterSectionProps = {
@@ -1538,16 +1546,10 @@ const badgeHeaderResetStyle = {
 	paddingVertical: 0,
 } satisfies Style;
 
-const badgeRadius = { pill: 999, rounded: 3, square: 0 } as const satisfies Record<BadgeDesign["shape"], number>;
-const badgeSize = {
-	small: { scale: 0.85, paddingHorizontal: 4, paddingVertical: 1 },
-	medium: { scale: 1, paddingHorizontal: 6, paddingVertical: 2 },
-	large: { scale: 1.15, paddingHorizontal: 8, paddingVertical: 3 },
-} as const satisfies Record<BadgeDesign["size"], { scale: number; paddingHorizontal: number; paddingVertical: number }>;
-
 /**
  * Bootstrap-style badge styles for a section's badge design: the main badge (`name*`) and a lighter secondary badge
- * (`tint*`) for keywords. Without a custom color, badges use the primary color.
+ * (`tint*`) for keywords. Without a custom color, badges use the primary color. Colors, shapes and sizes come from
+ * `@reactive-resume/resume/badge`, which the editor previews share.
  */
 const useBadgeStyles = (design: BadgeDesign = defaultBadgeDesign) => {
 	const data = useRender();
@@ -1560,7 +1562,7 @@ const useBadgeStyles = (design: BadgeDesign = defaultBadgeDesign) => {
 		sidebarBackground !== undefined &&
 		isDarkColor(sidebarBackground) === isDarkColor(colors.primary);
 	const primary = blendsIntoSidebar && sidebarForeground ? sidebarForeground : colors.primary;
-	const color = design.color.trim() || primary;
+	const { main, secondary } = getBadgeColors(design.style, design.color.trim() || primary);
 
 	const size = badgeSize[design.size];
 	const bodySize = data.metadata.typography.body.fontSize;
@@ -1572,33 +1574,18 @@ const useBadgeStyles = (design: BadgeDesign = defaultBadgeDesign) => {
 	} satisfies Style;
 	const text = { lineHeight: 1.2, fontSize: bodySize * size.scale } satisfies Style;
 	const smallText = { lineHeight: 1.2, fontSize: bodySize * 0.875 * size.scale } satisfies Style;
-	const tint = (opacity: number) => getPrimaryTint(color, opacity);
-
-	const variants = {
-		filled: {
-			name: { backgroundColor: color, borderColor: color },
-			nameText: { color: isDarkColor(color) ? "#ffffff" : "#000000" },
-			tint: { backgroundColor: tint(0.15), borderColor: tint(0.15) },
-		},
-		soft: {
-			name: { backgroundColor: tint(0.15), borderColor: tint(0.15) },
-			nameText: { color },
-			tint: { backgroundColor: tint(0.07), borderColor: tint(0.07) },
-		},
-		outline: {
-			name: { borderColor: color },
-			nameText: { color },
-			tint: { borderColor: tint(0.4) },
-		},
-	} satisfies Record<BadgeDesign["style"], { name: Style; nameText: Style; tint: Style }>;
-	const variant = variants[design.style];
+	const boxColors = ({ background, border }: BadgeColors): Style => ({
+		borderColor: border,
+		...(background === "transparent" ? {} : { backgroundColor: background }),
+	});
+	const textColor = ({ text: color }: BadgeColors): Style | undefined => (color ? { color } : undefined);
 
 	return {
-		nameStyle: composeStyles(box, variant.name),
-		nameTextStyle: composeStyles(text, variant.nameText),
-		nameSmallTextStyle: composeStyles(smallText, variant.nameText, { opacity: 0.85 }),
-		tintStyle: composeStyles(box, variant.tint),
-		tintTextStyle: smallText,
+		nameStyle: composeStyles(box, boxColors(main)),
+		nameTextStyle: composeStyles(text, textColor(main)),
+		nameSmallTextStyle: composeStyles(smallText, textColor(main), { opacity: 0.85 }),
+		tintStyle: composeStyles(box, boxColors(secondary)),
+		tintTextStyle: composeStyles(smallText, textColor(secondary)),
 	};
 };
 
@@ -1638,7 +1625,7 @@ const badgeItemStyle = {
 	maxWidth: "100%",
 } satisfies Style;
 
-const SkillsSection = ({ sectionId = "skills", sectionData }: ItemSectionProps<SkillItem> = {}) => {
+const SkillsSection = ({ sectionId = "skills", sectionData }: BadgeItemSectionProps<SkillItem> = {}) => {
 	const data = useRender();
 	const skills = sectionData ?? data.sections.skills;
 	const items = getVisibleItems(skills, "skills");
@@ -1650,13 +1637,14 @@ const SkillsSection = ({ sectionId = "skills", sectionData }: ItemSectionProps<S
 
 	const isInlineSkillsItem = "layout" in skills && skills.layout === "inline";
 
+	const badgeDesign = skills.badge;
 	if ("layout" in skills && skills.layout === "badges") {
 		return (
 			<SectionShell sectionId={sectionId} title={skills.title}>
 				<SectionItems wrap>
 					{items.map((item) => (
 						<SectionItem key={item.id} itemId={item.id} style={badgeItemStyle}>
-							<SkillBadges item={item} design={sectionData ? undefined : data.sections.skills.badge} />
+							<SkillBadges item={item} design={badgeDesign} />
 						</SectionItem>
 					))}
 				</SectionItems>
@@ -1722,20 +1710,21 @@ const LanguageBadge = ({ item, design }: LanguageBadgeProps) => {
 	);
 };
 
-const LanguagesSection = ({ sectionId = "languages", sectionData }: ItemSectionProps<LanguageItem> = {}) => {
+const LanguagesSection = ({ sectionId = "languages", sectionData }: BadgeItemSectionProps<LanguageItem> = {}) => {
 	const data = useRender();
 	const languages = sectionData ?? data.sections.languages;
 	const items = getVisibleItems(languages, "languages");
 
 	if (items.length === 0) return null;
 
+	const badgeDesign = languages.badge;
 	if ("layout" in languages && languages.layout === "badges") {
 		return (
 			<SectionShell sectionId={sectionId} title={languages.title}>
 				<SectionItems wrap>
 					{items.map((item) => (
 						<SectionItem key={item.id} itemId={item.id} style={badgeItemStyle}>
-							<LanguageBadge item={item} design={sectionData ? undefined : data.sections.languages.badge} />
+							<LanguageBadge item={item} design={badgeDesign} />
 						</SectionItem>
 					))}
 				</SectionItems>

@@ -4261,6 +4261,11 @@ msgstr "سطّح النموذج ليصبح النص جزءًا من الصفحة
 msgid "Fluency"
 msgstr "الطلاقة"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "التركيز، الخبرة، لماذا هذه الوظيفة"
@@ -5089,6 +5094,10 @@ msgstr "المفتاح المخزن مشفر"
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr "تعمل مفاتيح API نيابة عنك ويمكنها الوصول إلى مستنداتك. قم بإنشاء مفاتيح جديدة في إعدادات حساب المتصفح الخاص بك."
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr "تخطيط الكلمات الرئيسية"
@@ -5144,6 +5153,7 @@ msgstr "تنظّم المراحل لوحتك. وتحافظ فئتها على ا�
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr "اللّغة"
@@ -6510,6 +6520,7 @@ msgid "Odia"
 msgstr "الأودية"
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr "عن"
 
@@ -6568,6 +6579,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr "غير متصل. يتم حفظ التعديلات على هذا الجهاز وتتم مزامنتها عند إعادة الاتصال."
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr "مفعّل"
 
@@ -7259,6 +7271,10 @@ msgstr "اضغط مع الاستمرار لمعاينته على الصفحة."
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
 msgstr "اضغط مع الاستمرار، ثم اسحب إلى عمود أو صفحة أخرى."
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
+msgstr ""
 
 #: src/features/share/web-page.tsx
 msgid "Preview web page"
@@ -8869,6 +8885,10 @@ msgstr "إظهار {title} على الصفحة"
 msgid "Show all"
 msgstr "إظهار الكل"
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr "عرض مغلق"
@@ -9100,6 +9120,7 @@ msgid "Size"
 msgstr "الحجم"
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr "مهارة"
 

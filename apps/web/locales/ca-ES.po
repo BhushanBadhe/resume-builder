@@ -5412,6 +5412,11 @@ msgstr "Aplana el formulari perquè el text formi part de la pàgina."
 msgid "Fluency"
 msgstr "Fluïdesa"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/career/workspace/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "Focus, experiència, per què aquest lloc"
@@ -6579,6 +6584,10 @@ msgstr "Clau emmagatzemada encriptada"
 msgid "Keys act as you and can read and edit your documents."
 msgstr "Les claus actuen com tu i poden llegir i editar els teus documents."
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Keyword layout"
 msgstr "Disposició de les paraules clau"
@@ -6632,6 +6641,7 @@ msgstr "Apaïsat"
 #: src/features/command-palette/pages/navigation.tsx
 #: src/features/command-palette/pages/preferences/language.tsx
 #: src/features/resume/editor/design/style-groups.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/entries.tsx
 #: src/features/settings/preferences.tsx
 #: src/features/user/dropdown-menu.tsx
@@ -9121,6 +9131,10 @@ msgstr "Premeu <0>{RETURN_KEY}</0> per afegir o desar la paraula clau actual."
 msgid "Press <0>Enter</0> to open"
 msgstr "Premeu <0>Intro</0> per obrir"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Preview"
+msgstr ""
+
 #: src/features/templates/gallery.tsx
 msgid "Preview {name} sample PDF"
 msgstr "Previsualitza el PDF de mostra de {name}"
@@ -11025,6 +11039,10 @@ msgstr "Mostra de nou"
 msgid "Show all types"
 msgstr "Mostra tots els tipus"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/routes/dashboard/applications/index.tsx
 msgid "Show closed"
 msgstr "Espectacle tancat"
@@ -11243,6 +11261,7 @@ msgid "Size"
 msgstr "Mida"
 
 #: src/features/career/knowledge/facts.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 msgid "Skill"
 msgstr "Habilitat"
 

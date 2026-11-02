@@ -5412,6 +5412,11 @@ msgstr "Ισοπεδώστε τη φόρμα ώστε το κείμενο να �
 msgid "Fluency"
 msgstr "Ευχέρεια"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/career/workspace/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "Εστίαση, εμπειρία, γιατί αυτή η θέση"
@@ -6579,6 +6584,10 @@ msgstr "Το κλειδί αποθηκεύεται κρυπτογραφημέν�
 msgid "Keys act as you and can read and edit your documents."
 msgstr "Τα κλειδιά λειτουργούν όπως εσείς και μπορούν να διαβάσουν και να επεξεργαστούν τα έγγραφά σας."
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/resume/editor/write/section-row.tsx
 msgid "Keyword layout"
 msgstr "Διάταξη λέξης-κλειδιού"
@@ -6632,6 +6641,7 @@ msgstr "Οριζόντιος προσανατολισμός"
 #: src/features/command-palette/pages/navigation.tsx
 #: src/features/command-palette/pages/preferences/language.tsx
 #: src/features/resume/editor/design/style-groups.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 #: src/features/resume/editor/write/entries.tsx
 #: src/features/settings/preferences.tsx
 #: src/features/user/dropdown-menu.tsx
@@ -9121,6 +9131,10 @@ msgstr "Πατήστε <0>{RETURN_KEY}</0> για να προσθέσετε ή �
 msgid "Press <0>Enter</0> to open"
 msgstr "Πατήστε <0>Enter</0> για να ανοίξετε"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Preview"
+msgstr ""
+
 #: src/features/templates/gallery.tsx
 msgid "Preview {name} sample PDF"
 msgstr "Προεπισκόπηση {name} δείγματος PDF"
@@ -11025,6 +11039,10 @@ msgstr "Εμφάνιση ξανά"
 msgid "Show all types"
 msgstr "Εμφάνιση όλων των τύπων"
 
+#: src/features/resume/editor/write/badge-design-menu.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/routes/dashboard/applications/index.tsx
 msgid "Show closed"
 msgstr "Εμφάνιση κλειστή"
@@ -11243,6 +11261,7 @@ msgid "Size"
 msgstr "Μέγεθος"
 
 #: src/features/career/knowledge/facts.tsx
+#: src/features/resume/editor/write/badge-design-menu.tsx
 msgid "Skill"
 msgstr "Δεξιότητα"
 

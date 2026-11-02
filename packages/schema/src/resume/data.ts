@@ -411,15 +411,23 @@ const badgeDesignSchema = z
 
 export type BadgeDesign = z.infer<typeof badgeDesignSchema>;
 
+const languagesLayoutSchema = z
+	.enum(["default", "badges"])
+	.default("default")
+	.catch("default")
+	.describe("The layout style for language items. 'badges' prints each language and its fluency as a rounded badge.");
+
+const skillsLayoutSchema = z
+	.enum(["default", "inline", "badges"])
+	.default("default")
+	.catch("default")
+	.describe(
+		"The layout style for skill items. 'inline' places item fields next to name; 'badges' prints each skill and keyword as a rounded badge.",
+	);
+
 const languagesSectionSchema = itemSection(languageItemSchema, "The items to display in the languages section.").extend(
 	{
-		layout: z
-			.enum(["default", "badges"])
-			.default("default")
-			.catch("default")
-			.describe(
-				"The layout style for language items. 'badges' prints each language and its fluency as a rounded badge.",
-			),
+		layout: languagesLayoutSchema,
 		badge: badgeDesignSchema,
 	},
 );
@@ -439,13 +447,7 @@ const skillKeywordLayoutSchema = z
 export const skillsSectionSchema = itemSection(skillItemSchema, "The items to display in the skills section.")
 	.extend({
 		keywordLayout: skillKeywordLayoutSchema,
-		layout: z
-			.enum(["default", "inline", "badges"])
-			.default("default")
-			.catch("default")
-			.describe(
-				"The layout style for skill items. 'inline' places item fields next to name; 'badges' prints each skill and keyword as a rounded badge.",
-			),
+		layout: skillsLayoutSchema,
 		badge: badgeDesignSchema,
 	})
 	.transform((section) => (section.layout === "default" ? section : { ...section, columns: 1 }));
@@ -513,6 +515,15 @@ export type CustomSectionItem = z.infer<(typeof customSectionItemDefinitionByTyp
 const customSectionSchemaOptions = Object.entries(customSectionItemDefinitionByType).map(([type, { schema }]) =>
 	baseSectionSchema.extend({
 		keywordLayout: (type === "skills" ? skillKeywordLayoutSchema : z.undefined().catch(undefined)).optional(),
+		// Skills and Languages custom sections can use the same layouts and badge design as the built-in ones.
+		// One shared layout schema keeps the union to two branches, which TypeScript infers correctly.
+		layout: (type === "skills" || type === "languages"
+			? skillsLayoutSchema.describe(
+					"The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge.",
+				)
+			: z.undefined().catch(undefined)
+		).optional(),
+		badge: (type === "skills" || type === "languages" ? badgeDesignSchema : z.undefined().catch(undefined)).optional(),
 		id: z.string().describe("The unique identifier for the custom section. Usually generated as a UUID."),
 		type: z
 			.literal(type as CustomSectionType)

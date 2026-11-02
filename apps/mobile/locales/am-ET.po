@@ -4261,6 +4261,11 @@ msgstr "ጽሁፉ የገጹ አካል እንዲሆን ቅጹን ጠፍጣፋ ያ
 msgid "Fluency"
 msgstr "የቋንቋ ችሎታ"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "ትኩረት፣ ልምድ፣ ይህ የሥራ መደብ ለምን"
@@ -5089,6 +5094,10 @@ msgstr "የተከማቸ ቁልፍ ተመስጥሯል።"
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr "ቁልፎች እንደ እርስዎ ይሰራሉ እና ሰነዶችዎን መድረስ ይችላሉ። በአሳሽ መለያ ቅንጅቶች ውስጥ አዲስ ቁልፎች ተፈጥረዋል።"
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr "ቁልፍ ቃል አቀማመጥ"
@@ -5144,6 +5153,7 @@ msgstr "ደረጃዎች ሰሌዳዎን ያደራጃሉ። ምድባቸው የ�
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr "ቋንቋ"
@@ -6510,6 +6520,7 @@ msgid "Odia"
 msgstr "ኦዲያ"
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr "ጠፍቷል"
 
@@ -6568,6 +6579,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr "ከመስመር ውጭ። አርትዖቶች በዚህ መሣሪያ ላይ ይቀመጣሉ እና እንደገና ሲገናኙ ያመሳስሉ።"
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr "ነቅቷል"
 
@@ -7259,6 +7271,10 @@ msgstr "በገጹ ላይ ለማየት ተጭነው ይያዙት።"
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
 msgstr "ተጭነው ይያዙ፣ ከዚያ ወደ ሌላ አምድ ወይም ገጽ ይጎትቱ።"
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
+msgstr ""
 
 #: src/features/share/web-page.tsx
 msgid "Preview web page"
@@ -8869,6 +8885,10 @@ msgstr "{title} በገጹ ላይ አሳይ"
 msgid "Show all"
 msgstr "ሁሉንም አሳይ"
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr "አሳይ ተዘግቷል።"
@@ -9100,6 +9120,7 @@ msgid "Size"
 msgstr "መጠን"
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr "ችሎታ"
 

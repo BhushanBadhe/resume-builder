@@ -4261,6 +4261,11 @@ msgstr "Zploštěte formulář, aby byl text součástí stránky."
 msgid "Fluency"
 msgstr "Úroveň znalosti"
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr "Zaměření, zkušenosti, proč tato pozice"
@@ -5089,6 +5094,10 @@ msgstr "Klíč uložen zašifrovaný"
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr "Klávesy fungují jako vy a mají přístup k vašim dokumentům. Nové klíče se vytvoří v nastavení účtu prohlížeče."
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr "Rozložení klíčových slov"
@@ -5144,6 +5153,7 @@ msgstr "Fáze organizují vaši tabuli. Jejich kategorie zajišťuje soulad odes
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr "Jazyk"
@@ -6510,6 +6520,7 @@ msgid "Odia"
 msgstr "Udijština"
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr "Vypnuto"
 
@@ -6568,6 +6579,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr "Offline. Úpravy se uloží do tohoto zařízení a synchronizují se, když se znovu připojíte."
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr "Povoleno"
 
@@ -7259,6 +7271,10 @@ msgstr "Stisknutím a podržením zobrazíte náhled na stránce."
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
 msgstr "Stiskněte a podržte a poté přetáhněte na jiný sloupec nebo stránku."
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
+msgstr ""
 
 #: src/features/share/web-page.tsx
 msgid "Preview web page"
@@ -8869,6 +8885,10 @@ msgstr "Zobrazit {title} na stránce"
 msgid "Show all"
 msgstr "Zobrazit vše"
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr "Show uzavřena"
@@ -9100,6 +9120,7 @@ msgid "Size"
 msgstr "Velikost"
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr "Dovednost"
 

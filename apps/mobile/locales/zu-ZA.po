@@ -4261,6 +4261,11 @@ msgstr ""
 msgid "Fluency"
 msgstr ""
 
+#: src/features/write/badge-design-page.tsx
+msgctxt "Sample language fluency in a badge preview"
+msgid "Fluent"
+msgstr ""
+
 #: src/features/workspace/tabs/prepare.tsx
 msgid "Focus, experience, why this role"
 msgstr ""
@@ -5089,6 +5094,10 @@ msgstr ""
 msgid "Keys act as you and can access your documents. New keys are created in your browser account settings."
 msgstr ""
 
+#: src/features/write/badge-design-page.tsx
+msgid "Keyword"
+msgstr ""
+
 #: src/features/write/section-sheet.tsx
 msgid "Keyword layout"
 msgstr ""
@@ -5144,6 +5153,7 @@ msgstr ""
 #: src/features/design/style-groups.tsx
 #: src/features/document-menu/index.tsx
 #: src/features/search/search-screen.tsx
+#: src/features/write/badge-design-page.tsx
 #: src/features/write/fields.ts
 msgid "Language"
 msgstr ""
@@ -6510,6 +6520,7 @@ msgid "Odia"
 msgstr ""
 
 #: src/features/ai/provider-list.tsx
+#: src/features/write/section-sheet.tsx
 msgid "Off"
 msgstr ""
 
@@ -6568,6 +6579,7 @@ msgid "Offline. Edits are saved on this device and sync when you reconnect."
 msgstr ""
 
 #: src/features/career/today.tsx
+#: src/features/write/section-sheet.tsx
 msgid "On"
 msgstr ""
 
@@ -7258,6 +7270,10 @@ msgstr ""
 
 #: src/features/design/layout-screen.tsx
 msgid "Press and hold, then drag to another column or page."
+msgstr ""
+
+#: src/features/write/badge-design-page.tsx
+msgid "Preview"
 msgstr ""
 
 #: src/features/share/web-page.tsx
@@ -8869,6 +8885,10 @@ msgstr ""
 msgid "Show all"
 msgstr ""
 
+#: src/features/write/section-sheet.tsx
+msgid "Show as badges"
+msgstr ""
+
 #: src/features/applications/list-screen.tsx
 msgid "Show closed"
 msgstr ""
@@ -9100,6 +9120,7 @@ msgid "Size"
 msgstr ""
 
 #: src/features/career/facts.tsx
+#: src/features/write/badge-design-page.tsx
 msgid "Skill"
 msgstr ""
 

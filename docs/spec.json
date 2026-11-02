@@ -2336,6 +2336,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -2425,6 +2431,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -2507,6 +2519,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -2630,6 +2648,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -2882,6 +2906,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -3065,6 +3095,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -3234,6 +3270,63 @@
 																"default": "inline",
 																"description": "How skill keywords are displayed: inline separated by commas, or one bullet per keyword."
 															},
+															"layout": {
+																"enum": [
+																	"default",
+																	"inline",
+																	"badges"
+																],
+																"type": "string",
+																"default": "default",
+																"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+															},
+															"badge": {
+																"type": "object",
+																"properties": {
+																	"style": {
+																		"enum": [
+																			"filled",
+																			"soft",
+																			"outline"
+																		],
+																		"type": "string",
+																		"default": "filled",
+																		"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																	},
+																	"shape": {
+																		"enum": [
+																			"pill",
+																			"rounded",
+																			"square"
+																		],
+																		"type": "string",
+																		"default": "pill",
+																		"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																	},
+																	"size": {
+																		"enum": [
+																			"small",
+																			"medium",
+																			"large"
+																		],
+																		"type": "string",
+																		"default": "medium",
+																		"description": "The text size and padding of each badge."
+																	},
+																	"color": {
+																		"type": "string",
+																		"default": "",
+																		"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																	}
+																},
+																"default": {
+																	"style": "filled",
+																	"shape": "pill",
+																	"size": "medium",
+																	"color": ""
+																},
+																"description": "How badges look when the section uses the 'badges' layout."
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -3348,6 +3441,63 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"enum": [
+																	"default",
+																	"inline",
+																	"badges"
+																],
+																"type": "string",
+																"default": "default",
+																"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+															},
+															"badge": {
+																"type": "object",
+																"properties": {
+																	"style": {
+																		"enum": [
+																			"filled",
+																			"soft",
+																			"outline"
+																		],
+																		"type": "string",
+																		"default": "filled",
+																		"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																	},
+																	"shape": {
+																		"enum": [
+																			"pill",
+																			"rounded",
+																			"square"
+																		],
+																		"type": "string",
+																		"default": "pill",
+																		"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																	},
+																	"size": {
+																		"enum": [
+																			"small",
+																			"medium",
+																			"large"
+																		],
+																		"type": "string",
+																		"default": "medium",
+																		"description": "The text size and padding of each badge."
+																	},
+																	"color": {
+																		"type": "string",
+																		"default": "",
+																		"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																	}
+																},
+																"default": {
+																	"style": "filled",
+																	"shape": "pill",
+																	"size": "medium",
+																	"color": ""
+																},
+																"description": "How badges look when the section uses the 'badges' layout."
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -3442,6 +3592,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -3544,6 +3700,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -3714,6 +3876,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -3880,6 +4048,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -4050,6 +4224,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -4216,6 +4396,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -6903,6 +7089,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -6992,6 +7184,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -7074,6 +7272,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -7197,6 +7401,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -7449,6 +7659,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -7632,6 +7848,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -7801,6 +8023,63 @@
 																"default": "inline",
 																"description": "How skill keywords are displayed: inline separated by commas, or one bullet per keyword."
 															},
+															"layout": {
+																"enum": [
+																	"default",
+																	"inline",
+																	"badges"
+																],
+																"type": "string",
+																"default": "default",
+																"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+															},
+															"badge": {
+																"type": "object",
+																"properties": {
+																	"style": {
+																		"enum": [
+																			"filled",
+																			"soft",
+																			"outline"
+																		],
+																		"type": "string",
+																		"default": "filled",
+																		"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																	},
+																	"shape": {
+																		"enum": [
+																			"pill",
+																			"rounded",
+																			"square"
+																		],
+																		"type": "string",
+																		"default": "pill",
+																		"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																	},
+																	"size": {
+																		"enum": [
+																			"small",
+																			"medium",
+																			"large"
+																		],
+																		"type": "string",
+																		"default": "medium",
+																		"description": "The text size and padding of each badge."
+																	},
+																	"color": {
+																		"type": "string",
+																		"default": "",
+																		"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																	}
+																},
+																"default": {
+																	"style": "filled",
+																	"shape": "pill",
+																	"size": "medium",
+																	"color": ""
+																},
+																"description": "How badges look when the section uses the 'badges' layout."
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -7915,6 +8194,63 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"enum": [
+																	"default",
+																	"inline",
+																	"badges"
+																],
+																"type": "string",
+																"default": "default",
+																"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+															},
+															"badge": {
+																"type": "object",
+																"properties": {
+																	"style": {
+																		"enum": [
+																			"filled",
+																			"soft",
+																			"outline"
+																		],
+																		"type": "string",
+																		"default": "filled",
+																		"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																	},
+																	"shape": {
+																		"enum": [
+																			"pill",
+																			"rounded",
+																			"square"
+																		],
+																		"type": "string",
+																		"default": "pill",
+																		"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																	},
+																	"size": {
+																		"enum": [
+																			"small",
+																			"medium",
+																			"large"
+																		],
+																		"type": "string",
+																		"default": "medium",
+																		"description": "The text size and padding of each badge."
+																	},
+																	"color": {
+																		"type": "string",
+																		"default": "",
+																		"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																	}
+																},
+																"default": {
+																	"style": "filled",
+																	"shape": "pill",
+																	"size": "medium",
+																	"color": ""
+																},
+																"description": "How badges look when the section uses the 'badges' layout."
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -8009,6 +8345,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -8111,6 +8453,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -8281,6 +8629,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -8447,6 +8801,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -8617,6 +8977,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -8783,6 +9149,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -34349,6 +34721,12 @@
 																				"keywordLayout": {
 																					"not": {}
 																				},
+																				"layout": {
+																					"not": {}
+																				},
+																				"badge": {
+																					"not": {}
+																				},
 																				"id": {
 																					"type": "string",
 																					"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -34438,6 +34816,12 @@
 																				"keywordLayout": {
 																					"not": {}
 																				},
+																				"layout": {
+																					"not": {}
+																				},
+																				"badge": {
+																					"not": {}
+																				},
 																				"id": {
 																					"type": "string",
 																					"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -34520,6 +34904,12 @@
 																					"description": "If true, the section always begins on a new page."
 																				},
 																				"keywordLayout": {
+																					"not": {}
+																				},
+																				"layout": {
+																					"not": {}
+																				},
+																				"badge": {
 																					"not": {}
 																				},
 																				"id": {
@@ -34643,6 +35033,12 @@
 																					"description": "If true, the section always begins on a new page."
 																				},
 																				"keywordLayout": {
+																					"not": {}
+																				},
+																				"layout": {
+																					"not": {}
+																				},
+																				"badge": {
 																					"not": {}
 																				},
 																				"id": {
@@ -34833,6 +35229,12 @@
 																				"keywordLayout": {
 																					"not": {}
 																				},
+																				"layout": {
+																					"not": {}
+																				},
+																				"badge": {
+																					"not": {}
+																				},
 																				"id": {
 																					"type": "string",
 																					"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -35016,6 +35418,12 @@
 																				"keywordLayout": {
 																					"not": {}
 																				},
+																				"layout": {
+																					"not": {}
+																				},
+																				"badge": {
+																					"not": {}
+																				},
 																				"id": {
 																					"type": "string",
 																					"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -35185,6 +35593,63 @@
 																					"default": "inline",
 																					"description": "How skill keywords are displayed: inline separated by commas, or one bullet per keyword."
 																				},
+																				"layout": {
+																					"enum": [
+																						"default",
+																						"inline",
+																						"badges"
+																					],
+																					"type": "string",
+																					"default": "default",
+																					"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																				},
+																				"badge": {
+																					"type": "object",
+																					"properties": {
+																						"style": {
+																							"enum": [
+																								"filled",
+																								"soft",
+																								"outline"
+																							],
+																							"type": "string",
+																							"default": "filled",
+																							"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																						},
+																						"shape": {
+																							"enum": [
+																								"pill",
+																								"rounded",
+																								"square"
+																							],
+																							"type": "string",
+																							"default": "pill",
+																							"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																						},
+																						"size": {
+																							"enum": [
+																								"small",
+																								"medium",
+																								"large"
+																							],
+																							"type": "string",
+																							"default": "medium",
+																							"description": "The text size and padding of each badge."
+																						},
+																						"color": {
+																							"type": "string",
+																							"default": "",
+																							"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																						}
+																					},
+																					"default": {
+																						"style": "filled",
+																						"shape": "pill",
+																						"size": "medium",
+																						"color": ""
+																					},
+																					"description": "How badges look when the section uses the 'badges' layout."
+																				},
 																				"id": {
 																					"type": "string",
 																					"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -35299,6 +35764,63 @@
 																				"keywordLayout": {
 																					"not": {}
 																				},
+																				"layout": {
+																					"enum": [
+																						"default",
+																						"inline",
+																						"badges"
+																					],
+																					"type": "string",
+																					"default": "default",
+																					"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																				},
+																				"badge": {
+																					"type": "object",
+																					"properties": {
+																						"style": {
+																							"enum": [
+																								"filled",
+																								"soft",
+																								"outline"
+																							],
+																							"type": "string",
+																							"default": "filled",
+																							"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																						},
+																						"shape": {
+																							"enum": [
+																								"pill",
+																								"rounded",
+																								"square"
+																							],
+																							"type": "string",
+																							"default": "pill",
+																							"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																						},
+																						"size": {
+																							"enum": [
+																								"small",
+																								"medium",
+																								"large"
+																							],
+																							"type": "string",
+																							"default": "medium",
+																							"description": "The text size and padding of each badge."
+																						},
+																						"color": {
+																							"type": "string",
+																							"default": "",
+																							"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																						}
+																					},
+																					"default": {
+																						"style": "filled",
+																						"shape": "pill",
+																						"size": "medium",
+																						"color": ""
+																					},
+																					"description": "How badges look when the section uses the 'badges' layout."
+																				},
 																				"id": {
 																					"type": "string",
 																					"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -35393,6 +35915,12 @@
 																					"description": "If true, the section always begins on a new page."
 																				},
 																				"keywordLayout": {
+																					"not": {}
+																				},
+																				"layout": {
+																					"not": {}
+																				},
+																				"badge": {
 																					"not": {}
 																				},
 																				"id": {
@@ -35495,6 +36023,12 @@
 																					"description": "If true, the section always begins on a new page."
 																				},
 																				"keywordLayout": {
+																					"not": {}
+																				},
+																				"layout": {
+																					"not": {}
+																				},
+																				"badge": {
 																					"not": {}
 																				},
 																				"id": {
@@ -35665,6 +36199,12 @@
 																				"keywordLayout": {
 																					"not": {}
 																				},
+																				"layout": {
+																					"not": {}
+																				},
+																				"badge": {
+																					"not": {}
+																				},
 																				"id": {
 																					"type": "string",
 																					"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -35831,6 +36371,12 @@
 																					"description": "If true, the section always begins on a new page."
 																				},
 																				"keywordLayout": {
+																					"not": {}
+																				},
+																				"layout": {
+																					"not": {}
+																				},
+																				"badge": {
 																					"not": {}
 																				},
 																				"id": {
@@ -36001,6 +36547,12 @@
 																				"keywordLayout": {
 																					"not": {}
 																				},
+																				"layout": {
+																					"not": {}
+																				},
+																				"badge": {
+																					"not": {}
+																				},
 																				"id": {
 																					"type": "string",
 																					"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -36167,6 +36719,12 @@
 																					"description": "If true, the section always begins on a new page."
 																				},
 																				"keywordLayout": {
+																					"not": {}
+																				},
+																				"layout": {
+																					"not": {}
+																				},
+																				"badge": {
 																					"not": {}
 																				},
 																				"id": {
@@ -65107,6 +65665,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -65196,6 +65760,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -65278,6 +65848,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -65401,6 +65977,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -65653,6 +66235,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -65836,6 +66424,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -66005,6 +66599,63 @@
 																		"default": "inline",
 																		"description": "How skill keywords are displayed: inline separated by commas, or one bullet per keyword."
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -66119,6 +66770,63 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -66213,6 +66921,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -66315,6 +67029,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -66485,6 +67205,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -66651,6 +67377,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -66821,6 +67553,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -66987,6 +67725,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -69674,6 +70418,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -69763,6 +70513,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -69845,6 +70601,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -69968,6 +70730,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -70220,6 +70988,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -70403,6 +71177,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -70572,6 +71352,63 @@
 																		"default": "inline",
 																		"description": "How skill keywords are displayed: inline separated by commas, or one bullet per keyword."
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -70686,6 +71523,63 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -70780,6 +71674,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -70882,6 +71782,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -71052,6 +71958,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -71218,6 +72130,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -71388,6 +72306,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -71554,6 +72478,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -74529,6 +75459,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -74618,6 +75554,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -74700,6 +75642,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -74823,6 +75771,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -75075,6 +76029,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -75258,6 +76218,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -75427,6 +76393,63 @@
 																		"default": "inline",
 																		"description": "How skill keywords are displayed: inline separated by commas, or one bullet per keyword."
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -75541,6 +76564,63 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -75635,6 +76715,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -75737,6 +76823,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -75907,6 +76999,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -76073,6 +77171,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -76243,6 +77347,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -76409,6 +77519,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -79340,6 +80456,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -79429,6 +80551,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -79511,6 +80639,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -79634,6 +80768,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -79886,6 +81026,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -80069,6 +81215,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -80238,6 +81390,63 @@
 																		"default": "inline",
 																		"description": "How skill keywords are displayed: inline separated by commas, or one bullet per keyword."
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -80352,6 +81561,63 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -80446,6 +81712,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -80548,6 +81820,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -80718,6 +81996,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -80884,6 +82168,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -81054,6 +82344,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -81220,6 +82516,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -85309,6 +86611,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -85398,6 +86706,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -85480,6 +86794,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -85603,6 +86923,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -85855,6 +87181,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -86038,6 +87370,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -86207,6 +87545,63 @@
 																		"default": "inline",
 																		"description": "How skill keywords are displayed: inline separated by commas, or one bullet per keyword."
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -86321,6 +87716,63 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -86415,6 +87867,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -86517,6 +87975,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -86687,6 +88151,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -86853,6 +88323,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -87023,6 +88499,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -87189,6 +88671,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -90025,6 +91513,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -90114,6 +91608,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -90196,6 +91696,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -90319,6 +91825,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -90571,6 +92083,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -90754,6 +92272,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -90923,6 +92447,63 @@
 																		"default": "inline",
 																		"description": "How skill keywords are displayed: inline separated by commas, or one bullet per keyword."
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -91037,6 +92618,63 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -91131,6 +92769,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -91233,6 +92877,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -91403,6 +93053,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -91569,6 +93225,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -91739,6 +93401,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -91905,6 +93573,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -97424,6 +99098,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -97513,6 +99193,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -97595,6 +99281,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -97718,6 +99410,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -97970,6 +99668,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -98153,6 +99857,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -98322,6 +100032,63 @@
 																		"default": "inline",
 																		"description": "How skill keywords are displayed: inline separated by commas, or one bullet per keyword."
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -98436,6 +100203,63 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -98530,6 +100354,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -98632,6 +100462,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -98802,6 +100638,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -98968,6 +100810,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -99138,6 +100986,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -99304,6 +101158,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -102565,6 +104425,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -102654,6 +104520,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -102736,6 +104608,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -102859,6 +104737,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -103111,6 +104995,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -103294,6 +105184,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -103463,6 +105359,63 @@
 																		"default": "inline",
 																		"description": "How skill keywords are displayed: inline separated by commas, or one bullet per keyword."
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -103577,6 +105530,63 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"enum": [
+																			"default",
+																			"inline",
+																			"badges"
+																		],
+																		"type": "string",
+																		"default": "default",
+																		"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+																	},
+																	"badge": {
+																		"type": "object",
+																		"properties": {
+																			"style": {
+																				"enum": [
+																					"filled",
+																					"soft",
+																					"outline"
+																				],
+																				"type": "string",
+																				"default": "filled",
+																				"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																			},
+																			"shape": {
+																				"enum": [
+																					"pill",
+																					"rounded",
+																					"square"
+																				],
+																				"type": "string",
+																				"default": "pill",
+																				"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																			},
+																			"size": {
+																				"enum": [
+																					"small",
+																					"medium",
+																					"large"
+																				],
+																				"type": "string",
+																				"default": "medium",
+																				"description": "The text size and padding of each badge."
+																			},
+																			"color": {
+																				"type": "string",
+																				"default": "",
+																				"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																			}
+																		},
+																		"default": {
+																			"style": "filled",
+																			"shape": "pill",
+																			"size": "medium",
+																			"color": ""
+																		},
+																		"description": "How badges look when the section uses the 'badges' layout."
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -103671,6 +105681,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -103773,6 +105789,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -103943,6 +105965,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -104109,6 +106137,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -104279,6 +106313,12 @@
 																	"keywordLayout": {
 																		"not": {}
 																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
+																		"not": {}
+																	},
 																	"id": {
 																		"type": "string",
 																		"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -104445,6 +106485,12 @@
 																		"description": "If true, the section always begins on a new page."
 																	},
 																	"keywordLayout": {
+																		"not": {}
+																	},
+																	"layout": {
+																		"not": {}
+																	},
+																	"badge": {
 																		"not": {}
 																	},
 																	"id": {
@@ -115649,6 +117695,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -115738,6 +117790,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -115820,6 +117878,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -115943,6 +118007,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -116195,6 +118265,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -116378,6 +118454,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -116547,6 +118629,63 @@
 																"default": "inline",
 																"description": "How skill keywords are displayed: inline separated by commas, or one bullet per keyword."
 															},
+															"layout": {
+																"enum": [
+																	"default",
+																	"inline",
+																	"badges"
+																],
+																"type": "string",
+																"default": "default",
+																"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+															},
+															"badge": {
+																"type": "object",
+																"properties": {
+																	"style": {
+																		"enum": [
+																			"filled",
+																			"soft",
+																			"outline"
+																		],
+																		"type": "string",
+																		"default": "filled",
+																		"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																	},
+																	"shape": {
+																		"enum": [
+																			"pill",
+																			"rounded",
+																			"square"
+																		],
+																		"type": "string",
+																		"default": "pill",
+																		"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																	},
+																	"size": {
+																		"enum": [
+																			"small",
+																			"medium",
+																			"large"
+																		],
+																		"type": "string",
+																		"default": "medium",
+																		"description": "The text size and padding of each badge."
+																	},
+																	"color": {
+																		"type": "string",
+																		"default": "",
+																		"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																	}
+																},
+																"default": {
+																	"style": "filled",
+																	"shape": "pill",
+																	"size": "medium",
+																	"color": ""
+																},
+																"description": "How badges look when the section uses the 'badges' layout."
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -116661,6 +118800,63 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"enum": [
+																	"default",
+																	"inline",
+																	"badges"
+																],
+																"type": "string",
+																"default": "default",
+																"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+															},
+															"badge": {
+																"type": "object",
+																"properties": {
+																	"style": {
+																		"enum": [
+																			"filled",
+																			"soft",
+																			"outline"
+																		],
+																		"type": "string",
+																		"default": "filled",
+																		"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																	},
+																	"shape": {
+																		"enum": [
+																			"pill",
+																			"rounded",
+																			"square"
+																		],
+																		"type": "string",
+																		"default": "pill",
+																		"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																	},
+																	"size": {
+																		"enum": [
+																			"small",
+																			"medium",
+																			"large"
+																		],
+																		"type": "string",
+																		"default": "medium",
+																		"description": "The text size and padding of each badge."
+																	},
+																	"color": {
+																		"type": "string",
+																		"default": "",
+																		"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																	}
+																},
+																"default": {
+																	"style": "filled",
+																	"shape": "pill",
+																	"size": "medium",
+																	"color": ""
+																},
+																"description": "How badges look when the section uses the 'badges' layout."
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -116755,6 +118951,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -116857,6 +119059,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -117027,6 +119235,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -117193,6 +119407,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -117363,6 +119583,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -117529,6 +119755,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -120216,6 +122448,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -120305,6 +122543,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -120387,6 +122631,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -120510,6 +122760,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -120762,6 +123018,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -120945,6 +123207,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -121114,6 +123382,63 @@
 																"default": "inline",
 																"description": "How skill keywords are displayed: inline separated by commas, or one bullet per keyword."
 															},
+															"layout": {
+																"enum": [
+																	"default",
+																	"inline",
+																	"badges"
+																],
+																"type": "string",
+																"default": "default",
+																"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+															},
+															"badge": {
+																"type": "object",
+																"properties": {
+																	"style": {
+																		"enum": [
+																			"filled",
+																			"soft",
+																			"outline"
+																		],
+																		"type": "string",
+																		"default": "filled",
+																		"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																	},
+																	"shape": {
+																		"enum": [
+																			"pill",
+																			"rounded",
+																			"square"
+																		],
+																		"type": "string",
+																		"default": "pill",
+																		"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																	},
+																	"size": {
+																		"enum": [
+																			"small",
+																			"medium",
+																			"large"
+																		],
+																		"type": "string",
+																		"default": "medium",
+																		"description": "The text size and padding of each badge."
+																	},
+																	"color": {
+																		"type": "string",
+																		"default": "",
+																		"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																	}
+																},
+																"default": {
+																	"style": "filled",
+																	"shape": "pill",
+																	"size": "medium",
+																	"color": ""
+																},
+																"description": "How badges look when the section uses the 'badges' layout."
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -121228,6 +123553,63 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"enum": [
+																	"default",
+																	"inline",
+																	"badges"
+																],
+																"type": "string",
+																"default": "default",
+																"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge."
+															},
+															"badge": {
+																"type": "object",
+																"properties": {
+																	"style": {
+																		"enum": [
+																			"filled",
+																			"soft",
+																			"outline"
+																		],
+																		"type": "string",
+																		"default": "filled",
+																		"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border."
+																	},
+																	"shape": {
+																		"enum": [
+																			"pill",
+																			"rounded",
+																			"square"
+																		],
+																		"type": "string",
+																		"default": "pill",
+																		"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none."
+																	},
+																	"size": {
+																		"enum": [
+																			"small",
+																			"medium",
+																			"large"
+																		],
+																		"type": "string",
+																		"default": "medium",
+																		"description": "The text size and padding of each badge."
+																	},
+																	"color": {
+																		"type": "string",
+																		"default": "",
+																		"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color."
+																	}
+																},
+																"default": {
+																	"style": "filled",
+																	"shape": "pill",
+																	"size": "medium",
+																	"color": ""
+																},
+																"description": "How badges look when the section uses the 'badges' layout."
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -121322,6 +123704,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -121424,6 +123812,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -121594,6 +123988,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -121760,6 +124160,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -121930,6 +124336,12 @@
 															"keywordLayout": {
 																"not": {}
 															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
+																"not": {}
+															},
 															"id": {
 																"type": "string",
 																"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -122096,6 +124508,12 @@
 																"description": "If true, the section always begins on a new page."
 															},
 															"keywordLayout": {
+																"not": {}
+															},
+															"layout": {
+																"not": {}
+															},
+															"badge": {
 																"not": {}
 															},
 															"id": {
@@ -125947,6 +128365,8 @@
 											"type": "boolean"
 										},
 										"keywordLayout": {},
+										"layout": {},
+										"badge": {},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -126040,6 +128460,8 @@
 											"type": "boolean"
 										},
 										"keywordLayout": {},
+										"layout": {},
+										"badge": {},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -126128,6 +128550,8 @@
 											"type": "boolean"
 										},
 										"keywordLayout": {},
+										"layout": {},
+										"badge": {},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -126262,6 +128686,8 @@
 											"type": "boolean"
 										},
 										"keywordLayout": {},
+										"layout": {},
+										"badge": {},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -126529,6 +128955,8 @@
 											"type": "boolean"
 										},
 										"keywordLayout": {},
+										"layout": {},
+										"badge": {},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -126725,6 +129153,8 @@
 											"type": "boolean"
 										},
 										"keywordLayout": {},
+										"layout": {},
+										"badge": {},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -126909,6 +129339,63 @@
 												"list"
 											]
 										},
+										"layout": {
+											"default": "default",
+											"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge.",
+											"type": "string",
+											"enum": [
+												"default",
+												"inline",
+												"badges"
+											]
+										},
+										"badge": {
+											"default": {
+												"style": "filled",
+												"shape": "pill",
+												"size": "medium",
+												"color": ""
+											},
+											"description": "How badges look when the section uses the 'badges' layout.",
+											"type": "object",
+											"properties": {
+												"style": {
+													"default": "filled",
+													"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border.",
+													"type": "string",
+													"enum": [
+														"filled",
+														"soft",
+														"outline"
+													]
+												},
+												"shape": {
+													"default": "pill",
+													"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none.",
+													"type": "string",
+													"enum": [
+														"pill",
+														"rounded",
+														"square"
+													]
+												},
+												"size": {
+													"default": "medium",
+													"description": "The text size and padding of each badge.",
+													"type": "string",
+													"enum": [
+														"small",
+														"medium",
+														"large"
+													]
+												},
+												"color": {
+													"default": "",
+													"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color.",
+													"type": "string"
+												}
+											}
+										},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -127030,6 +129517,63 @@
 											"type": "boolean"
 										},
 										"keywordLayout": {},
+										"layout": {
+											"default": "default",
+											"description": "The layout style for items. 'inline' (skills only) places item fields next to name; 'badges' prints each item as a rounded badge.",
+											"type": "string",
+											"enum": [
+												"default",
+												"inline",
+												"badges"
+											]
+										},
+										"badge": {
+											"default": {
+												"style": "filled",
+												"shape": "pill",
+												"size": "medium",
+												"color": ""
+											},
+											"description": "How badges look when the section uses the 'badges' layout.",
+											"type": "object",
+											"properties": {
+												"style": {
+													"default": "filled",
+													"description": "'filled' uses a solid background, 'soft' a light tint with colored text, 'outline' a colored border.",
+													"type": "string",
+													"enum": [
+														"filled",
+														"soft",
+														"outline"
+													]
+												},
+												"shape": {
+													"default": "pill",
+													"description": "'pill' is fully rounded, 'rounded' has small rounded corners, 'square' has none.",
+													"type": "string",
+													"enum": [
+														"pill",
+														"rounded",
+														"square"
+													]
+												},
+												"size": {
+													"default": "medium",
+													"description": "The text size and padding of each badge.",
+													"type": "string",
+													"enum": [
+														"small",
+														"medium",
+														"large"
+													]
+												},
+												"color": {
+													"default": "",
+													"description": "Badge color, defined as rgba(r, g, b, a). Leave blank to use the primary color.",
+													"type": "string"
+												}
+											}
+										},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -127131,6 +129675,8 @@
 											"type": "boolean"
 										},
 										"keywordLayout": {},
+										"layout": {},
+										"badge": {},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -127239,6 +129785,8 @@
 											"type": "boolean"
 										},
 										"keywordLayout": {},
+										"layout": {},
+										"badge": {},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -127420,6 +129968,8 @@
 											"type": "boolean"
 										},
 										"keywordLayout": {},
+										"layout": {},
+										"badge": {},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -127601,6 +130151,8 @@
 											"type": "boolean"
 										},
 										"keywordLayout": {},
+										"layout": {},
+										"badge": {},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -127782,6 +130334,8 @@
 											"type": "boolean"
 										},
 										"keywordLayout": {},
+										"layout": {},
+										"badge": {},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
@@ -127963,6 +130517,8 @@
 											"type": "boolean"
 										},
 										"keywordLayout": {},
+										"layout": {},
+										"badge": {},
 										"id": {
 											"type": "string",
 											"description": "The unique identifier for the custom section. Usually generated as a UUID."
